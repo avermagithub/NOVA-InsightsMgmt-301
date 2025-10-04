@@ -7,9 +7,10 @@ const FrontOfficeInsights = ({ category, onClose }) => {
   const [selectedInsight, setSelectedInsight] = useState(null);
   const [showInsightDetails, setShowInsightDetails] = useState(false);
 
-  // Filter insights for Investment Products category and sort by priority
+  // Filter insights for selected category and sort by priority
+  const categoryName = category?.id === 'banking_products' ? 'Banking Products & Services' : 'Investment Products';
   const categoryInsights = INSIGHT_EXAMPLES.filter(insight => 
-    insight.category === 'Investment Products'
+    insight.category === categoryName
   );
 
   // Group insights by priority
