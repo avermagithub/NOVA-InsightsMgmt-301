@@ -103,6 +103,28 @@ export const FINANCIAL_ADVISORS = [
     aum: '$298M',
     clientCount: 64,
     location: 'Indianapolis, IN'
+  },
+  
+  // RMD and Retirement Planning Specialists
+  {
+    id: 'fa008',
+    name: 'Margaret Stewart, CFP®, CPA',
+    firm: 'Sterling Wealth Partners',
+    experience: 25,
+    specialties: ['RMD Planning', 'Tax Strategy', 'Retirement Distribution Planning'],
+    aum: '$315M',
+    clientCount: 52,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa009',
+    name: 'Thomas Richardson, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 19,
+    specialties: ['RMD Compliance', 'IRA Management', 'Charitable Distribution Strategies'],
+    aum: '$287M',
+    clientCount: 48,
+    location: 'Milwaukee, WI'
   }
 ];
 
@@ -310,6 +332,68 @@ export const CLIENTS = [
     objectives: ['Legacy Protection', 'Nursing Home Insurance', 'Family Support'],
     advisor: 'fa001',
     location: 'Lake Forest, IL'
+  },
+  
+  // Additional Clients for RMD Focus
+  {
+    id: 'cl017',
+    name: 'Frank and Marie Williams',
+    wealthSegment: 'HNW',
+    aum: '$2.3M',
+    age: 74,
+    occupation: 'Retired Corporate Executives',
+    riskProfile: 'Conservative',
+    objectives: ['RMD Compliance', 'Tax Minimization', 'Estate Planning'],
+    advisor: 'fa008',
+    location: 'Evanston, IL'
+  },
+  {
+    id: 'cl018',
+    name: 'Robert Mitchell',
+    wealthSegment: 'AFFLUENT',
+    aum: '$890K',
+    age: 76,
+    occupation: 'Retired Engineering Manager',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['RMD Optimization', 'Healthcare Costs', 'Charitable Giving'],
+    advisor: 'fa008',
+    location: 'Grand Rapids, MI'
+  },
+  {
+    id: 'cl019',
+    name: 'Eleanor Campbell',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$450K',
+    age: 73,
+    occupation: 'Retired School Administrator',
+    riskProfile: 'Conservative',
+    objectives: ['RMD Management', 'Social Security Optimization', 'Long-term Care Planning'],
+    advisor: 'fa009',
+    location: 'Madison, WI'
+  },
+  {
+    id: 'cl020',
+    name: 'Richard and Joyce Thompson',
+    wealthSegment: 'HNW',
+    aum: '$1.6M',
+    age: 71,
+    occupation: 'Retired Small Business Owners',
+    riskProfile: 'Moderate',
+    objectives: ['RMD Planning', 'Business Exit Tax Strategy', 'Grandchildren Education'],
+    advisor: 'fa009',
+    location: 'Bloomington, IN'
+  },
+  {
+    id: 'cl021',
+    name: 'William Carson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$675K',
+    age: 78,
+    occupation: 'Retired Federal Employee',
+    riskProfile: 'Conservative',
+    objectives: ['Late RMD Compliance', 'Pension Coordination', 'Medical Expenses'],
+    advisor: 'fa008',
+    location: 'Springfield, IL'
   }
 ];
 
@@ -363,6 +447,12 @@ export const INVESTMENT_INSIGHTS = [
     id: 'ip007',
     name: 'Annuities',
     purpose: 'Guide Clients on Annuities for Income and Protection',
+    category: 'Investment Products'
+  },
+  {
+    id: 'ip008',
+    name: 'RMD',
+    purpose: 'Guide Clients on RMD Compliance and Optimization',
     category: 'Investment Products'
   }
 ];

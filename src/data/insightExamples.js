@@ -1215,5 +1215,292 @@ export const INSIGHT_EXAMPLES = [
     logic: 'Model based',
     modelRuleName: 'QLAC_ReturnPremium_EstateBalance_v3.3',
     reasoning: 'QLAC estate planning and return of premium modeling balances longevity protection with beneficiary interests. Analysis includes death benefit calculations, premium recovery mechanisms, and estate planning coordination. Model evaluates return of premium costs, estate liquidity impacts, and optimal benefit structuring per QLAC regulatory requirements and estate planning best practices.'
+  },
+
+  // RMD INSIGHTS (25 examples - 5 for each of 5 insight types)
+  
+  // RMD PLANNING OPPORTUNITY (5 examples)
+  {
+    id: 'rmd_001',
+    insight: 'RMD',
+    title: 'Pre-RMD Strategic Planning Opportunity',
+    insightText: 'Frank Williams will reach age 73 in 8 months, triggering first-year RMD requirements. IRA balance: $1,850,000. Projected first RMD: $69,811. Current tax bracket: 22%. Strategic planning window closing.',
+    opportunities: 'Implement pre-RMD tax strategy including Roth conversions, charitable distributions setup, coordinate with Social Security timing, establish systematic distribution plan.',
+    client: getClient('cl017'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_002',
+    insight: 'RMD',
+    title: 'First-Year RMD Election Strategy',
+    insightText: 'Robert Mitchell age 73 in his first RMD year can delay initial distribution until April 1st of following year. However, this creates double distribution tax impact. Current RMD: $32,547. Next year RMD: $34,289.',
+    opportunities: 'Evaluate first-year RMD timing election, assess double distribution tax impact, optimize distribution timing to minimize tax bracket escalation.',
+    client: getClient('cl018'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_003',
+    insight: 'RMD',
+    title: 'Roth Conversion RMD Planning',
+    insightText: 'Richard Thompson age 68 has 5-year window for strategic Roth conversions before RMDs begin. Current IRA: $1,200,000. Annual conversion capacity: $85,000 to stay in 22% bracket.',
+    opportunities: 'Execute systematic Roth conversion strategy to reduce future RMD amounts, optimize tax bracket utilization, coordinate with retirement timeline.',
+    client: getClient('cl020'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_004',
+    insight: 'RMD',
+    title: 'Spousal RMD Coordination Strategy',
+    insightText: 'Eleanor Campbell\'s spouse died last year. As beneficiary, she can stretch inherited IRA distributions over 10 years or roll to own IRA. Current age: 73. Inherited IRA: $285,000.',
+    opportunities: 'Optimize spousal IRA election strategy, evaluate stretch vs rollover benefits, coordinate with own RMD requirements, maximize tax efficiency.',
+    client: getClient('cl019'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_005',
+    insight: 'RMD',
+    title: 'Asset Location RMD Optimization',
+    insightText: 'William Carson has multiple retirement accounts: Traditional IRA $425,000, 401k $285,000, Roth IRA $95,000. Strategic asset location can optimize RMD tax impact and withdrawal sequencing.',
+    opportunities: 'Optimize asset location across account types, coordinate Traditional and Roth withdrawals, implement tax-efficient distribution sequencing strategy.',
+    client: getClient('cl021'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+
+  // RMD TAX OPTIMIZATION ALERT (5 examples)
+  {
+    id: 'rmd_006',
+    insight: 'RMD',
+    title: 'Tax Bracket Management Strategy',
+    insightText: 'Frank Williams\' RMD of $85,250 will push income into 24% tax bracket. Current taxable income: $72,000. Excess above 22% bracket threshold: $18,500. Additional tax cost: $3,145.',
+    opportunities: 'Implement tax bracket management through timing of other income sources, coordinate with Social Security elections, evaluate charitable distribution options.',
+    client: getClient('cl017'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_007',
+    insight: 'RMD',
+    title: 'Medicare IRMAA Impact Alert',
+    insightText: 'Robert Mitchell\'s RMD will increase MAGI to $94,500, triggering Medicare IRMAA surcharge of $2,448 annually. Current Medicare Part B: $174.70/month. IRMAA adjustment: $378.70/month.',
+    opportunities: 'Coordinate RMD timing with Medicare IRMAA thresholds, evaluate charitable distribution strategies to reduce MAGI, optimize distribution timing.',
+    client: getClient('cl018'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_008',
+    insight: 'RMD',
+    title: 'State Tax Optimization Strategy',
+    insightText: 'Eleanor Campbell considering relocation to Florida (no state income tax) before large RMDs begin. Current Wisconsin tax on RMD: $2,250 annually. Five-year savings potential: $12,847.',
+    opportunities: 'Evaluate state tax optimization through strategic relocation, assess domicile change requirements, coordinate with overall retirement planning.',
+    client: getClient('cl019'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_009',
+    insight: 'RMD',
+    title: 'Net Investment Income Tax Planning',
+    insightText: 'Richard Thompson\'s RMD combined with investment income will exceed $250,000 threshold, triggering 3.8% Net Investment Income Tax. Projected NIIT: $4,275 annually.',
+    opportunities: 'Coordinate RMD with investment income timing, evaluate municipal bond strategies, implement tax-loss harvesting to manage NIIT exposure.',
+    client: getClient('cl020'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_010',
+    insight: 'RMD',
+    title: 'Multi-State Tax Coordination',
+    insightText: 'William Carson has retirement accounts in Illinois and Florida. Illinois taxes all retirement income, Florida has no income tax. Strategic account selection can save $3,200 annually.',
+    opportunities: 'Optimize RMD source account selection for multi-state tax efficiency, coordinate with residency planning, maximize after-tax retirement income.',
+    client: getClient('cl021'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+
+  // LATE RMD DISTRIBUTION WARNING (5 examples)
+  {
+    id: 'rmd_011',
+    insight: 'RMD',
+    title: 'Critical: RMD Deadline Alert - 45 Days Remaining',
+    insightText: 'URGENT: Frank Williams has $85,250 RMD remaining with only 45 days until December 31st deadline. Failure to distribute will trigger 25% IRS penalty of $21,313. Immediate action required.',
+    opportunities: 'Execute immediate RMD distribution to avoid 25% penalty, coordinate with tax withholding strategy, establish systematic process for future compliance.',
+    client: getClient('cl017'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'High'
+  },
+  {
+    id: 'rmd_012',
+    insight: 'RMD',
+    title: 'First-Year RMD April Deadline Warning',
+    insightText: 'CRITICAL: Robert Mitchell\'s first-year RMD of $32,547 must be completed by April 1st (78 days remaining). Missing deadline triggers 25% penalty of $8,137. Second RMD also due same year.',
+    opportunities: 'Complete first-year RMD before April 1st deadline, plan for double distribution tax impact, establish ongoing RMD compliance procedures.',
+    client: getClient('cl018'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'High'
+  },
+  {
+    id: 'rmd_013',
+    insight: 'RMD',
+    title: 'Partial RMD Shortfall Alert',
+    insightText: 'Eleanor Campbell has distributed $18,500 of required $21,300 RMD. Remaining shortfall: $2,800. Penalty on shortfall: $700. 92 days remaining to complete distribution.',
+    opportunities: 'Complete remaining RMD shortfall immediately, review calculation accuracy, implement systematic distribution monitoring for future compliance.',
+    client: getClient('cl019'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'High'
+  },
+  {
+    id: 'rmd_014',
+    insight: 'RMD',
+    title: 'Inherited IRA RMD Deadline Warning',
+    insightText: 'Richard Thompson\'s inherited IRA RMD of $28,500 due by December 31st. Inherited accounts have different penalty rules - 25% penalty applies. 67 days remaining for compliance.',
+    opportunities: 'Complete inherited IRA RMD distribution, verify beneficiary RMD calculation accuracy, coordinate with own retirement account RMDs.',
+    client: getClient('cl020'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'High'
+  },
+  {
+    id: 'rmd_015',
+    insight: 'RMD',
+    title: '401(k) Rollover RMD Compliance Alert',
+    insightText: 'William Carson\'s 401(k) rollover to IRA was completed mid-year. RMD calculation must include 401(k) balance at year-end prior year. Potential shortfall: $8,900. Penalty risk: $2,225.',
+    opportunities: 'Verify RMD calculation includes all qualified accounts, complete any shortfall distributions, coordinate with former employer 401(k) records.',
+    client: getClient('cl021'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'High'
+  },
+
+  // RMD CHARITABLE DISTRIBUTION OPPORTUNITY (5 examples)
+  {
+    id: 'rmd_016',
+    insight: 'RMD',
+    title: 'Qualified Charitable Distribution Strategy',
+    insightText: 'Frank Williams can satisfy $50,000 of his $85,250 RMD through direct charitable distributions. Tax savings versus cash donation: $11,000 (22% bracket). Charitable intent aligns with tax strategy.',
+    opportunities: 'Structure Qualified Charitable Distribution (QCD) to satisfy RMD requirements, capture tax benefits versus itemized deductions, coordinate with overall charitable planning.',
+    client: getClient('cl017'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_017',
+    insight: 'RMD',
+    title: 'Donor Advised Fund QCD Strategy',
+    insightText: 'Robert Mitchell can contribute $25,000 to Donor Advised Fund through QCD, reducing RMD from $32,547 to $7,547. Creates ongoing charitable flexibility while minimizing current income.',
+    opportunities: 'Establish Donor Advised Fund through QCD distribution, create flexible charitable giving vehicle, coordinate with family philanthropic objectives.',
+    client: getClient('cl018'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_018',
+    insight: 'RMD',
+    title: 'Charitable Remainder Trust QCD Alternative',
+    insightText: 'Eleanor Campbell\'s charitable intent and RMD requirement present Charitable Remainder Trust opportunity. CRT can provide income stream while capturing charitable deduction of $95,000.',
+    opportunities: 'Evaluate Charitable Remainder Trust as alternative to QCD, capture charitable deduction benefits, coordinate with estate planning objectives.',
+    client: getClient('cl019'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_019',
+    insight: 'RMD',
+    title: 'Multi-Year QCD Planning Strategy',
+    insightText: 'Richard Thompson can satisfy entire $45,000 annual RMD through charitable distributions over next 5 years. Cumulative tax savings: $49,500. Annual QCD limit: $105,000 per person.',
+    opportunities: 'Develop multi-year QCD strategy to optimize charitable giving and RMD compliance, coordinate with spouse for enhanced limits, plan charitable legacy.',
+    client: getClient('cl020'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_020',
+    insight: 'RMD',
+    title: 'Religious Organization QCD Opportunity',
+    insightText: 'William Carson\'s church capital campaign provides QCD opportunity. $15,000 pledge can be satisfied through QCD, reducing RMD taxable income while supporting religious community.',
+    opportunities: 'Structure church capital campaign contribution as QCD, coordinate with religious organization for direct transfer requirements, optimize tax benefits.',
+    client: getClient('cl021'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+
+  // MULTIPLE ACCOUNT RMD COORDINATION (5 examples)
+  {
+    id: 'rmd_021',
+    insight: 'RMD',
+    title: 'Multi-Custodian RMD Coordination Alert',
+    insightText: 'Frank Williams has IRAs at 3 different custodians: Fidelity ($850K), Vanguard ($650K), Edward Jones ($350K). Total RMD: $85,250. Can aggregate and distribute from any account combination.',
+    opportunities: 'Coordinate RMD across multiple custodians, optimize distribution sourcing for tax efficiency, consolidate accounts for simplified management.',
+    client: getClient('cl017'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_022',
+    insight: 'RMD',
+    title: '401(k) vs IRA RMD Coordination',
+    insightText: 'Robert Mitchell has 401(k) at former employer ($185K) and rollover IRA ($485K). RMDs must be calculated separately but can be optimized for asset location and tax efficiency.',
+    opportunities: 'Coordinate 401(k) and IRA RMD calculations, evaluate rollover benefits, optimize distribution sources based on investment options and fees.',
+    client: getClient('cl018'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_023',
+    insight: 'RMD',
+    title: 'Inherited vs Own Account RMD Management',
+    insightText: 'Eleanor Campbell manages her own IRA RMD ($21,300) plus inherited IRA from spouse ($12,500). Different distribution rules apply. Combined tax impact requires coordination.',
+    opportunities: 'Coordinate inherited and own IRA RMD requirements, optimize distribution timing and tax impact, ensure compliance with different beneficiary rules.',
+    client: getClient('cl019'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_024',
+    insight: 'RMD',
+    title: 'SEP-IRA and Traditional IRA Coordination',
+    insightText: 'Richard Thompson has SEP-IRA from consulting work ($285K) and traditional IRA ($915K). RMD calculation includes both accounts: $45,238 total. Can distribute from either account.',
+    opportunities: 'Coordinate SEP-IRA and traditional IRA RMDs, optimize distribution sources, evaluate consolidation benefits for simplified compliance.',
+    client: getClient('cl020'),
+    advisor: getAdvisor('fa009'),
+    category: 'Investment Products',
+    priority: 'Medium'
+  },
+  {
+    id: 'rmd_025',
+    insight: 'RMD',
+    title: 'Roth 401(k) vs Traditional Account Strategy',
+    insightText: 'William Carson has Roth 401(k) ($125K) subject to RMD and traditional IRA ($550K). Strategic coordination can optimize tax efficiency and preserve Roth benefits through rollover.',
+    opportunities: 'Coordinate Roth 401(k) and traditional IRA distributions, evaluate Roth 401(k) rollover to Roth IRA, optimize tax-free growth preservation.',
+    client: getClient('cl021'),
+    advisor: getAdvisor('fa008'),
+    category: 'Investment Products',
+    priority: 'Medium'
   }
 ];
