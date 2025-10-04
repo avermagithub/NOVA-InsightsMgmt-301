@@ -33,7 +33,7 @@ const Header = ({ selectedRole, onRoleChange, userRoles }) => {
             />
           </div>
           <div className="title-content">
-            <span className="main-title">AI Powered Insights and Opportunity Management</span>
+            <span className="main-title">EDJ AI Powered Insights & Opportunities Management</span>
           </div>
         </div>
         
