@@ -317,6 +317,70 @@ export const FINANCIAL_ADVISORS = [
     aum: '$365M',
     clientCount: 79,
     location: 'Detroit, MI'
+  },
+
+  // Financial Planning Specialists
+  {
+    id: 'fa028',
+    name: 'Sarah Peterson, CFP®, FPA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['Comprehensive Financial Planning', 'Goal-Based Planning', 'Risk Profile Assessment', 'Investment Strategy'],
+    aum: '$445M',
+    clientCount: 83,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa029',
+    name: 'Michael Chang, CFP®, CPA/PFS',
+    firm: 'Sterling Wealth Partners',
+    experience: 12,
+    specialties: ['Financial Plan Development', 'Tax-Integrated Planning', 'Retirement Planning', 'Estate Coordination'],
+    aum: '$312M',
+    clientCount: 76,
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'fa030',
+    name: 'Jennifer Adams, CFP®, FPA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 10,
+    specialties: ['Financial Goal Setting', 'Life Planning', 'Investment Planning', 'Risk Management'],
+    aum: '$278M',
+    clientCount: 71,
+    location: 'Indianapolis, IN'
+  },
+
+  // Retirement Planning Specialists
+  {
+    id: 'fa031',
+    name: 'David Taylor, CFP®, QPA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['401k Plan Design', 'Fiduciary Services', 'Plan Administration', 'Corporate Retirement Solutions'],
+    aum: '$525M',
+    clientCount: 89,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa032',
+    name: 'Lisa Thompson, CPA, QPA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['Plan Compliance', 'Retirement Plan Administration', 'Employee Education', 'Cost Analysis'],
+    aum: '$398M',
+    clientCount: 74,
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'fa033',
+    name: 'Robert Wilson, CFP®, QKA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Plan Implementation', 'State Mandate Compliance', 'Merger Integration', 'Fiduciary Oversight'],
+    aum: '$467M',
+    clientCount: 81,
+    location: 'Detroit, MI'
   }
 ];
 
@@ -1150,6 +1214,202 @@ export const CLIENTS = [
     objectives: ['SBL Education', 'Credit Line Establishment', 'Risk Management', 'Opportunity Assessment'],
     advisor: 'fa027',
     location: 'Detroit, MI'
+  },
+
+  // Financial Planning-Focused Clients
+  {
+    id: 'cl068',
+    name: 'Andrew Richardson',
+    wealthSegment: 'UHNW',
+    aum: '$16.8M',
+    age: 55,
+    occupation: 'Investment Management CEO',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Comprehensive Financial Planning', 'Goal-Based Investing', 'Legacy Planning', 'Tax Optimization'],
+    advisor: 'fa028',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl069',
+    name: 'Sophia Martinez',
+    wealthSegment: 'HNW',
+    aum: '$3.7M',
+    age: 48,
+    occupation: 'Corporate Executive',
+    riskProfile: 'Moderate',
+    objectives: ['Financial Plan Creation', 'Retirement Planning', 'Risk Profile Assessment', 'Investment Strategy'],
+    advisor: 'fa029',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl070',
+    name: 'William Foster',
+    wealthSegment: 'HNW',
+    aum: '$2.9M',
+    age: 51,
+    occupation: 'Medical Practice Owner',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Financial Goal Setting', 'Practice Succession Planning', 'Investment Diversification', 'Tax Planning'],
+    advisor: 'fa030',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl071',
+    name: 'Isabella Chen',
+    wealthSegment: 'AFFLUENT',
+    aum: '$825K',
+    age: 43,
+    occupation: 'Technology Director',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Financial Planning Process', 'Goal Achievement Strategy', 'Risk Management', 'Investment Planning'],
+    advisor: 'fa028',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl072',
+    name: 'Charles Wilson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$695K',
+    age: 46,
+    occupation: 'Engineering Manager',
+    riskProfile: 'Moderate',
+    objectives: ['Comprehensive Planning', 'Time Horizon Assessment', 'Investment Allocation', 'Financial Goals'],
+    advisor: 'fa029',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl073',
+    name: 'Olivia Johnson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$395K',
+    age: 39,
+    occupation: 'Marketing Director',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Financial Plan Development', 'Career Planning Integration', 'Investment Strategy', 'Goal Prioritization'],
+    advisor: 'fa030',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl074',
+    name: 'Benjamin Brown',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$285K',
+    age: 35,
+    occupation: 'Financial Analyst',
+    riskProfile: 'Moderate',
+    objectives: ['Financial Planning Basics', 'Goal Setting Framework', 'Risk Assessment', 'Investment Foundation'],
+    advisor: 'fa028',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl075',
+    name: 'Emma Davis',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$95K',
+    age: 31,
+    occupation: 'Healthcare Professional',
+    riskProfile: 'Conservative',
+    objectives: ['Financial Planning Introduction', 'Goal Establishment', 'Budget Integration', 'Investment Start'],
+    advisor: 'fa030',
+    location: 'Detroit, MI'
+  },
+
+  // Retirement Planning-Focused Clients
+  {
+    id: 'cl076',
+    name: 'Nicholas Thompson',
+    wealthSegment: 'UHNW',
+    aum: '$22.1M',
+    age: 58,
+    occupation: 'Private Equity Founder',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Corporate Retirement Plans', 'Executive Benefits', 'Succession Planning', 'Employee Retirement Solutions'],
+    advisor: 'fa031',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl077',
+    name: 'Grace Rodriguez',
+    wealthSegment: 'HNW',
+    aum: '$4.8M',
+    age: 52,
+    occupation: 'Manufacturing CEO',
+    riskProfile: 'Moderate',
+    objectives: ['401k Plan Administration', 'Employee Benefits', 'Fiduciary Services', 'Plan Compliance'],
+    advisor: 'fa032',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl078',
+    name: 'Daniel Anderson',
+    wealthSegment: 'HNW',
+    aum: '$3.4M',
+    age: 49,
+    occupation: 'Healthcare System COO',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Retirement Plan Design', '403b Administration', 'Employee Education', 'Compliance Management'],
+    advisor: 'fa033',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl079',
+    name: 'Samantha Mitchell',
+    wealthSegment: 'AFFLUENT',
+    aum: '$925K',
+    age: 46,
+    occupation: 'Law Firm Partner',
+    riskProfile: 'Moderate',
+    objectives: ['Professional Practice Plans', 'Partner Retirement Benefits', 'Plan Administration', 'Fiduciary Oversight'],
+    advisor: 'fa031',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl080',
+    name: 'Ryan Garcia',
+    wealthSegment: 'AFFLUENT',
+    aum: '$785K',
+    age: 44,
+    occupation: 'Construction Company Owner',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Small Business 401k', 'Employee Retention', 'State Compliance', 'Cost Optimization'],
+    advisor: 'fa032',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl081',
+    name: 'Lauren White',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$465K',
+    age: 41,
+    occupation: 'Restaurant Chain Owner',
+    riskProfile: 'Moderate',
+    objectives: ['Multi-Location Plans', 'Employee Benefits', 'Compliance Solutions', 'Cost Management'],
+    advisor: 'fa033',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl082',
+    name: 'Kevin Martinez',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$385K',
+    age: 38,
+    occupation: 'Technology Startup Founder',
+    riskProfile: 'Aggressive',
+    objectives: ['Startup Retirement Plans', 'Employee Stock Options', 'Growth Company Benefits', 'Talent Retention'],
+    advisor: 'fa031',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl083',
+    name: 'Jessica Lee',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$125K',
+    age: 33,
+    occupation: 'HR Director',
+    riskProfile: 'Conservative',
+    objectives: ['HR Benefits Planning', 'Employee Education Programs', 'Compliance Support', 'Benefit Administration'],
+    advisor: 'fa033',
+    location: 'Detroit, MI'
   }
 ];
 
@@ -1580,4 +1840,112 @@ export const SBL_BUSINESS_BENEFITS = [
   'Variable rate management with refinancing alternatives',
   'Comprehensive debt consolidation analysis with rate savings',
   'Emergency liquidity planning with pre-approved facilities'
+];
+
+// Financial Planning Insight Category
+export const FINANCIAL_PLANNING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Financial Planning',
+  description: 'These Insights help Financial Advisors to work with the Client or Prospect to create a Financial Plan with goals, investment risk profile and time horizon',
+  displayLabel: 'These Insights help Financial Advisors to work with the Client or Prospect to create a Financial Plan with goals, investment risk profile and time horizon'
+};
+
+// Financial Planning Insights
+export const FINANCIAL_PLANNING_INSIGHTS = [
+  {
+    id: 'fp001',
+    name: 'Financial Plan',
+    purpose: 'Goal Setting',
+    category: 'Financial Planning'
+  }
+];
+
+// Business Benefits for Financial Planning
+export const FINANCIAL_PLANNING_BUSINESS_BENEFITS = [
+  'Comprehensive goal-based planning approach for client financial success',
+  'Enhanced client engagement through structured financial planning process',
+  'Increased client retention through ongoing plan monitoring and updates',
+  'Cross-selling opportunities through holistic financial needs analysis',
+  'Improved client outcomes through risk-appropriate investment strategies'
+];
+
+// Retirement Planning Insight Category
+export const RETIREMENT_PLANNING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Retirement Planning',
+  description: 'These Insights help Financial Advisor identify insights related to retirement planning needs of clients. The insights help with identifying the need of a Retirement plan, Low score from their party on current retirement plans, Plan administration and State mandated plans for employees',
+  displayLabel: 'Retirement Planning'
+};
+
+// Retirement Planning Insights
+export const RETIREMENT_PLANNING_INSIGHTS = [
+  {
+    id: 'rp001',
+    name: 'Retirement Plan Administration',
+    purpose: 'Retirement Plan Administration',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp002',
+    name: 'Retirement Plan Low Score',
+    purpose: 'Retirement Plan Low Score',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp003',
+    name: 'Plan Design & Implementation',
+    purpose: 'Plan design for 401(k), 403(b), profit sharing Plan',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp004',
+    name: 'Plan Administration',
+    purpose: 'Recordkeeping, compliance, reporting',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp005',
+    name: 'Fiduciary Services',
+    purpose: '3(21) and 3(38) fiduciary oversight',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp006',
+    name: 'State Mandate Compliance',
+    purpose: 'California, Oregon, Illinois Mandated requirements',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp007',
+    name: 'Employee Education',
+    purpose: 'Financial wellness, retirement readiness',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp008',
+    name: 'Cost Analysis',
+    purpose: 'Fee benchmarking and optimization',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp009',
+    name: 'Compliance Management',
+    purpose: 'Testing, audits, corrections',
+    category: 'Retirement Planning'
+  },
+  {
+    id: 'rp010',
+    name: 'Merger Integration',
+    purpose: 'Plan consolidation and transition services',
+    category: 'Retirement Planning'
+  }
+];
+
+// Business Benefits for Retirement Planning
+export const RETIREMENT_PLANNING_BUSINESS_BENEFITS = [
+  'Proactive retirement plan need identification and client outreach',
+  'Enhanced plan administration services and business development opportunities',
+  'Improved client retention through comprehensive retirement planning solutions',
+  'Cross-selling opportunities for corporate retirement plan services',
+  'Increased revenue through plan administration and fiduciary services'
 ];
