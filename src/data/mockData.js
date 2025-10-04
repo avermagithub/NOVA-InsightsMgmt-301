@@ -1,0 +1,289 @@
+// Wealth Segments Definition
+export const WEALTH_SEGMENTS = {
+  UHNW: { label: 'UHNW', range: '$10M+ AUM', fullName: 'Ultra High Net Worth' },
+  HNW: { label: 'HNW', range: '$1-$10M AUM', fullName: 'High Net Worth' },
+  AFFLUENT: { label: 'Affluent', range: '$500k-$1M AUM', fullName: 'Affluent' },
+  MASS_AFFLUENT: { label: 'Mass Affluent', range: '$100k-$500k AUM', fullName: 'Mass Affluent' },
+  EMERGING_WEALTH: { label: 'Emerging Wealth', range: '$25k-$100k AUM', fullName: 'Emerging Wealth' }
+};
+
+// User Roles
+export const USER_ROLES = [
+  'National Leader',
+  'Regional Leader', 
+  'Field Manager',
+  'Financial Advisor',
+  'Client Success Manager',
+  'Business Services',
+  'Legal/Compliance'
+];
+
+// Dummy RIA Firm
+export const RIA_FIRM = {
+  name: "Sterling Wealth Partners",
+  type: "Independent RIA",
+  aum: "$2.8B",
+  advisors: 45,
+  clients: 1250,
+  founded: 2008,
+  headquarters: "Chicago, IL",
+  specialties: ["Wealth Management", "Retirement Planning", "Estate Planning", "Investment Management"]
+};
+
+// Financial Advisors
+export const FINANCIAL_ADVISORS = [
+  {
+    id: 'fa001',
+    name: 'Michael Chen, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 12,
+    specialties: ['High Net Worth Planning', 'Alternative Investments'],
+    aum: '$285M',
+    clientCount: 78,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa002',
+    name: 'Sarah Rodriguez, CFA',
+    firm: 'Sterling Wealth Partners',
+    experience: 8,
+    specialties: ['Portfolio Management', 'ESG Investing'],
+    aum: '$156M',
+    clientCount: 62,
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'fa003',
+    name: 'David Thompson, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['Retirement Planning', 'Tax Strategy'],
+    aum: '$312M',
+    clientCount: 89,
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'fa004',
+    name: 'Jennifer Liu, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 6,
+    specialties: ['Young Professionals', 'Technology Sector'],
+    aum: '$98M',
+    clientCount: 145,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa005',
+    name: 'Robert Miller, CPA/PFS',
+    firm: 'Sterling Wealth Partners',
+    experience: 20,
+    specialties: ['Tax Planning', 'Business Owners'],
+    aum: '$425M',
+    clientCount: 72,
+    location: 'Detroit, MI'
+  }
+];
+
+// Wealth Management Clients
+export const CLIENTS = [
+  // UHNW Clients
+  {
+    id: 'cl001',
+    name: 'Thomas Garcia',
+    wealthSegment: 'UHNW',
+    aum: '$15.2M',
+    age: 58,
+    occupation: 'Technology Executive',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Wealth Preservation', 'Tax Optimization', 'Legacy Planning'],
+    advisor: 'fa001',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl002',
+    name: 'Elizabeth and James Morrison',
+    wealthSegment: 'UHNW',
+    aum: '$22.8M',
+    age: 65,
+    occupation: 'Retired Business Owners',
+    riskProfile: 'Conservative',
+    objectives: ['Income Generation', 'Estate Planning', 'Philanthropy'],
+    advisor: 'fa003',
+    location: 'Lake Forest, IL'
+  },
+  
+  // HNW Clients  
+  {
+    id: 'cl003',
+    name: 'Amanda Foster',
+    wealthSegment: 'HNW',
+    aum: '$3.2M',
+    age: 45,
+    occupation: 'Surgeon',
+    riskProfile: 'Moderate',
+    objectives: ['Portfolio Growth', 'Education Funding', 'Retirement Planning'],
+    advisor: 'fa002',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl004',
+    name: 'Mark and Susan Patel',
+    wealthSegment: 'HNW',
+    aum: '$5.7M',
+    age: 52,
+    occupation: 'Investment Banker / Attorney',
+    riskProfile: 'Aggressive',
+    objectives: ['Alternative Investments', 'Tax Strategy', 'Wealth Accumulation'],
+    advisor: 'fa001',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl005',
+    name: 'Jennifer Walsh',
+    wealthSegment: 'HNW',
+    aum: '$2.1M',
+    age: 41,
+    occupation: 'Tech Entrepreneur',
+    riskProfile: 'Aggressive',
+    objectives: ['Growth Investing', 'Stock Options Management', 'Business Exit Planning'],
+    advisor: 'fa004',
+    location: 'Chicago, IL'
+  },
+  
+  // Affluent Clients
+  {
+    id: 'cl006',
+    name: 'Kevin Roberts',
+    wealthSegment: 'AFFLUENT',
+    aum: '$750K',
+    age: 39,
+    occupation: 'Marketing Director',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Home Purchase', 'Retirement Saving', 'Investment Growth'],
+    advisor: 'fa004',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl007',
+    name: 'Maria Santos',
+    wealthSegment: 'AFFLUENT',
+    aum: '$850K',
+    age: 47,
+    occupation: 'Healthcare Administrator',
+    riskProfile: 'Moderate',
+    objectives: ['Education Funding', 'Retirement Planning', 'Emergency Fund'],
+    advisor: 'fa002',
+    location: 'Milwaukee, WI'
+  },
+  
+  // Mass Affluent Clients
+  {
+    id: 'cl008',
+    name: 'Daniel Kim',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$325K',
+    age: 34,
+    occupation: 'Software Engineer',
+    riskProfile: 'Aggressive',
+    objectives: ['401k Optimization', 'Home Down Payment', 'Investment Learning'],
+    advisor: 'fa004',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl009',
+    name: 'Lisa Johnson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$275K',
+    age: 42,
+    occupation: 'Teacher',
+    riskProfile: 'Conservative',
+    objectives: ['Retirement Security', 'Pension Optimization', 'Healthcare Planning'],
+    advisor: 'fa003',
+    location: 'Detroit, MI'
+  },
+  
+  // Emerging Wealth Clients
+  {
+    id: 'cl010',
+    name: 'Alex Martinez',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$75K',
+    age: 28,
+    occupation: 'Financial Analyst',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Emergency Fund', 'First Home', 'Career Development'],
+    advisor: 'fa004',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl011',
+    name: 'Rachel Green',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$45K',
+    age: 26,
+    occupation: 'Marketing Coordinator',
+    riskProfile: 'Moderate',
+    objectives: ['Student Loan Payoff', 'Emergency Savings', 'Investment Start'],
+    advisor: 'fa004',
+    location: 'Milwaukee, WI'
+  }
+];
+
+// Investment Products Insight Category
+export const INVESTMENT_PRODUCTS_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Investment Products',
+  description: 'These Insights help Financial Advisor identify right Investment Products for Client\'s Portfolio.',
+  displayLabel: 'These Insights help Financial Advisor identify right Investment Products for Client\'s Portfolio.'
+};
+
+// Investment Product Insights
+export const INVESTMENT_INSIGHTS = [
+  {
+    id: 'ip001',
+    name: 'Stocks',
+    purpose: 'Identify the right stocks',
+    category: 'Investment Products'
+  },
+  {
+    id: 'ip002', 
+    name: 'Bonds',
+    purpose: 'Identify the right bonds',
+    category: 'Investment Products'
+  },
+  {
+    id: 'ip003',
+    name: 'Mutual Funds',
+    purpose: 'Identify the right Mutual Funds', 
+    category: 'Investment Products'
+  },
+  {
+    id: 'ip004',
+    name: 'ETFs',
+    purpose: 'Identify the right ETFs',
+    category: 'Investment Products'
+  },
+  {
+    id: 'ip005',
+    name: 'Alternative Investments',
+    purpose: 'Provide access to Private Markets',
+    category: 'Investment Products'
+  },
+  {
+    id: 'ip006',
+    name: 'Specialized Strategies',
+    purpose: 'Specialized Strategies',
+    category: 'Investment Products'
+  }
+];
+
+// Business Benefits for Investment Products
+export const BUSINESS_BENEFITS = [
+  'Market Timing Intelligence: Real-time analysis of market conditions and sector rotation opportunities.',
+  'Client Suitability Matching: Sophisticated algorithms matching investment products to client risk profiles and objectives.',
+  'Alternative Investment Access: Comprehensive coverage of private markets and institutional-quality investments.',
+  'Cost Optimization: Expense ratio analysis and fee reduction opportunities across all asset classes.',
+  'Tax Efficiency: Tax-loss harvesting, municipal bonds, and tax-advantaged investment strategies.',
+  'Performance Attribution: Detailed analysis of fund manager performance and style consistency.',
+  'Risk Management: Concentration risk alerts, correlation analysis, and diversification optimization.'
+];

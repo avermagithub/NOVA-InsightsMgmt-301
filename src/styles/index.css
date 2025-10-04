@@ -1,0 +1,466 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: #1f2937;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* Edward Jones Brand Colors */
+:root {
+  --ej-primary: #003366;
+  --ej-secondary: #0066cc;
+  --ej-accent: #ff6b35;
+  --ej-success: #10b981;
+  --ej-warning: #f59e0b;
+  --ej-error: #ef4444;
+  --ej-gray-50: #f9fafb;
+  --ej-gray-100: #f3f4f6;
+  --ej-gray-200: #e5e7eb;
+  --ej-gray-300: #d1d5db;
+  --ej-gray-400: #9ca3af;
+  --ej-gray-500: #6b7280;
+  --ej-gray-600: #4b5563;
+  --ej-gray-700: #374151;
+  --ej-gray-800: #1f2937;
+  --ej-gray-900: #111827;
+  --ej-white: #ffffff;
+}
+
+/* Layout */
+.app {
+  min-height: 100vh;
+  background: var(--ej-gray-50);
+}
+
+.app-header {
+  background: var(--ej-primary);
+  color: var(--ej-white);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.app-title .logo {
+  width: 32px;
+  height: 32px;
+  background: var(--ej-accent);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.dropdown-trigger {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--ej-white);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.dropdown-trigger:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--ej-white);
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 1000;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--ej-gray-700);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 0.9rem;
+}
+
+.dropdown-item:hover {
+  background: var(--ej-gray-50);
+}
+
+.dropdown-item.active {
+  background: var(--ej-primary);
+  color: var(--ej-white);
+}
+
+.main-layout {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 280px;
+  background: var(--ej-white);
+  border-right: 1px solid var(--ej-gray-200);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+}
+
+.nav-menu {
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 0.25rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--ej-gray-700);
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 500;
+  border-right: 3px solid transparent;
+}
+
+.nav-link:hover {
+  background: var(--ej-gray-50);
+  color: var(--ej-primary);
+}
+
+.nav-link.active {
+  background: rgba(0, 51, 102, 0.05);
+  color: var(--ej-primary);
+  border-right-color: var(--ej-primary);
+  font-weight: 600;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: var(--ej-gray-50);
+}
+
+/* Page Styles */
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ej-primary);
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  color: var(--ej-gray-600);
+  font-size: 1rem;
+}
+
+/* Cards */
+.card {
+  background: var(--ej-white);
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--ej-gray-200);
+  background: var(--ej-gray-50);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ej-primary);
+  margin-bottom: 0.25rem;
+}
+
+.card-subtitle {
+  color: var(--ej-gray-600);
+  font-size: 0.9rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* Grid System */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 1024px) {
+  .grid-cols-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .grid-cols-2,
+  .grid-cols-3 { grid-template-columns: 1fr; }
+}
+
+/* Insight Categories */
+.insight-category {
+  margin-bottom: 2rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--ej-white);
+  border-radius: 8px;
+  border-left: 4px solid var(--ej-secondary);
+}
+
+.category-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--ej-secondary);
+  color: var(--ej-white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-info h3 {
+  color: var(--ej-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.category-info p {
+  color: var(--ej-gray-600);
+  font-size: 0.9rem;
+}
+
+/* Insight Items */
+.insight-item {
+  background: var(--ej-white);
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+}
+
+.insight-item:hover {
+  border-color: var(--ej-secondary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insight-header {
+  display: flex;
+  justify-content: between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.insight-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ej-primary);
+  margin-bottom: 0.5rem;
+}
+
+.insight-purpose {
+  color: var(--ej-gray-600);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.insight-content {
+  background: var(--ej-gray-50);
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--ej-accent);
+}
+
+.insight-text {
+  color: var(--ej-gray-800);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.opportunities-section {
+  margin-top: 1rem;
+}
+
+.opportunities-title {
+  font-weight: 600;
+  color: var(--ej-success);
+  margin-bottom: 0.5rem;
+}
+
+.opportunities-text {
+  color: var(--ej-gray-700);
+  line-height: 1.6;
+}
+
+/* Client and Advisor Info */
+.client-advisor-info {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ej-gray-200);
+}
+
+.client-info,
+.advisor-info {
+  flex: 1;
+  background: var(--ej-gray-50);
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.client-info h4,
+.advisor-info h4 {
+  color: var(--ej-primary);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.wealth-segment {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: var(--ej-secondary);
+  color: var(--ej-white);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    border-right: none;
+    border-bottom: 1px solid var(--ej-gray-200);
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .header-content {
+    padding: 0 1rem;
+  }
+  
+  .app-title {
+    font-size: 1.2rem;
+  }
+  
+  .client-advisor-info {
+    flex-direction: column;
+  }
+}
+
+/* Loading and States */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  color: var(--ej-gray-500);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--ej-gray-500);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
