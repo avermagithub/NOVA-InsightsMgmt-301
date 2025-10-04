@@ -81,6 +81,28 @@ export const FINANCIAL_ADVISORS = [
     aum: '$425M',
     clientCount: 72,
     location: 'Detroit, MI'
+  },
+  
+  // Additional Advisors specializing in Annuities and Retirement Planning
+  {
+    id: 'fa006',
+    name: 'Catherine Johnson, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Retirement Income Planning', 'Annuities', 'Long-term Care'],
+    aum: '$235M',
+    clientCount: 58,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa007',
+    name: 'William Thompson, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 22,
+    specialties: ['Insurance Products', 'Fixed Annuities', 'Estate Planning'],
+    aum: '$298M',
+    clientCount: 64,
+    location: 'Indianapolis, IN'
   }
 ];
 
@@ -226,6 +248,68 @@ export const CLIENTS = [
     objectives: ['Student Loan Payoff', 'Emergency Savings', 'Investment Start'],
     advisor: 'fa004',
     location: 'Milwaukee, WI'
+  },
+  
+  // Additional Clients for Annuities Focus
+  {
+    id: 'cl012',
+    name: 'Harold and Margaret Wilson',
+    wealthSegment: 'HNW',
+    aum: '$4.2M',
+    age: 68,
+    occupation: 'Retired Manufacturing Executive / Retired Teacher',
+    riskProfile: 'Conservative',
+    objectives: ['Income Generation', 'Principal Protection', 'Long-term Care Planning'],
+    advisor: 'fa003',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl013',
+    name: 'Patricia Davis',
+    wealthSegment: 'AFFLUENT',
+    aum: '$950K',
+    age: 61,
+    occupation: 'Retired Government Employee',
+    riskProfile: 'Conservative',
+    objectives: ['Guaranteed Income', 'Healthcare Costs', 'Estate Planning'],
+    advisor: 'fa005',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl014',
+    name: 'Charles and Linda Brown',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$385K',
+    age: 63,
+    occupation: 'Retired Police Officer / Retired Nurse',
+    riskProfile: 'Conservative',
+    objectives: ['Pension Supplement', 'Medical Expenses', 'Fixed Income'],
+    advisor: 'fa003',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl015',
+    name: 'George Anderson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$720K',
+    age: 59,
+    occupation: 'Insurance Executive',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Pre-retirement Planning', 'Income Bridge', 'Tax Deferral'],
+    advisor: 'fa005',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl016',
+    name: 'Dorothy Taylor',
+    wealthSegment: 'HNW',
+    aum: '$1.8M',
+    age: 72,
+    occupation: 'Retired Real Estate Developer',
+    riskProfile: 'Conservative',
+    objectives: ['Legacy Protection', 'Nursing Home Insurance', 'Family Support'],
+    advisor: 'fa001',
+    location: 'Lake Forest, IL'
   }
 ];
 
@@ -273,6 +357,12 @@ export const INVESTMENT_INSIGHTS = [
     id: 'ip006',
     name: 'Specialized Strategies',
     purpose: 'Specialized Strategies',
+    category: 'Investment Products'
+  },
+  {
+    id: 'ip007',
+    name: 'Annuities',
+    purpose: 'Guide Clients on Annuities for Income and Protection',
     category: 'Investment Products'
   }
 ];
