@@ -285,6 +285,38 @@ export const FINANCIAL_ADVISORS = [
     aum: '$315M',
     clientCount: 67,
     location: 'Detroit, MI'
+  },
+
+  // Security Backed Lending (SBL) Specialists
+  {
+    id: 'fa025',
+    name: 'Richard Walker, CFP®, CLS®',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Securities Backed Lending', 'Credit Strategy', 'Leverage Management', 'Liquidity Solutions'],
+    aum: '$425M',
+    clientCount: 72,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa026',
+    name: 'Emily Rodriguez, CFA, CLS®',
+    firm: 'Sterling Wealth Partners',
+    experience: 11,
+    specialties: ['SBL Portfolio Strategy', 'Credit Line Optimization', 'Alternative Financing', 'Risk Management'],
+    aum: '$298M',
+    clientCount: 68,
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'fa027',
+    name: 'Thomas Mitchell, ChFC®, CLS®',
+    firm: 'Sterling Wealth Partners',
+    experience: 13,
+    specialties: ['SBL Debt Consolidation', 'Rate Optimization', 'Credit Analysis', 'Structured Lending'],
+    aum: '$365M',
+    clientCount: 79,
+    location: 'Detroit, MI'
   }
 ];
 
@@ -1020,6 +1052,104 @@ export const CLIENTS = [
     objectives: ['Education Savings Start', '529 Basics', 'Teacher Loan Forgiveness', 'Education Tax Benefits'],
     advisor: 'fa024',
     location: 'Detroit, MI'
+  },
+
+  // Security Backed Lending (SBL) Focused Clients
+  {
+    id: 'cl060',
+    name: 'Alexander Mitchell',
+    wealthSegment: 'UHNW',
+    aum: '$18.5M',
+    age: 52,
+    occupation: 'Private Equity Managing Director',
+    riskProfile: 'Aggressive',
+    objectives: ['SBL Leverage Strategy', 'Tax Optimization', 'Liquidity Access', 'Portfolio Concentration Management'],
+    advisor: 'fa025',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl061',
+    name: 'Victoria Chen',
+    wealthSegment: 'UHNW',
+    aum: '$14.2M',
+    age: 47,
+    occupation: 'Technology Entrepreneur',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['SBL Expansion', 'Asset Diversification', 'Tax Liquidity Planning', 'Growth Capital Access'],
+    advisor: 'fa026',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl062',
+    name: 'Marcus Thompson',
+    wealthSegment: 'HNW',
+    aum: '$5.8M',
+    age: 49,
+    occupation: 'Investment Banking Managing Director',
+    riskProfile: 'Aggressive',
+    objectives: ['SBL Debt Consolidation', 'Rate Optimization', 'Credit Line Expansion', 'Liquidity Management'],
+    advisor: 'fa025',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl063',
+    name: 'Rachel Anderson',
+    wealthSegment: 'HNW',
+    aum: '$3.2M',
+    age: 44,
+    occupation: 'Real Estate Developer',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['SBL New Opportunity', 'Development Financing', 'Portfolio Leverage', 'Tax Strategy'],
+    advisor: 'fa027',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl064',
+    name: 'Jonathan Davis',
+    wealthSegment: 'AFFLUENT',
+    aum: '$950K',
+    age: 41,
+    occupation: 'Hedge Fund Portfolio Manager',
+    riskProfile: 'Aggressive',
+    objectives: ['SBL Maturity Management', 'Leverage Optimization', 'Rollover Strategy', 'Alternative Financing'],
+    advisor: 'fa026',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl065',
+    name: 'Catherine Williams',
+    wealthSegment: 'AFFLUENT',
+    aum: '$725K',
+    age: 38,
+    occupation: 'Corporate Finance Director',
+    riskProfile: 'Moderate',
+    objectives: ['SBL Capacity Analysis', 'Interest Rate Management', 'Debt Optimization', 'Liquidity Planning'],
+    advisor: 'fa027',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl066',
+    name: 'Steven Johnson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$425K',
+    age: 36,
+    occupation: 'Investment Advisor',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['SBL Introduction', 'Leverage Strategy', 'Tax Efficiency', 'Portfolio Enhancement'],
+    advisor: 'fa025',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl067',
+    name: 'Michelle Turner',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$385K',
+    age: 34,
+    occupation: 'Private Wealth Associate',
+    riskProfile: 'Moderate',
+    objectives: ['SBL Education', 'Credit Line Establishment', 'Risk Management', 'Opportunity Assessment'],
+    advisor: 'fa027',
+    location: 'Detroit, MI'
   }
 ];
 
@@ -1394,4 +1524,60 @@ export const EDUCATION_PLANNING_BUSINESS_BENEFITS = [
   'Average college cost savings per family through strategic planning',
   'Average annual education savings contributions via tax-advantaged accounts',
   'Improvement in education funding efficiency through multi-generational strategies'
+];
+
+// Security Backed Lending (SBL) Insight Category
+export const SBL_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Security Backed Lending (SBL)',
+  description: 'Security Backed Lending',
+  displayLabel: 'Securities Backed Lending'
+};
+
+// SBL Insights
+export const SBL_INSIGHTS = [
+  {
+    id: 'sbl001',
+    name: 'SBL Maturity date approaching',
+    purpose: 'SBL Maturity date approaching',
+    category: 'Security Backed Lending (SBL)'
+  },
+  {
+    id: 'sbl002',
+    name: 'SBL Expansion Opportunity',
+    purpose: 'SBL Expansion Opportunity',
+    category: 'Security Backed Lending (SBL)'
+  },
+  {
+    id: 'sbl003',
+    name: 'SBL New Opportunity',
+    purpose: 'SBL New Opportunity',
+    category: 'Security Backed Lending (SBL)'
+  },
+  {
+    id: 'sbl004',
+    name: 'SBL Rollover into variable',
+    purpose: 'SBL Rollover into variable',
+    category: 'Security Backed Lending (SBL)'
+  },
+  {
+    id: 'sbl005',
+    name: 'SBL Debt consolidation',
+    purpose: 'SBL Debt consolidation',
+    category: 'Security Backed Lending (SBL)'
+  }
+];
+
+// Business Benefits for SBL
+export const SBL_BUSINESS_BENEFITS = [
+  'Annual savings impact through SBL optimization',
+  'Average annual interest savings per client through rate optimization',
+  'Average additional borrowing capacity through expansion strategies',
+  'Improvement in liquidity access efficiency through strategic SBL management',
+  'Proactive SBL maturity monitoring and renewal optimization',
+  'Strategic SBL capacity expansion based on portfolio appreciation',
+  'New opportunity identification for tax liquidity and investments',
+  'Variable rate management with refinancing alternatives',
+  'Comprehensive debt consolidation analysis with rate savings',
+  'Emergency liquidity planning with pre-approved facilities'
 ];
