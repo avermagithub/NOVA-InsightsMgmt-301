@@ -157,6 +157,38 @@ export const FINANCIAL_ADVISORS = [
     aum: '$278M',
     clientCount: 71,
     location: 'Minneapolis, MN'
+  },
+  
+  // CRM & Client Relationship Management Specialists
+  {
+    id: 'fa013',
+    name: 'Rachel Anderson, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 12,
+    specialties: ['Client Engagement', 'Digital Communications', 'Relationship Management'],
+    aum: '$265M',
+    clientCount: 89,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa014',
+    name: 'Michael Foster, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['CRM Systems', 'Client Experience', 'Communication Strategy'],
+    aum: '$298M',
+    clientCount: 76,
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'fa015',
+    name: 'Catherine Williams, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 20,
+    specialties: ['High-Touch Service', 'Client Retention', 'Personalized Communications'],
+    aum: '$385M',
+    clientCount: 62,
+    location: 'Detroit, MI'
   }
 ];
 
@@ -512,6 +544,92 @@ export const CLIENTS = [
     objectives: ['Student Loan Management', 'Credit Enhancement', 'Banking Optimization'],
     advisor: 'fa010',
     location: 'Chicago, IL'
+  },
+
+  // CRM & Client Relationship Management Clients
+  {
+    id: 'cl029',
+    name: 'Victoria Harrison',
+    wealthSegment: 'HNW',
+    aum: '$3.8M',
+    age: 52,
+    occupation: 'Corporate Executive',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Communication Preferences', 'Digital Engagement', 'Personalized Service'],
+    advisor: 'fa013',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl030', 
+    name: 'Steven and Barbara Chen',
+    wealthSegment: 'AFFLUENT',
+    aum: '$750K',
+    age: 58,
+    occupation: 'Retired Teachers',
+    riskProfile: 'Conservative',
+    objectives: ['Regular Communication', 'Educational Content', 'Simplified Interactions'],
+    advisor: 'fa014',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl031',
+    name: 'Daniel Rodriguez',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$385K',
+    age: 41,
+    occupation: 'IT Director',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Technology Integration', 'Digital-First Communication', 'Efficient Interactions'],
+    advisor: 'fa013',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl032',
+    name: 'Grace Thompson',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$95K',
+    age: 32,
+    occupation: 'Marketing Director',
+    riskProfile: 'Aggressive',
+    objectives: ['Social Media Engagement', 'Modern Communication', 'Flexible Scheduling'],
+    advisor: 'fa014',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl033',
+    name: 'Robert and Susan Miller',
+    wealthSegment: 'UHNW',
+    aum: '$12.5M',
+    age: 64,
+    occupation: 'Business Owners',
+    riskProfile: 'Moderate',
+    objectives: ['High-Touch Service', 'Personal Attention', 'Traditional Communication'],
+    advisor: 'fa015',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl034',
+    name: 'Jennifer Liu',
+    wealthSegment: 'HNW',
+    aum: '$2.2M',
+    age: 45,
+    occupation: 'Physician',
+    riskProfile: 'Moderate',
+    objectives: ['Efficient Communication', 'Time-Sensitive Updates', 'Professional Coordination'],
+    advisor: 'fa015',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl035',
+    name: 'Alexander Davis',
+    wealthSegment: 'AFFLUENT',
+    aum: '$650K',
+    age: 29,
+    occupation: 'Tech Entrepreneur',
+    riskProfile: 'Aggressive',
+    objectives: ['Digital Innovation', 'Real-Time Updates', 'Mobile-First Experience'],
+    advisor: 'fa013',
+    location: 'Chicago, IL'
   }
 ];
 
@@ -647,4 +765,55 @@ export const BANKING_BUSINESS_BENEFITS = [
   'Smart Priority Management: High priority for time-sensitive opportunities, medium/low for optimization strategies',
   'Value Potential Ranges: Potential per insight based on financial impact significance',
   'Market-Current Data: Updates with realistic current interest rates, credit terms, and banking product features'
+];
+
+// CRM Insight Category
+export const CRM_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'CRM',
+  description: 'These Insights help Financial Advisors help mature their relationships with Clients and Prospects',
+  displayLabel: 'These Insights help Financial Advisors help mature their relationships with Clients and Prospects'
+};
+
+// CRM Insights
+export const CRM_INSIGHTS = [
+  {
+    id: 'crm001',
+    name: 'Client Emails',
+    purpose: 'Have meaningful and relevant number of digital interactions with the client through emails',
+    category: 'CRM'
+  },
+  {
+    id: 'crm002',
+    name: 'Client Meeting',
+    purpose: 'Have meaningful and relevant number of digital interactions with the client through meetings',
+    category: 'CRM'
+  },
+  {
+    id: 'crm003',
+    name: 'Client Calls',
+    purpose: 'Have meaningful and relevant number of digital interactions with the client through calls',
+    category: 'CRM'
+  },
+  {
+    id: 'crm004',
+    name: 'Client Chats',
+    purpose: 'Have meaningful and relevant number of digital interactions with the client through chats',
+    category: 'CRM'
+  },
+  {
+    id: 'crm005',
+    name: 'Client Conferences',
+    purpose: 'Have meaningful and relevant number of digital interactions with the client through conferences',
+    category: 'CRM'
+  }
+];
+
+// Business Benefits for CRM
+export const CRM_BUSINESS_BENEFITS = [
+  'Response Rates Optimization: Improved response rates across all communication channels',
+  'Engagement Improvements: Better engagement through proper channel selection and personalization',
+  'Efficiency Gains: Reduction in follow-up attempts and time-to-resolution improvements',
+  'Satisfaction Scores: Higher client satisfaction and increased referrals from engaged clients',
+  'Better Retention Rates: Enhanced client retention through personalized communication strategies'
 ];

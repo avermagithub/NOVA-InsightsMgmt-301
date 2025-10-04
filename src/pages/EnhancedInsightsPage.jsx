@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, TrendingUp, Users, PieChart, Shield, FileCheck, CreditCard } from 'lucide-react';
+import { Search, Filter, TrendingUp, Users, PieChart, Shield, FileCheck, CreditCard, MessageSquare } from 'lucide-react';
 import { INSIGHT_CATEGORY_GROUPINGS, INSIGHT_CATEGORIES_BY_GROUP, INSIGHT_EXAMPLES } from '../data/insightExamples';
 import FrontOfficeInsights from '../components/FrontOfficeInsights';
 
@@ -19,13 +19,14 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
       PieChart,
       Shield,
       FileCheck,
-      CreditCard
+      CreditCard,
+      MessageSquare
     };
     return icons[iconName] || TrendingUp;
   };
 
   const handleCategoryClick = (category) => {
-    if (category.id === 'investment_products' || category.id === 'banking_products') {
+    if (category.id === 'investment_products' || category.id === 'banking_products' || category.id === 'crm') {
       setSelectedCategory(category);
       setShowFrontOfficeInsights(true);
     }
