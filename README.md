@@ -12,7 +12,7 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 
 ## 🚀 **Live Application**
 
-**🌐 Live Application:** https://3004-int96ssk733oij52uju5q-6532622b.e2b.dev
+**🌐 Live Application:** https://3005-int96ssk733oij52uju5q-6532622b.e2b.dev
 
 > **📱 Mobile Responsive** | **🔒 Enterprise Ready** | **⚡ Real-Time Updates** | **🤖 AI-Powered Insights** | **🏛️ Annuities Platform** | **💰 RMD Compliance** | **🎨 Official Edward Jones Branding**
 
@@ -30,10 +30,11 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 
 This application adheres to **Edward Jones official branding guidelines** as specified in their graphics vendor instructions:
 
-**🎨 Brand Colors:**
-- **Primary Gold:** `#FAD141` (PMS 116C) - Official Edward Jones signature color
-- **Dark Gray:** `#2c2c2c` (PMS 2336C equivalent) - Official text and logo color  
-- **Black:** `#000000` - Alternative logo color for signage and print
+**🎨 Official Logo & Brand Colors:**
+- **Official Logo:** Direct integration from https://1000logos.net/wp-content/uploads/2021/05/Edward-Jones-logo.png
+- **Logo Gold:** `#FFC72C` - Official Edward Jones logo background color
+- **Dark Gray:** `#2c2c2c` - Professional header and text color  
+- **Black:** `#000000` - Logo text and alternative branding color
 
 **🔤 Typography:**
 - **Primary Font:** Gotham (official Edward Jones brand font)
