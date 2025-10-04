@@ -90,6 +90,57 @@ body {
   transition: all 0.2s ease;
 }
 
+/* Prominent Logo Styles */
+.logo-prominent {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  background: var(--ej-white);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.edward-jones-logo-prominent {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.edward-jones-logo-prominent:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+/* Title Content Styles */
+.title-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.main-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ej-white);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+
+.version-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ej-gold);
+  background: rgba(255, 199, 44, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+  width: fit-content;
+  border: 1px solid var(--ej-gold);
+}
+
 .app-title .logo img,
 .app-title .logo svg {
   height: 100%;
@@ -457,6 +508,25 @@ body {
   
   .app-title {
     font-size: 1.2rem;
+    gap: 1rem;
+  }
+  
+  .logo-prominent {
+    height: 50px;
+    margin-right: 1rem;
+    padding: 6px 10px;
+  }
+  
+  .edward-jones-logo-prominent {
+    height: 38px;
+  }
+  
+  .main-title {
+    font-size: 1.1rem;
+  }
+  
+  .version-badge {
+    font-size: 0.7rem;
   }
   
   .client-advisor-info {
