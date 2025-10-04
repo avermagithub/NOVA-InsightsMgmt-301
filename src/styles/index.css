@@ -15,10 +15,10 @@ body {
 
 /* Edward Jones Official Brand Colors */
 :root {
-  --ej-primary: #2c2c2c; /* Dark Gray (PMS 2336C equivalent) */
-  --ej-gold: #FAD141; /* Official Edward Jones Gold (PMS 116C) */
+  --ej-primary: #2c2c2c; /* Dark Gray for headers and text */
+  --ej-gold: #FFC72C; /* Official Edward Jones Logo Gold */
   --ej-secondary: #0066cc;
-  --ej-accent: #FAD141; /* Using official gold as accent */
+  --ej-accent: #FFC72C; /* Using official logo gold as accent */
   --ej-success: #10b981;
   --ej-warning: #f59e0b;
   --ej-error: #ef4444;
@@ -68,11 +68,26 @@ body {
 }
 
 .app-title .logo {
-  height: 32px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
+}
+
+.edward-jones-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.edward-jones-logo:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
 }
 
 .app-title .logo img,
@@ -189,7 +204,7 @@ body {
 }
 
 .nav-link.active {
-  background: rgba(250, 209, 65, 0.1);
+  background: rgba(255, 199, 44, 0.1);
   color: var(--ej-primary);
   border-right-color: var(--ej-gold);
   font-weight: 600;

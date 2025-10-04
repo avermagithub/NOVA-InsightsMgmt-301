@@ -26,43 +26,11 @@ const Header = ({ selectedRole, onRoleChange, userRoles }) => {
       <div className="header-content">
         <div className="app-title">
           <div className="logo">
-            <svg
-              width="160"
-              height="32"
-              viewBox="0 0 160 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {/* Edward Jones Logo Text */}
-              <text
-                x="2"
-                y="22"
-                fontFamily="'Gotham', 'Arial', sans-serif"
-                fontSize="16"
-                fontWeight="bold"
-                fill="white"
-                letterSpacing="0.5px"
-              >
-                Edward Jones
-              </text>
-              {/* Official Brand Gold Circle */}
-              <circle
-                cx="140"
-                cy="16"
-                r="8"
-                fill="#FAD141"
-                stroke="white"
-                strokeWidth="1"
-              />
-              {/* Small inner circle for depth */}
-              <circle
-                cx="140"
-                cy="16"
-                r="3"
-                fill="white"
-                opacity="0.3"
-              />
-            </svg>
+            <img 
+              src="https://1000logos.net/wp-content/uploads/2021/05/Edward-Jones-logo.png"
+              alt="Edward Jones - Making Sense of Investing"
+              className="edward-jones-logo"
+            />
           </div>
           <span>Insights and Opportunities Management v1</span>
         </div>
