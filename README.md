@@ -12,7 +12,9 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 
 ## 🚀 **Live Application**
 
-**Access the application:** https://3000-int96ssk733oij52uju5q-6532622b.e2b.dev
+**Access the application:** https://5000-int96ssk733oij52uju5q-6532622b.e2b.dev
+
+> **Note:** The application is served using a custom Node.js server for optimal performance and React Router compatibility.
 
 ## ✨ **Key Features**
 
@@ -185,6 +187,33 @@ Application will be available at `http://localhost:3000`
 npm run build
 npm run preview
 ```
+
+### **Custom Server Options**
+The application includes custom server configurations for enhanced deployment:
+
+#### **Simple HTTP Server** (Recommended)
+```bash
+# Build the application first
+npm run build
+
+# Start simple Node.js server
+node simple-server.js
+```
+
+#### **Express Server** (Advanced)
+```bash
+# Build the application first
+npm run build
+
+# Start Express server
+node server.js
+```
+
+Both servers provide:
+- ✅ **React Router Support** - Proper SPA routing
+- ✅ **Static Asset Serving** - Optimized file delivery
+- ✅ **CORS Headers** - Cross-origin compatibility
+- ✅ **Production Ready** - Suitable for deployment
 
 ## 📊 **Application Analytics**
 
