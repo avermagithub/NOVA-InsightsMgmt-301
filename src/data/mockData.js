@@ -381,6 +381,130 @@ export const FINANCIAL_ADVISORS = [
     aum: '$467M',
     clientCount: 81,
     location: 'Detroit, MI'
+  },
+  // Estate Planning Specialists
+  {
+    id: 'fa034',
+    name: 'Victoria Sterling, JD, CFP®, TEP',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Estate Tax Planning', 'Generation-Skipping Trusts', 'Charitable Legacy Planning', 'Family Governance'],
+    aum: '$585M',
+    clientCount: 52,
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'fa035',
+    name: 'Charles Whitmore III, JD, CPA, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 22,
+    specialties: ['Estate Planning', 'Business Succession', 'Trust Structures', 'Multi-generational Planning'],
+    aum: '$678M',
+    clientCount: 48,
+    location: 'Manhattan, NY'
+  },
+  {
+    id: 'fa036',
+    name: 'Amanda Richardson, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['Basic Estate Planning', 'Guardian Protection', 'Life Insurance Planning', 'Professional Practice Protection'],
+    aum: '$245M',
+    clientCount: 89,
+    location: 'Austin, TX'
+  },
+  // Trust Planning Specialists
+  {
+    id: 'fa037',
+    name: 'Harrison Pemberton, JD, LLM, TEP',
+    firm: 'Sterling Wealth Partners',
+    experience: 25,
+    specialties: ['Dynasty Trusts', 'Charitable Remainder Trusts', 'GRAT Strategies', 'Advanced Trust Planning'],
+    aum: '$892M',
+    clientCount: 35,
+    location: 'Newport, RI'
+  },
+  {
+    id: 'fa038',
+    name: 'Margaret Thornton, JD, CFP®, CPA',
+    firm: 'Sterling Wealth Partners',
+    experience: 19,
+    specialties: ['Revocable Trusts', 'Credit Shelter Trusts', 'Asset Protection', 'Testamentary Planning'],
+    aum: '$456M',
+    clientCount: 67,
+    location: 'Miami, FL'
+  },
+  {
+    id: 'fa039',
+    name: 'Edward Hamilton, CFP®, ChFC®, TEP',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Living Trusts', 'Minor Protection Trusts', 'QTIP Trusts', 'Family Trust Planning'],
+    aum: '$312M',
+    clientCount: 78,
+    location: 'Denver, CO'
+  },
+  // Tax Planning Specialists
+  {
+    id: 'fa040',
+    name: 'Alexander Montgomery, CPA, CFP®, PFS',
+    firm: 'Sterling Wealth Partners',
+    experience: 21,
+    specialties: ['Tax Loss Harvesting', 'Alternative Minimum Tax', 'High-Income Tax Strategies', 'Portfolio Tax Optimization'],
+    aum: '$734M',
+    clientCount: 43,
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'fa041',
+    name: 'Stephanie Goldman, CPA, CFP®, MST',
+    firm: 'Sterling Wealth Partners',
+    experience: 17,
+    specialties: ['Roth Conversions', 'Tax-Aware Portfolio Management', 'Municipal Bond Strategies', 'Tax Lot Optimization'],
+    aum: '$521M',
+    clientCount: 61,
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'fa042',
+    name: 'Jonathan Davis, CPA, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 13,
+    specialties: ['Basic Tax Planning', 'Retirement Tax Planning', 'Education Tax Credits', 'Tax Software Solutions'],
+    aum: '$289M',
+    clientCount: 94,
+    location: 'Washington, DC'
+  },
+  // Client 360 & Competitive Intelligence Specialists
+  {
+    id: 'fa043',
+    name: 'Catherine Blackwood, CFP®, CFA, CIMA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 20,
+    specialties: ['Competitive Analysis', 'Market Share Protection', 'Client Intelligence', 'Relationship Management'],
+    aum: '$612M',
+    clientCount: 56,
+    location: 'New York, NY'
+  },
+  {
+    id: 'fa044',
+    name: 'Thomas Anderson, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['Account Monitoring', 'External Relationship Tracking', 'Client Profile Analysis', 'Investment Intelligence'],
+    aum: '$387M',
+    clientCount: 72,
+    location: 'Atlanta, GA'
+  },
+  {
+    id: 'fa045',
+    name: 'Rachel Taylor, CFP®, CRPC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 11,
+    specialties: ['Market Intelligence', 'Young Professional Services', 'Account Tracking', 'Competitive Positioning'],
+    aum: '$156M',
+    clientCount: 118,
+    location: 'Austin, TX'
   }
 ];
 
@@ -1410,6 +1534,250 @@ export const CLIENTS = [
     objectives: ['HR Benefits Planning', 'Employee Education Programs', 'Compliance Support', 'Benefit Administration'],
     advisor: 'fa033',
     location: 'Detroit, MI'
+  },
+  // Estate Planning Clients
+  {
+    id: 'cl084',
+    name: 'Margaret Wellington',
+    wealthSegment: 'UHNW',
+    aum: '$18.5M',
+    age: 68,
+    occupation: 'Retired Business Owner',
+    riskProfile: 'Conservative',
+    objectives: ['Estate Tax Mitigation', 'Generation-Skipping Planning', 'Charitable Legacy', 'Family Governance'],
+    advisor: 'fa034',
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'cl085',
+    name: 'Robert & Catherine Mitchell',
+    wealthSegment: 'HNW',
+    aum: '$4.2M',
+    age: 62,
+    occupation: 'Professional Couple',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Estate Planning', 'Trust Structures', 'Business Succession', 'Retirement Integration'],
+    advisor: 'fa034',
+    location: 'Scottsdale, AZ'
+  },
+  {
+    id: 'cl086',
+    name: 'Thomas Harrison III',
+    wealthSegment: 'HNW',
+    aum: '$6.8M',
+    age: 55,
+    occupation: 'Investment Banker',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Estate Liquidity', 'Trust Optimization', 'Charitable Planning', 'Multi-generational Wealth'],
+    advisor: 'fa035',
+    location: 'Manhattan, NY'
+  },
+  {
+    id: 'cl087',
+    name: 'David & Susan Chen',
+    wealthSegment: 'AFFLUENT',
+    aum: '$850K',
+    age: 47,
+    occupation: 'Medical Professionals',
+    riskProfile: 'Moderate',
+    objectives: ['Estate Planning Basics', 'Guardian Protection', 'Professional Practice Protection', 'Education Funding'],
+    advisor: 'fa035',
+    location: 'Palo Alto, CA'
+  },
+  {
+    id: 'cl088',
+    name: 'Jennifer & Mark Rodriguez',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$320K',
+    age: 42,
+    occupation: 'Corporate Executives',
+    riskProfile: 'Moderate',
+    objectives: ['Basic Estate Planning', 'Minor Protection', 'Life Insurance', 'Will & Testament'],
+    advisor: 'fa036',
+    location: 'Austin, TX'
+  },
+  // Trust Planning Clients
+  {
+    id: 'cl089',
+    name: 'Eleanor Vanderbilt',
+    wealthSegment: 'UHNW',
+    aum: '$42M',
+    age: 74,
+    occupation: 'Trust Fund Beneficiary',
+    riskProfile: 'Conservative',
+    objectives: ['Dynasty Trusts', 'Generation-Skipping', 'Charitable Remainder Trusts', 'Family Governance'],
+    advisor: 'fa037',
+    location: 'Newport, RI'
+  },
+  {
+    id: 'cl090',
+    name: 'William & Elizabeth Ashford',
+    wealthSegment: 'UHNW',
+    aum: '$23M',
+    age: 59,
+    occupation: 'Technology Entrepreneurs',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Irrevocable Trusts', 'GRAT Strategies', 'Life Insurance Trusts', 'Charitable Lead Trusts'],
+    advisor: 'fa037',
+    location: 'Seattle, WA'
+  },
+  {
+    id: 'cl091',
+    name: 'Charles Montgomery',
+    wealthSegment: 'HNW',
+    aum: '$7.5M',
+    age: 64,
+    occupation: 'Real Estate Developer',
+    riskProfile: 'Conservative',
+    objectives: ['Revocable Trusts', 'Credit Shelter Trusts', 'Marital Trusts', 'Asset Protection'],
+    advisor: 'fa038',
+    location: 'Miami, FL'
+  },
+  {
+    id: 'cl092',
+    name: 'Patricia & George Hamilton',
+    wealthSegment: 'HNW',
+    aum: '$3.8M',
+    age: 58,
+    occupation: 'Healthcare Executives',
+    riskProfile: 'Moderate',
+    objectives: ['Trust Planning', 'Testamentary Trusts', 'Educational Trusts', 'Professional Practice Trusts'],
+    advisor: 'fa038',
+    location: 'Boston, MA'
+  },
+  {
+    id: 'cl093',
+    name: 'Richard & Laura Thompson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$920K',
+    age: 51,
+    occupation: 'Professional Services',
+    riskProfile: 'Moderate',
+    objectives: ['Living Trusts', 'Minor Protection Trusts', 'QTIP Trusts', 'Family Protection'],
+    advisor: 'fa039',
+    location: 'Denver, CO'
+  },
+  // Tax Planning Clients
+  {
+    id: 'cl094',
+    name: 'Alexander Carnegie',
+    wealthSegment: 'UHNW',
+    aum: '$35M',
+    age: 52,
+    occupation: 'Hedge Fund Manager',
+    riskProfile: 'Aggressive',
+    objectives: ['Tax Loss Harvesting', 'Alternative Minimum Tax', 'Charitable Tax Planning', 'Portfolio Tax Optimization'],
+    advisor: 'fa040',
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'cl095',
+    name: 'Victoria & James Sterling',
+    wealthSegment: 'HNW',
+    aum: '$8.2M',
+    age: 56,
+    occupation: 'Business Owners',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Roth Conversions', 'Business Tax Integration', 'Estate Tax Minimization', 'Multi-year Tax Planning'],
+    advisor: 'fa040',
+    location: 'Dallas, TX'
+  },
+  {
+    id: 'cl096',
+    name: 'Michael & Sarah Goldman',
+    wealthSegment: 'HNW',
+    aum: '$5.4M',
+    age: 49,
+    occupation: 'Investment Professionals',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Tax-Aware Portfolio Management', 'Municipal Bonds', 'Wash Sale Prevention', 'Tax Lot Optimization'],
+    advisor: 'fa041',
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'cl097',
+    name: 'Christopher & Amanda Davis',
+    wealthSegment: 'AFFLUENT',
+    aum: '$750K',
+    age: 44,
+    occupation: 'Technology Workers',
+    riskProfile: 'Moderate',
+    objectives: ['Tax Planning Strategies', 'Roth Planning', 'Asset Location', 'Tax Software Solutions'],
+    advisor: 'fa041',
+    location: 'Portland, OR'
+  },
+  {
+    id: 'cl098',
+    name: 'Daniel & Rebecca Martinez',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$285K',
+    age: 38,
+    occupation: 'Government Employees',
+    riskProfile: 'Conservative',
+    objectives: ['Basic Tax Planning', 'Retirement Tax Planning', 'Education Tax Credits', 'Personalized Tax Management'],
+    advisor: 'fa042',
+    location: 'Washington, DC'
+  },
+  // Client 360 Clients
+  {
+    id: 'cl099',
+    name: 'Jonathan Blackstone',
+    wealthSegment: 'UHNW',
+    aum: '$28M',
+    age: 61,
+    occupation: 'Private Equity Executive',
+    riskProfile: 'Aggressive',
+    objectives: ['Competitive Analysis', 'Market Share Protection', 'Alternative Investments', 'External Account Monitoring'],
+    advisor: 'fa043',
+    location: 'New York, NY'
+  },
+  {
+    id: 'cl100',
+    name: 'Caroline & Robert Whitman',
+    wealthSegment: 'HNW',
+    aum: '$6.1M',
+    age: 54,
+    occupation: 'Investment Advisors',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Account Monitoring', 'Relationship Intelligence', 'Investment Tracking', 'Competitive Positioning'],
+    advisor: 'fa043',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl101',
+    name: 'Steven & Marie Johnson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$680K',
+    age: 46,
+    occupation: 'Corporate Management',
+    riskProfile: 'Moderate',
+    objectives: ['External Account Analysis', 'Banking Relationship Monitoring', 'Investment Account Tracking', 'Financial Profile Updates'],
+    advisor: 'fa044',
+    location: 'Atlanta, GA'
+  },
+  {
+    id: 'cl102',
+    name: 'Kevin & Lisa Anderson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$195K',
+    age: 35,
+    occupation: 'Young Professionals',
+    riskProfile: 'Moderate',
+    objectives: ['Account Monitoring', 'Investment Tracking', 'Relationship Management', 'Profile Analysis'],
+    advisor: 'fa044',
+    location: 'Phoenix, AZ'
+  },
+  {
+    id: 'cl103',
+    name: 'Brian & Nicole Taylor',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$85K',
+    age: 29,
+    occupation: 'Startup Employees',
+    riskProfile: 'Aggressive',
+    objectives: ['Market Share Monitoring', 'External Investment Tracking', 'Competitive Analysis', 'Account Intelligence'],
+    advisor: 'fa045',
+    location: 'Austin, TX'
   }
 ];
 
@@ -1948,4 +2316,436 @@ export const RETIREMENT_PLANNING_BUSINESS_BENEFITS = [
   'Improved client retention through comprehensive retirement planning solutions',
   'Cross-selling opportunities for corporate retirement plan services',
   'Increased revenue through plan administration and fiduciary services'
+];
+
+// Estate Planning Insight Category
+export const ESTATE_PLANNING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Estate Planning',
+  description: 'These Insights help Financial Advisor to identify insights around Estate planning needs for clients',
+  displayLabel: 'These Insights help Financial Advisor to identify insights around Estate planning needs for clients'
+};
+
+// Estate Planning Insights
+export const ESTATE_PLANNING_INSIGHTS = [
+  {
+    id: 'esp001',
+    name: 'Estate Plan',
+    purpose: 'Estate Plan',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp002',
+    name: 'Estate Plan Need Assessment',
+    purpose: 'Basic estate planning need identification',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp003',
+    name: 'Trust Structure Optimization',
+    purpose: 'Revocable and irrevocable trust strategies',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp004',
+    name: 'Generation-Skipping Tax Planning',
+    purpose: 'Dynasty trusts and GST optimization',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp005',
+    name: 'Estate Tax Mitigation Strategy',
+    purpose: 'GRATs, QPRTs, and advanced techniques',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp006',
+    name: 'Estate Liquidity Analysis',
+    purpose: 'Life insurance and asset restructuring',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp007',
+    name: 'Charitable Legacy Planning',
+    purpose: 'CRTs, CLTs, donor-advised funds, foundations',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp008',
+    name: 'Business Succession Integration',
+    purpose: 'Buy-sell agreements, family partnerships',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp009',
+    name: 'Guardianship & Minor Protection',
+    purpose: 'Minor protection trusts, educational funding',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp010',
+    name: 'Retirement Estate Integration',
+    purpose: 'IRA/401(k) beneficiary optimization',
+    category: 'Estate Planning'
+  },
+  {
+    id: 'esp011',
+    name: 'Multi-generational Wealth Strategy',
+    purpose: 'Family governance and perpetual trusts',
+    category: 'Estate Planning'
+  }
+];
+
+// Business Benefits for Estate Planning
+export const ESTATE_PLANNING_BUSINESS_BENEFITS = [
+  'Proactive estate planning need identification and client outreach',
+  'Enhanced wealth transfer and legacy planning advisory services',
+  'Improved client retention through comprehensive estate planning solutions',
+  'Cross-selling opportunities for trust services and tax planning products',
+  'Deeper client relationships through multigenerational planning'
+];
+
+// Trust Planning Insight Category
+export const TRUST_PLANNING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Trust Planning',
+  description: 'These Insights help Financial Advisor to help with Trust Planning needs. These Insights are related to various types of Trusts like Revocable trust, Irrevocable, Life Insurance Trust, Charitable Trust, Residual Trust, Qualified domestic trust',
+  displayLabel: 'These Insights help Financial Advisor to help with Trust Planning needs'
+};
+
+// Trust Planning Insights
+export const TRUST_PLANNING_INSIGHTS = [
+  {
+    id: 'tp001',
+    name: 'Trust Plan',
+    purpose: 'Trust Planning',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp002',
+    name: 'Revocable Trust',
+    purpose: 'Trust Plan',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp003',
+    name: 'Irrevocable Trust',
+    purpose: 'Irrevocable Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp004',
+    name: 'Testamentary Trust',
+    purpose: 'Testamentary Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp005',
+    name: 'Grantor Retained Annuity Trust',
+    purpose: 'Grantor Retained Annuity Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp006',
+    name: 'Living/Intervivos Trust',
+    purpose: 'Living/Intervivos Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp007',
+    name: 'Generation Skipping Trust',
+    purpose: 'Generation skipping trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp008',
+    name: 'Marital Trust',
+    purpose: 'Marital Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp009',
+    name: 'Life Insurance Trust',
+    purpose: 'Life Insurance Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp010',
+    name: 'Charitable Remainder Unit Trust',
+    purpose: 'Charitable Remainder Unit Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp011',
+    name: 'Credit Shelter Trust',
+    purpose: 'Credit Shelter Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp012',
+    name: 'Residual Trust',
+    purpose: 'Residual Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp013',
+    name: 'Charitable Lead Annuity Trust',
+    purpose: 'Charitable lead Annuity Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp014',
+    name: 'Separate Property Trust',
+    purpose: 'Separate property Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp015',
+    name: 'Qualified Terminable Interest',
+    purpose: 'Qualified Terminable Interest',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp016',
+    name: 'Charitable Lead Unit Trust',
+    purpose: 'Charitable Lead Unit Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp017',
+    name: 'Charitable Remainder Annuity',
+    purpose: 'Charitable Remainder Annuity',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp018',
+    name: 'Grantor Retained Uni Trust',
+    purpose: 'Grantor Retained Uni Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp019',
+    name: 'Minor\'s Trust-2503 (B) Trust',
+    purpose: 'Minor\'s Trust-2503 (B) Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp020',
+    name: 'Educational Trust',
+    purpose: 'Educational Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp021',
+    name: 'Qualified Domestic Trust',
+    purpose: 'Qualified Domestic Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp022',
+    name: 'Minor\'s Trust-2503 (C) Trust',
+    purpose: 'Minor\'s Trust-2503 (C) Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp023',
+    name: 'RABBI\'S Trust',
+    purpose: 'RABBI\'S Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp024',
+    name: 'Grantor Retained Income Trust',
+    purpose: 'Grantor Retained Income Trust',
+    category: 'Trust Planning'
+  },
+  {
+    id: 'tp025',
+    name: 'Secular Trust',
+    purpose: 'Secular Trust',
+    category: 'Trust Planning'
+  }
+];
+
+// Business Benefits for Trust Planning
+export const TRUST_PLANNING_BUSINESS_BENEFITS = [
+  'Comprehensive trust structure recommendations for wealth preservation',
+  'Enhanced estate planning through sophisticated trust strategies',
+  'Improved tax efficiency through strategic trust implementations',
+  'Multi-generational wealth transfer optimization and legacy planning',
+  'Increased fiduciary service revenue and deeper client relationships'
+];
+
+// Tax Planning Insight Category
+export const TAX_PLANNING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Tax Planning',
+  description: 'These Insights help Financial Advisor to help the Clients around Tax Planning needs for their clients. These Insights are related to Tax planning strategies, Wash sale strategies, Tax loss harvesting and other things',
+  displayLabel: 'These Insights help Financial Advisor to help the Clients around Tax Planning needs'
+};
+
+// Tax Planning Insights
+export const TAX_PLANNING_INSIGHTS = [
+  {
+    id: 'txp001',
+    name: 'Tax Loss Harvesting',
+    purpose: 'Tax Loss Harvesting',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp002',
+    name: 'Tax Planning Strategies & Municipal Bonds',
+    purpose: 'Tax Planning Strategies & Municipal Bonds',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp003',
+    name: 'Tax Planning Tools & Software Solutions',
+    purpose: 'Tax Planning Tools & Software Solutions',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp004',
+    name: 'Personalized Tax Management Solutions',
+    purpose: 'Personalized Tax Management Solutions',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp005',
+    name: 'Roth Conversion & Retirement Tax Planning',
+    purpose: 'Roth Conversion & Retirement Tax Planning',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp006',
+    name: 'Wash Sale Prevention & Tax Compliance',
+    purpose: 'Wash Sale Prevention & Tax Compliance',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp007',
+    name: 'Estate & Generation-Skipping Tax Planning',
+    purpose: 'Estate & Generation-Skipping Tax Planning',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp008',
+    name: 'Alternative Minimum Tax & High-Income Strategies',
+    purpose: 'Alternative Minimum Tax & High-Income Strategies',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp009',
+    name: 'Charitable Tax Planning & Donor-Advised Funds',
+    purpose: 'Charitable Tax Planning & Donor-Advised Funds',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp010',
+    name: 'Business Tax Integration & Schedule K-1 Optimization',
+    purpose: 'Business Tax Integration & Schedule K-1 Optimization',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp011',
+    name: 'Estate Tax Minimization - Multi-generational planning',
+    purpose: 'Estate Tax Minimization - Multi-generational planning',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp012',
+    name: 'Tax-Aware Portfolio Management - Automated optimization tools',
+    purpose: 'Tax-Aware Portfolio Management - Automated optimization tools',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp013',
+    name: 'Tax Lot Optimization - Intelligent lot selection systems',
+    purpose: 'Tax Lot Optimization - Intelligent lot selection systems',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp014',
+    name: 'High-Income Tax Strategies - AMT and state tax optimization',
+    purpose: 'High-Income Tax Strategies - AMT and state tax optimization',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp015',
+    name: 'Roth Conversion Planning - Multi-year tax optimization',
+    purpose: 'Roth Conversion Planning - Multi-year tax optimization',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp016',
+    name: 'Asset Location Strategies - Tax-efficient account placement',
+    purpose: 'Asset Location Strategies - Tax-efficient account placement',
+    category: 'Tax Planning'
+  },
+  {
+    id: 'txp017',
+    name: 'Charitable Tax Planning - Donor-advised funds and CRTs',
+    purpose: 'Charitable Tax Planning - Donor-advised funds and CRTs',
+    category: 'Tax Planning'
+  }
+];
+
+// Business Benefits for Tax Planning
+export const TAX_PLANNING_BUSINESS_BENEFITS = [
+  'Proactive tax optimization and loss harvesting opportunities',
+  'Enhanced client value through strategic tax planning advisory',
+  'Improved portfolio efficiency through tax-aware investment management',
+  'Cross-selling opportunities for tax planning and accounting services',
+  'Increased client retention through comprehensive tax advisory solutions'
+];
+
+// Client 360 Insight Category
+export const CLIENT_360_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Client 360',
+  description: 'These Insights help the Financial Advisor to get a better understanding of the Client especially when something significant has changed recently from a profile point of view',
+  displayLabel: 'These Insights help the Financial Advisor to get a better understanding of the Client'
+};
+
+// Client 360 Insights
+export const CLIENT_360_INSIGHTS = [
+  {
+    id: 'c360001',
+    name: 'Client Investable Asset Market Share Change',
+    purpose: 'Client Investable Asset Market Share Change',
+    category: 'Client 360'
+  },
+  {
+    id: 'c360002',
+    name: 'New External Alternative Investment Account Opened',
+    purpose: 'New External Alternative Investment Account Opened',
+    category: 'Client 360'
+  },
+  {
+    id: 'c360003',
+    name: 'New External Banking Relationship',
+    purpose: 'New External Banking Relationship',
+    category: 'Client 360'
+  },
+  {
+    id: 'c360004',
+    name: 'New External Brokerage Accounts',
+    purpose: 'New External Brokerage Accounts',
+    category: 'Client 360'
+  },
+  {
+    id: 'c360005',
+    name: 'New External Investment Accounts',
+    purpose: 'New External Investment Accounts',
+    category: 'Client 360'
+  }
+];
+
+// Business Benefits for Client 360
+export const CLIENT_360_BUSINESS_BENEFITS = [
+  'Proactive client relationship monitoring and retention strategies',
+  'Enhanced competitive intelligence and market share protection',
+  'Improved client engagement through timely outreach and communication',
+  'Strategic opportunity identification for service expansion',
+  'Deeper client insights for personalized advisory services'
 ];

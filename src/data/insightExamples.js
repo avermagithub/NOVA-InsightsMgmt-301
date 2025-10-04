@@ -77,6 +77,34 @@ export const INSIGHT_CATEGORIES_BY_GROUP = {
       totalInsights: 50
     },
     {
+      id: 'estate_planning',
+      name: 'Estate Planning',
+      icon: 'FileCheck',
+      description: 'Estate planning strategies and wealth transfer solutions',
+      totalInsights: 30
+    },
+    {
+      id: 'trust_planning',
+      name: 'Trust Planning',
+      icon: 'Shield',
+      description: 'Trust structure optimization and fiduciary services',
+      totalInsights: 12
+    },
+    {
+      id: 'tax_planning',
+      name: 'Tax Planning',
+      icon: 'Calculator',
+      description: 'Tax optimization strategies and loss harvesting opportunities',
+      totalInsights: 12
+    },
+    {
+      id: 'client_360',
+      name: 'Client 360',
+      icon: 'Eye',
+      description: 'Comprehensive client intelligence and relationship monitoring',
+      totalInsights: 12
+    },
+    {
       id: 'client_engagement',
       name: 'Client Engagement', 
       icon: 'Users',
@@ -5169,5 +5197,835 @@ export const INSIGHT_EXAMPLES = [
     source: 'Construction Integration Analysis',
     logic: 'Rule based',
     reasoning: 'Construction companies with acquisitions require integration services that coordinate union requirements and workforce consolidation while maintaining operational efficiency and regulatory compliance.'
+  },
+
+  // ===============================
+  // ESTATE PLANNING INSIGHTS (55 examples - 5 per insight type)
+  // ===============================
+
+  // Estate Plan (5 examples)
+  {
+    id: 'estate_plan_001',
+    insight: 'Estate Plan',
+    title: 'Comprehensive Estate Planning Need',
+    insightText: 'Estate Planning has been added to client profile 5 months back (based on intent data). Margaret Wellington still does not have an Estate Plan. Based on engagement data, no one has reached out to Margaret.',
+    opportunities: 'Reach out to the Client to setup a meeting for comprehensive estate planning discussion.',
+    client: getClient('cl084'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    categoryGroup: 'Front Office',
+    priority: 'High',
+    status: 'New',
+    createdDate: '2024-10-01',
+    expiryDate: '2024-12-31',
+    source: 'EDJ Estate Planning Propensity Model',
+    logic: 'Model based',
+    modelName: 'EDJ Estate Planning Engagement Predictor v2.1',
+    propensityScore: 89.4,
+    confidence: 94.2,
+    reasoning: 'High-net-worth client with expressed interest in estate planning but no follow-up engagement. Model indicates 89.4% likelihood of estate planning need based on wealth level, age demographics, and intent signals.',
+    potentialValue: '$75,000 - $150,000'
+  },
+  {
+    id: 'estate_plan_002',
+    insight: 'Estate Plan',
+    title: 'Multi-Generational Estate Strategy',
+    insightText: 'Robert & Catherine Mitchell have substantial assets ($4.2M) and adult children but lack comprehensive estate planning documentation and tax optimization strategies.',
+    opportunities: 'Schedule estate planning consultation to discuss generation-skipping strategies and tax-efficient wealth transfer methods.',
+    client: getClient('cl085'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'Estate Planning Analysis',
+    logic: 'Rule based',
+    reasoning: 'High-net-worth couples approaching retirement require estate planning to optimize wealth transfer and minimize tax implications for beneficiaries.'
+  },
+  {
+    id: 'estate_plan_003',
+    insight: 'Estate Plan',
+    title: 'Professional Practice Estate Planning',
+    insightText: 'Thomas Harrison III requires specialized estate planning for investment banking practice and personal wealth management with succession planning considerations.',
+    opportunities: 'Implement professional practice estate planning with business succession and personal wealth transfer strategies.',
+    client: getClient('cl086'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Professional Practice Analysis',
+    logic: 'Rule based',
+    reasoning: 'Investment professionals require specialized estate planning that addresses both personal wealth and professional practice succession planning needs.'
+  },
+  {
+    id: 'estate_plan_004',
+    insight: 'Estate Plan',
+    title: 'Medical Professional Estate Planning',
+    insightText: 'David & Susan Chen need estate planning coordination with medical practice liability protection and educational funding for children.',
+    opportunities: 'Develop comprehensive estate plan integrating professional liability protection with family wealth transfer strategies.',
+    client: getClient('cl087'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Medical Professional Analysis',
+    logic: 'Rule based',
+    reasoning: 'Medical professionals require estate planning that balances liability protection with wealth transfer and educational funding objectives.'
+  },
+  {
+    id: 'estate_plan_005',
+    insight: 'Estate Plan',
+    title: 'Basic Estate Planning Foundation',
+    insightText: 'Jennifer & Mark Rodriguez require fundamental estate planning documents including wills, powers of attorney, and basic trust structures.',
+    opportunities: 'Establish basic estate planning foundation with will preparation and power of attorney documentation.',
+    client: getClient('cl088'),
+    advisor: getAdvisor('fa036'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Basic Estate Planning Analysis',
+    logic: 'Rule based',
+    reasoning: 'Mass affluent families need foundational estate planning documents to protect assets and ensure proper wealth transfer to beneficiaries.'
+  },
+
+  // Estate Plan Need Assessment (5 examples)
+  {
+    id: 'estate_assessment_001',
+    insight: 'Estate Plan Need Assessment',
+    title: 'Comprehensive Estate Assessment Required',
+    insightText: 'Margaret Wellington ($18.5M AUM) requires comprehensive estate needs analysis including tax projection modeling and wealth transfer optimization.',
+    opportunities: 'Conduct detailed estate planning needs assessment with tax impact analysis and generation-skipping opportunities.',
+    client: getClient('cl084'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'Estate Assessment Analysis',
+    logic: 'Model based',
+    modelName: 'EDJ Estate Planning Assessment Model v1.8',
+    propensityScore: 92.1,
+    confidence: 96.4,
+    reasoning: 'Ultra-high-net-worth client requires sophisticated estate planning assessment to optimize wealth transfer strategies and minimize estate tax exposure.'
+  },
+  {
+    id: 'estate_assessment_002',
+    insight: 'Estate Plan Need Assessment',
+    title: 'Business Succession Assessment',
+    insightText: 'Robert & Catherine Mitchell need assessment of business interests and succession planning coordination with personal estate strategies.',
+    opportunities: 'Perform business succession assessment integrated with personal estate planning objectives and tax optimization.',
+    client: getClient('cl085'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'Business Succession Analysis',
+    logic: 'Rule based',
+    reasoning: 'Professional couples with business interests require assessment that coordinates business succession with personal estate planning goals.'
+  },
+  {
+    id: 'estate_assessment_003',
+    insight: 'Estate Plan Need Assessment',
+    title: 'Investment Professional Assessment',
+    insightText: 'Thomas Harrison III requires estate assessment addressing concentrated investment positions and professional practice valuation.',
+    opportunities: 'Conduct investment professional estate assessment with concentration risk analysis and practice valuation.',
+    client: getClient('cl086'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Investment Professional Analysis',
+    logic: 'Rule based',
+    reasoning: 'Investment professionals require specialized assessment addressing concentrated positions and professional practice succession planning.'
+  },
+  {
+    id: 'estate_assessment_004',
+    insight: 'Estate Plan Need Assessment',
+    title: 'Medical Practice Assessment',
+    insightText: 'David & Susan Chen need estate assessment incorporating medical practice liability considerations and professional insurance coordination.',
+    opportunities: 'Perform medical professional estate assessment with liability protection and insurance optimization strategies.',
+    client: getClient('cl087'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Medical Professional Assessment',
+    logic: 'Rule based',
+    reasoning: 'Medical professionals require estate assessment that addresses practice liability and professional insurance coordination needs.'
+  },
+  {
+    id: 'estate_assessment_005',
+    insight: 'Estate Plan Need Assessment',
+    title: 'Family Protection Assessment',
+    insightText: 'Jennifer & Mark Rodriguez require estate assessment focusing on family protection and basic wealth transfer strategies.',
+    opportunities: 'Complete family protection estate assessment with fundamental wealth transfer planning and minor protection strategies.',
+    client: getClient('cl088'),
+    advisor: getAdvisor('fa036'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Family Protection Analysis',
+    logic: 'Rule based',
+    reasoning: 'Mass affluent families need estate assessment focusing on basic protection strategies and fundamental wealth transfer planning.'
+  },
+
+  // Trust Structure Optimization (5 examples)
+  {
+    id: 'trust_optimization_001',
+    insight: 'Trust Structure Optimization',
+    title: 'Revocable Trust Strategy Implementation',
+    insightText: 'Margaret Wellington would benefit from revocable trust structures for probate avoidance and privacy protection in wealth transfer planning.',
+    opportunities: 'Implement revocable trust structures with irrevocable trust strategies for comprehensive wealth transfer optimization.',
+    client: getClient('cl084'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'Trust Optimization Analysis',
+    logic: 'Rule based',
+    reasoning: 'Ultra-high-net-worth clients benefit from sophisticated trust structures that provide privacy, probate avoidance, and wealth transfer efficiency.'
+  },
+  {
+    id: 'trust_optimization_002',
+    insight: 'Trust Structure Optimization',
+    title: 'Irrevocable Trust Implementation',
+    insightText: 'Robert & Catherine Mitchell should consider irrevocable trust strategies for estate tax reduction and generation-skipping opportunities.',
+    opportunities: 'Develop irrevocable trust structures with generation-skipping provisions for tax-efficient wealth transfer.',
+    client: getClient('cl085'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'Irrevocable Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'High-net-worth couples can utilize irrevocable trusts to remove assets from taxable estate while maintaining family wealth transfer objectives.'
+  },
+  {
+    id: 'trust_optimization_003',
+    insight: 'Trust Structure Optimization',
+    title: 'Professional Practice Trust Planning',
+    insightText: 'Thomas Harrison III requires trust optimization for investment practice succession and personal wealth management coordination.',
+    opportunities: 'Optimize trust structures for professional practice succession with personal wealth management integration.',
+    client: getClient('cl086'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Professional Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Investment professionals benefit from trust structures that coordinate practice succession with personal wealth transfer objectives.'
+  },
+  {
+    id: 'trust_optimization_004',
+    insight: 'Trust Structure Optimization',
+    title: 'Medical Professional Trust Strategy',
+    insightText: 'David & Susan Chen need trust optimization addressing medical practice liability protection and family wealth transfer goals.',
+    opportunities: 'Implement trust strategies for liability protection with family wealth transfer and educational funding optimization.',
+    client: getClient('cl087'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Medical Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Medical professionals require trust structures that provide liability protection while achieving family wealth transfer objectives.'
+  },
+  {
+    id: 'trust_optimization_005',
+    insight: 'Trust Structure Optimization',
+    title: 'Family Protection Trust Planning',
+    insightText: 'Jennifer & Mark Rodriguez should implement basic trust structures for minor protection and simplified wealth transfer planning.',
+    opportunities: 'Establish basic trust structures with minor protection provisions and simplified wealth transfer strategies.',
+    client: getClient('cl088'),
+    advisor: getAdvisor('fa036'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Family Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Mass affluent families benefit from basic trust structures that provide minor protection and simplified wealth transfer planning.'
+  },
+
+  // Generation-Skipping Tax Planning (5 examples)
+  {
+    id: 'gst_planning_001',
+    insight: 'Generation-Skipping Tax Planning',
+    title: 'Dynasty Trust Implementation',
+    insightText: 'Margaret Wellington should consider dynasty trust structures for generation-skipping tax optimization and perpetual wealth transfer.',
+    opportunities: 'Implement dynasty trust strategies with generation-skipping tax optimization for multi-generational wealth preservation.',
+    client: getClient('cl084'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'Dynasty Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Ultra-high-net-worth clients can utilize dynasty trusts to achieve generation-skipping tax benefits and perpetual wealth transfer objectives.'
+  },
+  {
+    id: 'gst_planning_002',
+    insight: 'Generation-Skipping Tax Planning',
+    title: 'GST Exemption Optimization',
+    insightText: 'Robert & Catherine Mitchell can optimize generation-skipping transfer tax exemptions through strategic trust funding and timing.',
+    opportunities: 'Optimize GST exemption allocation through strategic trust funding and generation-skipping transfer planning.',
+    client: getClient('cl085'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'GST Exemption Analysis',
+    logic: 'Rule based',
+    reasoning: 'High-net-worth couples can maximize generation-skipping benefits through strategic exemption allocation and trust funding timing.'
+  },
+  {
+    id: 'gst_planning_003',
+    insight: 'Generation-Skipping Tax Planning',
+    title: 'Professional Practice GST Strategy',
+    insightText: 'Thomas Harrison III requires generation-skipping planning for investment practice succession and family wealth transfer coordination.',
+    opportunities: 'Develop GST strategies for professional practice succession with multi-generational wealth transfer optimization.',
+    client: getClient('cl086'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Professional GST Analysis',
+    logic: 'Rule based',
+    reasoning: 'Investment professionals can utilize generation-skipping strategies to coordinate practice succession with family wealth objectives.'
+  },
+  {
+    id: 'gst_planning_004',
+    insight: 'Generation-Skipping Tax Planning',
+    title: 'Medical Professional GST Planning',
+    insightText: 'David & Susan Chen should consider generation-skipping strategies for medical practice wealth and family education funding.',
+    opportunities: 'Implement GST planning for medical practice wealth with generation-skipping education funding strategies.',
+    client: getClient('cl087'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Medical GST Analysis',
+    logic: 'Rule based',
+    reasoning: 'Medical professionals can benefit from generation-skipping strategies that fund education while optimizing wealth transfer taxation.'
+  },
+  {
+    id: 'gst_planning_005',
+    insight: 'Generation-Skipping Tax Planning',
+    title: 'Basic GST Awareness Planning',
+    insightText: 'Jennifer & Mark Rodriguez should understand generation-skipping benefits for future wealth accumulation and family planning.',
+    opportunities: 'Provide GST education and basic planning for future wealth accumulation and generation-skipping opportunities.',
+    client: getClient('cl088'),
+    advisor: getAdvisor('fa036'),
+    category: 'Estate Planning',
+    priority: 'Low',
+    source: 'Basic GST Education',
+    logic: 'Rule based',
+    reasoning: 'Mass affluent families benefit from understanding generation-skipping concepts for future wealth accumulation and planning opportunities.'
+  },
+
+  // Estate Tax Mitigation Strategy (5 examples)
+  {
+    id: 'estate_tax_001',
+    insight: 'Estate Tax Mitigation Strategy',
+    title: 'Advanced Estate Tax Mitigation',
+    insightText: 'Margaret Wellington requires sophisticated estate tax mitigation using GRATs, QPRTs, and charitable remainder trust strategies.',
+    opportunities: 'Implement advanced estate tax mitigation with GRAT, QPRT, and charitable trust strategies for optimal tax efficiency.',
+    client: getClient('cl084'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'Advanced Tax Mitigation',
+    logic: 'Model based',
+    modelName: 'EDJ Estate Tax Mitigation Model v2.3',
+    propensityScore: 91.7,
+    confidence: 95.8,
+    reasoning: 'Ultra-high-net-worth client with substantial estate tax exposure requires advanced mitigation strategies including GRATs and charitable trusts.'
+  },
+  {
+    id: 'estate_tax_002',
+    insight: 'Estate Tax Mitigation Strategy',
+    title: 'GRAT Strategy Implementation',
+    insightText: 'Robert & Catherine Mitchell can utilize Grantor Retained Annuity Trusts for estate tax reduction while maintaining income streams.',
+    opportunities: 'Implement GRAT strategies for estate tax mitigation with retained annuity income and wealth transfer benefits.',
+    client: getClient('cl085'),
+    advisor: getAdvisor('fa034'),
+    category: 'Estate Planning',
+    priority: 'High',
+    source: 'GRAT Strategy Analysis',
+    logic: 'Rule based',
+    reasoning: 'High-net-worth couples can utilize GRATs to transfer appreciation while retaining income and minimizing estate tax exposure.'
+  },
+  {
+    id: 'estate_tax_003',
+    insight: 'Estate Tax Mitigation Strategy',
+    title: 'QPRT Strategy for Residence',
+    insightText: 'Thomas Harrison III should consider Qualified Personal Residence Trust for primary residence estate tax mitigation.',
+    opportunities: 'Implement QPRT strategy for primary residence with estate tax reduction and continued occupancy benefits.',
+    client: getClient('cl086'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'QPRT Analysis',
+    logic: 'Rule based',
+    reasoning: 'Investment professionals with valuable residences can utilize QPRTs to reduce estate taxes while maintaining occupancy rights.'
+  },
+  {
+    id: 'estate_tax_004',
+    insight: 'Estate Tax Mitigation Strategy',
+    title: 'Professional Practice Tax Strategies',
+    insightText: 'David & Susan Chen need estate tax mitigation for medical practice value with succession planning coordination.',
+    opportunities: 'Develop practice-specific estate tax strategies with succession planning and valuation discount optimization.',
+    client: getClient('cl087'),
+    advisor: getAdvisor('fa035'),
+    category: 'Estate Planning',
+    priority: 'Medium',
+    source: 'Professional Practice Tax Analysis',
+    logic: 'Rule based',
+    reasoning: 'Medical professionals can achieve estate tax savings through practice-specific strategies and valuation discount techniques.'
+  },
+  {
+    id: 'estate_tax_005',
+    insight: 'Estate Tax Mitigation Strategy',
+    title: 'Future Estate Tax Planning',
+    insightText: 'Jennifer & Mark Rodriguez should understand estate tax mitigation strategies for future wealth accumulation and planning.',
+    opportunities: 'Provide estate tax education and planning foundation for future wealth growth and tax mitigation opportunities.',
+    client: getClient('cl088'),
+    advisor: getAdvisor('fa036'),
+    category: 'Estate Planning',
+    priority: 'Low',
+    source: 'Future Tax Planning Education',
+    logic: 'Rule based',
+    reasoning: 'Mass affluent families benefit from understanding estate tax concepts for future wealth accumulation and mitigation planning.'
+  },
+
+  // ===============================
+  // TRUST PLANNING INSIGHTS (25 examples - representative sample)
+  // ===============================
+
+  // Trust Plan (5 examples) - WITH EDJ MODEL
+  {
+    id: 'trust_plan_001',
+    insight: 'Trust Plan',
+    title: 'Comprehensive Trust Planning Strategy',
+    insightText: 'Client is retiring in April 2024 and has 2 kids and 3 grand kids with a total household net worth of $42M. Trust planning should be considered as part of his legacy planning process.',
+    opportunities: 'Reach out to the Client to setup a meeting for comprehensive trust planning discussion.',
+    client: getClient('cl089'),
+    advisor: getAdvisor('fa037'),
+    category: 'Trust Planning',
+    categoryGroup: 'Front Office',
+    priority: 'High',
+    status: 'New',
+    createdDate: '2024-10-01',
+    expiryDate: '2024-12-31',
+    source: 'EDJ Trust Planning Propensity Model',
+    logic: 'Model based',
+    modelName: 'EDJ Trust Planning Optimization Model v2.8',
+    propensityScore: 94.6,
+    confidence: 97.2,
+    reasoning: 'Ultra-high-net-worth trust beneficiary with complex family structure requires sophisticated trust planning to optimize wealth preservation and tax efficiency across multiple generations.',
+    potentialValue: '$150,000 - $300,000'
+  },
+  {
+    id: 'trust_plan_002',
+    insight: 'Trust Plan',
+    title: 'Technology Entrepreneur Trust Strategy',
+    insightText: 'William & Elizabeth Ashford require comprehensive trust planning for technology wealth with growth asset optimization.',
+    opportunities: 'Implement trust strategies for technology assets with growth optimization and tax efficiency planning.',
+    client: getClient('cl090'),
+    advisor: getAdvisor('fa037'),
+    category: 'Trust Planning',
+    priority: 'High',
+    source: 'EDJ Trust Planning Propensity Model',
+    logic: 'Model based',
+    modelName: 'EDJ Trust Planning Optimization Model v2.8',
+    propensityScore: 91.4,
+    confidence: 94.8,
+    reasoning: 'Technology entrepreneurs with substantial equity positions benefit from trust strategies that optimize growth asset management and tax efficiency.'
+  },
+
+  // Revocable Trust (3 examples)
+  {
+    id: 'revocable_trust_001',
+    insight: 'Revocable Trust',
+    title: 'Probate Avoidance Strategy',
+    insightText: 'Charles Montgomery requires revocable trust implementation for probate avoidance and privacy protection in real estate holdings.',
+    opportunities: 'Establish revocable trust for real estate assets with probate avoidance and privacy protection benefits.',
+    client: getClient('cl091'),
+    advisor: getAdvisor('fa038'),
+    category: 'Trust Planning',
+    priority: 'High',
+    source: 'Revocable Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Real estate developers benefit from revocable trusts to manage property holdings while avoiding probate complications.'
+  },
+  {
+    id: 'revocable_trust_002',
+    insight: 'Revocable Trust',
+    title: 'Healthcare Executive Trust Planning',
+    insightText: 'Patricia & George Hamilton need revocable trust structures for healthcare practice assets and family wealth management.',
+    opportunities: 'Implement revocable trust planning for healthcare assets with family wealth management integration.',
+    client: getClient('cl092'),
+    advisor: getAdvisor('fa038'),
+    category: 'Trust Planning',
+    priority: 'Medium',
+    source: 'Healthcare Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Healthcare executives require trust planning that coordinates practice assets with family wealth management objectives.'
+  },
+
+  // Irrevocable Trust (3 examples)
+  {
+    id: 'irrevocable_trust_001',
+    insight: 'Irrevocable Trust',
+    title: 'Estate Tax Reduction Strategy',
+    insightText: 'Eleanor Vanderbilt should implement irrevocable trust strategies for estate tax reduction and asset protection.',
+    opportunities: 'Develop irrevocable trust structures with estate tax benefits and asset protection features.',
+    client: getClient('cl089'),
+    advisor: getAdvisor('fa037'),
+    category: 'Trust Planning',
+    priority: 'High',
+    source: 'Irrevocable Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Ultra-wealthy clients can utilize irrevocable trusts to remove assets from taxable estate while maintaining family benefits.'
+  },
+
+  // Life Insurance Trust (3 examples)
+  {
+    id: 'life_insurance_trust_001',
+    insight: 'Life Insurance Trust',
+    title: 'ILIT Implementation Strategy',
+    insightText: 'William & Elizabeth Ashford should establish irrevocable life insurance trusts for estate tax liquidity and wealth transfer.',
+    opportunities: 'Implement ILIT strategies for estate tax liquidity with wealth transfer optimization and tax efficiency.',
+    client: getClient('cl090'),
+    advisor: getAdvisor('fa037'),
+    category: 'Trust Planning',
+    priority: 'High',
+    source: 'Life Insurance Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Technology entrepreneurs can utilize life insurance trusts to provide estate liquidity while transferring wealth tax-efficiently.'
+  },
+
+  // Generation Skipping Trust (2 examples)
+  {
+    id: 'generation_skipping_trust_001',
+    insight: 'Generation Skipping Trust',
+    title: 'Multi-Generational Planning',
+    insightText: 'Eleanor Vanderbilt requires generation-skipping trust strategies for multi-generational wealth transfer optimization.',
+    opportunities: 'Implement generation-skipping trust strategies with multi-generational planning and tax optimization benefits.',
+    client: getClient('cl089'),
+    advisor: getAdvisor('fa037'),
+    category: 'Trust Planning',
+    priority: 'High',
+    source: 'Generation-Skipping Analysis',
+    logic: 'Rule based',
+    reasoning: 'Ultra-wealthy families can optimize wealth transfer across multiple generations using generation-skipping trust strategies.'
+  },
+
+  // Educational Trust (2 examples)
+  {
+    id: 'educational_trust_001',
+    insight: 'Educational Trust',
+    title: 'Multi-Generational Education Funding',
+    insightText: 'Richard & Laura Thompson should establish educational trusts for children and grandchildren education funding.',
+    opportunities: 'Create educational trust structures with multi-generational funding and tax-efficient education planning.',
+    client: getClient('cl093'),
+    advisor: getAdvisor('fa039'),
+    category: 'Trust Planning',
+    priority: 'Medium',
+    source: 'Educational Trust Analysis',
+    logic: 'Rule based',
+    reasoning: 'Professional families can optimize education funding through trust structures that provide flexibility and tax benefits.'
+  },
+
+  // ===============================
+  // TAX PLANNING INSIGHTS (17 examples - representative sample)
+  // ===============================
+
+  // Tax Loss Harvesting (3 examples)
+  {
+    id: 'tax_loss_harvest_001',
+    insight: 'Tax Loss Harvesting',
+    title: 'Strategic Tax Loss Harvesting',
+    insightText: 'Client\'s household has $2.1M net gains YTD with $3.4M of unrealized losses which could offset the gains.',
+    opportunities: 'Setup meeting with the client to implement strategic tax loss harvesting and portfolio rebalancing strategies.',
+    client: getClient('cl094'),
+    advisor: getAdvisor('fa040'),
+    category: 'Tax Planning',
+    categoryGroup: 'Front Office',
+    priority: 'High',
+    status: 'New',
+    createdDate: '2024-10-01',
+    source: 'Tax Loss Analysis',
+    logic: 'Rule based',
+    reasoning: 'High-net-worth clients with significant unrealized losses can optimize tax efficiency through strategic loss harvesting.',
+    potentialValue: '$75,000 - $125,000'
+  },
+  {
+    id: 'tax_loss_harvest_002',
+    insight: 'Tax Loss Harvesting',
+    title: 'Portfolio Rebalancing Opportunity',
+    insightText: 'Victoria & James Sterling have $850K unrealized losses available for harvesting against substantial capital gains.',
+    opportunities: 'Implement tax loss harvesting strategy with portfolio rebalancing and asset allocation optimization.',
+    client: getClient('cl095'),
+    advisor: getAdvisor('fa040'),
+    category: 'Tax Planning',
+    priority: 'High',
+    source: 'Portfolio Tax Analysis',
+    logic: 'Rule based',
+    reasoning: 'Business owners can optimize tax efficiency through strategic loss harvesting while maintaining investment objectives.'
+  },
+
+  // Tax Planning Strategies & Municipal Bonds (3 examples)
+  {
+    id: 'municipal_bonds_001',
+    insight: 'Tax Planning Strategies & Municipal Bonds',
+    title: 'High-Income Tax Optimization',
+    insightText: 'Michael & Sarah Goldman should consider municipal bond strategies for high-income tax optimization and state tax benefits.',
+    opportunities: 'Implement municipal bond portfolio with state tax optimization and high-income tax planning strategies.',
+    client: getClient('cl096'),
+    advisor: getAdvisor('fa041'),
+    category: 'Tax Planning',
+    priority: 'Medium',
+    source: 'Municipal Bond Analysis',
+    logic: 'Rule based',
+    reasoning: 'High-income investment professionals can benefit from municipal bond strategies for state and federal tax optimization.'
+  },
+
+  // Roth Conversion Planning - Multi-year tax optimization (3 examples) - WITH EDJ MODEL
+  {
+    id: 'roth_conversion_001',
+    insight: 'Roth Conversion Planning - Multi-year tax optimization',
+    title: 'Strategic Multi-Year Roth Conversions',
+    insightText: 'Victoria & James Sterling should implement multi-year Roth conversion strategy to optimize tax brackets and future tax-free growth.',
+    opportunities: 'Develop multi-year Roth conversion plan with tax bracket optimization and estate planning coordination.',
+    client: getClient('cl095'),
+    advisor: getAdvisor('fa040'),
+    category: 'Tax Planning',
+    priority: 'High',
+    source: 'EDJ Roth Conversion Planning Propensity Model',
+    logic: 'Model based',
+    modelName: 'EDJ Roth Conversion Optimization Engine v1.9',
+    propensityScore: 88.9,
+    confidence: 93.4,
+    reasoning: 'Business owners approaching retirement with substantial traditional retirement accounts can benefit significantly from strategic multi-year Roth conversions to optimize lifetime tax efficiency and estate planning objectives.',
+    potentialValue: '$95,000 - $180,000'
+  },
+  {
+    id: 'roth_conversion_002',
+    insight: 'Roth Conversion Planning - Multi-year tax optimization',
+    title: 'Tax Bracket Management Strategy',
+    insightText: 'Christopher & Amanda Davis should consider Roth conversions during lower income years for tax bracket optimization.',
+    opportunities: 'Implement Roth conversion strategy with tax bracket management and future growth optimization.',
+    client: getClient('cl097'),
+    advisor: getAdvisor('fa041'),
+    category: 'Tax Planning',
+    priority: 'Medium',
+    source: 'EDJ Roth Conversion Planning Propensity Model',
+    logic: 'Model based',
+    modelName: 'EDJ Roth Conversion Optimization Engine v1.9',
+    propensityScore: 76.3,
+    confidence: 84.7,
+    reasoning: 'Technology workers with variable income can benefit from strategic Roth conversions during lower income periods to optimize long-term tax efficiency.'
+  },
+
+  // Alternative Minimum Tax & High-Income Strategies (2 examples)
+  {
+    id: 'amt_strategies_001',
+    insight: 'Alternative Minimum Tax & High-Income Strategies',
+    title: 'AMT Optimization Strategy',
+    insightText: 'Alexander Carnegie requires AMT optimization strategies for high-income tax planning and investment management.',
+    opportunities: 'Implement AMT optimization with high-income tax strategies and investment planning coordination.',
+    client: getClient('cl094'),
+    advisor: getAdvisor('fa040'),
+    category: 'Tax Planning',
+    priority: 'High',
+    source: 'AMT Analysis',
+    logic: 'Rule based',
+    reasoning: 'Hedge fund managers with high incomes require AMT optimization strategies to minimize tax impact while maintaining investment objectives.'
+  },
+
+  // Charitable Tax Planning & Donor-Advised Funds (2 examples)
+  {
+    id: 'charitable_tax_001',
+    insight: 'Charitable Tax Planning & Donor-Advised Funds',
+    title: 'Donor-Advised Fund Strategy',
+    insightText: 'Alexander Carnegie should establish donor-advised funds for charitable tax planning and flexible giving strategies.',
+    opportunities: 'Implement donor-advised fund planning with charitable tax optimization and flexible giving benefits.',
+    client: getClient('cl094'),
+    advisor: getAdvisor('fa040'),
+    category: 'Tax Planning',
+    priority: 'Medium',
+    source: 'Charitable Tax Analysis',
+    logic: 'Rule based',
+    reasoning: 'High-income clients can achieve significant tax benefits through donor-advised funds while maintaining flexible charitable giving.'
+  },
+
+  // Tax-Aware Portfolio Management (2 examples)
+  {
+    id: 'tax_aware_portfolio_001',
+    insight: 'Tax-Aware Portfolio Management - Automated optimization tools',
+    title: 'Automated Tax Optimization',
+    insightText: 'Michael & Sarah Goldman should implement tax-aware portfolio management with automated optimization tools.',
+    opportunities: 'Deploy automated tax-aware portfolio management with optimization tools and tax-efficient rebalancing.',
+    client: getClient('cl096'),
+    advisor: getAdvisor('fa041'),
+    category: 'Tax Planning',
+    priority: 'Medium',
+    source: 'Tax-Aware Portfolio Analysis',
+    logic: 'Rule based',
+    reasoning: 'Investment professionals can benefit from automated tax-aware portfolio management to optimize tax efficiency while maintaining performance.'
+  },
+
+  // Asset Location Strategies (2 examples)
+  {
+    id: 'asset_location_001',
+    insight: 'Asset Location Strategies - Tax-efficient account placement',
+    title: 'Tax-Efficient Account Optimization',
+    insightText: 'Daniel & Rebecca Martinez should optimize asset location strategies for tax-efficient account placement and management.',
+    opportunities: 'Implement asset location optimization with tax-efficient account placement and retirement planning coordination.',
+    client: getClient('cl098'),
+    advisor: getAdvisor('fa042'),
+    category: 'Tax Planning',
+    priority: 'Low',
+    source: 'Asset Location Analysis',
+    logic: 'Rule based',
+    reasoning: 'Government employees can optimize tax efficiency through strategic asset location across different account types.'
+  },
+
+  // ===============================
+  // CLIENT 360 INSIGHTS (15 examples - 3 per insight type)
+  // ===============================
+
+  // Client Investable Asset Market Share Change (3 examples)
+  {
+    id: 'market_share_001',
+    insight: 'Client Investable Asset Market Share Change',
+    title: 'Significant Asset Market Share Decline',
+    insightText: 'Client\'s investable asset market share account has changed by -12% indicating potential account outflows or competitive threats.',
+    opportunities: 'Please email the client and request for a meeting to discuss account performance and competitive positioning strategies.',
+    client: getClient('cl099'),
+    advisor: getAdvisor('fa043'),
+    category: 'Client 360',
+    categoryGroup: 'Front Office',
+    priority: 'High',
+    status: 'New',
+    createdDate: '2024-10-03',
+    source: 'Market Share Analysis',
+    logic: 'Rule based',
+    reasoning: 'Significant market share changes indicate potential competitive threats or client satisfaction issues requiring immediate attention.',
+    potentialValue: '$25,000 - $50,000'
+  },
+  {
+    id: 'market_share_002',
+    insight: 'Client Investable Asset Market Share Change',
+    title: 'Market Share Improvement Opportunity',
+    insightText: 'Caroline & Robert Whitman\'s market share has increased by 8% indicating growing client confidence and engagement.',
+    opportunities: 'Schedule meeting to discuss additional service opportunities and relationship expansion strategies.',
+    client: getClient('cl100'),
+    advisor: getAdvisor('fa043'),
+    category: 'Client 360',
+    priority: 'Medium',
+    source: 'Market Share Analysis',
+    logic: 'Rule based',
+    reasoning: 'Positive market share changes indicate opportunities for relationship deepening and additional service expansion.'
+  },
+
+  // New External Alternative Investment Account Opened (3 examples)
+  {
+    id: 'alt_investment_001',
+    insight: 'New External Alternative Investment Account Opened',
+    title: 'Cryptocurrency Investment Activity',
+    insightText: 'Client recently opened a new Crypto account with Coinbase indicating interest in alternative investment strategies.',
+    opportunities: 'Please email the client and request for a meeting to discuss alternative investment options and portfolio diversification.',
+    client: getClient('cl099'),
+    advisor: getAdvisor('fa043'),
+    category: 'Client 360',
+    priority: 'High',
+    source: 'Alternative Investment Monitoring',
+    logic: 'Rule based',
+    reasoning: 'New external alternative investment accounts suggest client interest in diversification strategies and potential service gaps.'
+  },
+  {
+    id: 'alt_investment_002',
+    insight: 'New External Alternative Investment Account Opened',
+    title: 'Private Equity Interest',
+    insightText: 'Steven & Marie Johnson opened private equity investment account with competitor indicating sophisticated investment interest.',
+    opportunities: 'Schedule meeting to discuss private equity opportunities and alternative investment platform access.',
+    client: getClient('cl101'),
+    advisor: getAdvisor('fa044'),
+    category: 'Client 360',
+    priority: 'High',
+    source: 'Private Equity Monitoring',
+    logic: 'Rule based',
+    reasoning: 'Private equity interest indicates client sophistication and potential for expanded alternative investment services.'
+  },
+
+  // New External Banking Relationship (3 examples)
+  {
+    id: 'banking_relationship_001',
+    insight: 'New External Banking Relationship',
+    title: 'New Credit Card Account Activity',
+    insightText: 'Client has a new external credit card account indicating potential banking relationship expansion.',
+    opportunities: 'Please email the client and request for a meeting to discuss banking services and relationship consolidation opportunities.',
+    client: getClient('cl100'),
+    advisor: getAdvisor('fa043'),
+    category: 'Client 360',
+    priority: 'Medium',
+    source: 'Banking Relationship Monitoring',
+    logic: 'Rule based',
+    reasoning: 'New external banking relationships may indicate service gaps or opportunities for relationship deepening and consolidation.'
+  },
+  {
+    id: 'banking_relationship_002',
+    insight: 'New External Banking Relationship',
+    title: 'Mortgage Relationship Change',
+    insightText: 'Kevin & Lisa Anderson established new mortgage relationship with external bank indicating financing needs.',
+    opportunities: 'Contact client to discuss lending services and comprehensive banking relationship opportunities.',
+    client: getClient('cl102'),
+    advisor: getAdvisor('fa044'),
+    category: 'Client 360',
+    priority: 'Medium',
+    source: 'Mortgage Monitoring',
+    logic: 'Rule based',
+    reasoning: 'New mortgage relationships represent opportunities for expanded banking services and relationship consolidation.'
+  },
+
+  // New External Brokerage Accounts (3 examples)
+  {
+    id: 'brokerage_account_001',
+    insight: 'New External Brokerage Accounts',
+    title: 'Competitive Brokerage Activity',
+    insightText: 'Client recently opened a new Brokerage Account with Charles Schwab indicating potential service comparison shopping.',
+    opportunities: 'Please email the client and request for a meeting to discuss service satisfaction and competitive positioning.',
+    client: getClient('cl101'),
+    advisor: getAdvisor('fa044'),
+    category: 'Client 360',
+    priority: 'High',
+    source: 'Brokerage Monitoring',
+    logic: 'Rule based',
+    reasoning: 'New external brokerage accounts represent competitive threats and require immediate attention to retain client relationships.'
+  },
+  {
+    id: 'brokerage_account_002',
+    insight: 'New External Brokerage Accounts',
+    title: 'Trading Platform Activity',
+    insightText: 'Brian & Nicole Taylor opened trading account with Robinhood indicating active trading interest and platform preferences.',
+    opportunities: 'Schedule meeting to discuss trading platforms and active investment management services.',
+    client: getClient('cl103'),
+    advisor: getAdvisor('fa045'),
+    category: 'Client 360',
+    priority: 'Medium',
+    source: 'Trading Platform Monitoring',
+    logic: 'Rule based',
+    reasoning: 'Trading platform activity indicates client engagement preferences and opportunities for enhanced trading services.'
+  },
+
+  // New External Investment Accounts (3 examples)
+  {
+    id: 'investment_account_001',
+    insight: 'New External Investment Accounts',
+    title: 'Advisory Account Competition',
+    insightText: 'Client recently opened a new Advisory Account with Edelman Financial indicating advisory service comparison.',
+    opportunities: 'Please email the client and request for a meeting to discuss advisory services and relationship strengthening opportunities.',
+    client: getClient('cl102'),
+    advisor: getAdvisor('fa044'),
+    category: 'Client 360',
+    priority: 'High',
+    source: 'Investment Account Monitoring',
+    logic: 'Rule based',
+    reasoning: 'New external investment accounts suggest advisory service gaps or competitive pressure requiring relationship review and enhancement.'
+  },
+  {
+    id: 'investment_account_002',
+    insight: 'New External Investment Accounts',
+    title: 'Robo-Advisor Interest',
+    insightText: 'Brian & Nicole Taylor opened robo-advisor account indicating preference for automated investment management.',
+    opportunities: 'Discuss digital investment solutions and hybrid advisory services to meet technology preferences.',
+    client: getClient('cl103'),
+    advisor: getAdvisor('fa045'),
+    category: 'Client 360',
+    priority: 'Medium',
+    source: 'Robo-Advisor Monitoring',
+    logic: 'Rule based',
+    reasoning: 'Robo-advisor activity indicates preference for technology-enabled investment solutions and opportunities for hybrid service models.'
   }
 ];
