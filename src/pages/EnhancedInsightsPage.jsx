@@ -28,7 +28,7 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
   };
 
   const handleCategoryClick = (category) => {
-    if (category.id === 'investment_products' || category.id === 'banking_products' || category.id === 'crm' || category.id === 'account_performance') {
+    if (category.id === 'investment_products' || category.id === 'banking_products' || category.id === 'crm' || category.id === 'account_performance' || category.id === 'insurance_planning') {
       setSelectedCategory(category);
       setShowFrontOfficeInsights(true);
     }

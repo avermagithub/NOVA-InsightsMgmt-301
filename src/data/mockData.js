@@ -221,6 +221,38 @@ export const FINANCIAL_ADVISORS = [
     aum: '$465M',
     clientCount: 78,
     location: 'Milwaukee, WI'
+  },
+  
+  // Insurance Planning Specialists
+  {
+    id: 'fa019',
+    name: 'Benjamin Walsh, CLU®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Insurance Planning', 'Estate Planning', 'Risk Management'],
+    aum: '$385M',
+    clientCount: 92,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa020',
+    name: 'Amanda Rodriguez, CFP®, CLU®',
+    firm: 'Sterling Wealth Partners',
+    experience: 13,
+    specialties: ['Life Insurance', 'Long Term Care Planning', 'Business Insurance'],
+    aum: '$295M',
+    clientCount: 87,
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'fa021',
+    name: 'Christopher Chen, ChFC®, LTCP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['Disability Insurance', 'Long Term Care Insurance', 'Insurance Portfolio Review'],
+    aum: '$325M',
+    clientCount: 89,
+    location: 'Indianapolis, IN'
   }
 ];
 
@@ -760,6 +792,104 @@ export const CLIENTS = [
     objectives: ['Growth Maximization', 'Performance Tracking', 'Learning Opportunities'],
     advisor: 'fa017',
     location: 'Indianapolis, IN'
+  },
+
+  // Insurance Planning-Focused Clients
+  {
+    id: 'cl044',
+    name: 'James Mitchell',
+    wealthSegment: 'HNW',
+    aum: '$2.8M',
+    age: 45,
+    occupation: 'Medical Doctor',
+    riskProfile: 'Conservative Moderate',
+    objectives: ['Income Protection', 'Estate Planning', 'Risk Management'],
+    advisor: 'fa019',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl045',
+    name: 'Linda Thompson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$750K',
+    age: 52,
+    occupation: 'Business Owner',
+    riskProfile: 'Moderate',
+    objectives: ['Business Succession', 'Key Person Insurance', 'Wealth Transfer'],
+    advisor: 'fa020',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl046',
+    name: 'Thomas Rodriguez',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$385K',
+    age: 38,
+    occupation: 'Engineering Manager',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Family Protection', 'Disability Coverage', 'College Funding'],
+    advisor: 'fa021',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl047',
+    name: 'Carol Williams',
+    wealthSegment: 'UHNW',
+    aum: '$12.5M',
+    age: 62,
+    occupation: 'Retired Executive',
+    riskProfile: 'Conservative',
+    objectives: ['Long Term Care Planning', 'Legacy Preservation', 'Healthcare Security'],
+    advisor: 'fa019',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl048',
+    name: 'Daniel Foster',
+    wealthSegment: 'HNW',
+    aum: '$1.9M',
+    age: 41,
+    occupation: 'Technology Executive',
+    riskProfile: 'Aggressive',
+    objectives: ['Term Life Conversion', 'Universal Life Strategy', 'Tax Efficiency'],
+    advisor: 'fa020',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl049',
+    name: 'Patricia Chen',
+    wealthSegment: 'AFFLUENT',
+    aum: '$625K',
+    age: 55,
+    occupation: 'Healthcare Administrator',
+    riskProfile: 'Conservative Moderate',
+    objectives: ['Long Term Care Insurance', 'Retirement Security', 'Healthcare Planning'],
+    advisor: 'fa021',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl050',
+    name: 'Michael Anderson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$295K',
+    age: 34,
+    occupation: 'Sales Manager',
+    riskProfile: 'Moderate',
+    objectives: ['Income Replacement', 'Mortgage Protection', 'Family Security'],
+    advisor: 'fa019',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl051',
+    name: 'Jennifer Davis',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$95K',
+    age: 29,
+    occupation: 'Marketing Professional',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Basic Life Insurance', 'Disability Protection', 'Career Development'],
+    advisor: 'fa020',
+    location: 'Milwaukee, WI'
   }
 ];
 
@@ -1021,4 +1151,55 @@ export const ACCOUNT_PERFORMANCE_BUSINESS_BENEFITS = [
   'Enhanced Client Communication: Through performance attribution analysis',
   'Timely Action Alerts: On fund rating changes and strategy overlaps',
   'Improved Client Retention: Through superior performance tracking and explanation'
+];
+
+// Insurance Planning Insight Category
+export const INSURANCE_PLANNING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Insurance Planning',
+  description: 'These Insights help Financial Advisor to suggest insurance products for the client',
+  displayLabel: 'These Insights help Financial Advisor to suggest insurance products for the client'
+};
+
+// Insurance Planning Insights
+export const INSURANCE_PLANNING_INSIGHTS = [
+  {
+    id: 'ip001',
+    name: 'Term Life',
+    purpose: 'Term Life',
+    category: 'Insurance Planning'
+  },
+  {
+    id: 'ip002',
+    name: 'Whole Life',
+    purpose: 'Whole Life',
+    category: 'Insurance Planning'
+  },
+  {
+    id: 'ip003',
+    name: 'Universal Life',
+    purpose: 'Universal Life',
+    category: 'Insurance Planning'
+  },
+  {
+    id: 'ip004',
+    name: 'Long Term Care',
+    purpose: 'Long Term Care',
+    category: 'Insurance Planning'
+  },
+  {
+    id: 'ip005',
+    name: 'Disability',
+    purpose: 'Disability',
+    category: 'Insurance Planning'
+  }
+];
+
+// Business Benefits for Insurance Planning
+export const INSURANCE_PLANNING_BUSINESS_BENEFITS = [
+  'Comprehensive Risk Assessment: Insurance needs analysis for client protection',
+  'Proactive Coverage Gap Identification: Optimization opportunities for existing policies',
+  'Enhanced Financial Security: Appropriate insurance recommendations for client protection',
+  'Revenue Diversification: Insurance product sales and commission opportunities',
+  'Improved Client Retention: Holistic financial planning approach with risk management'
 ];
