@@ -189,6 +189,38 @@ export const FINANCIAL_ADVISORS = [
     aum: '$385M',
     clientCount: 62,
     location: 'Detroit, MI'
+  },
+  
+  // Account Performance Specialists
+  {
+    id: 'fa016',
+    name: 'Alexander Mitchell, CFA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['Performance Analysis', 'Benchmark Comparison', 'Risk Attribution'],
+    aum: '$425M',
+    clientCount: 85,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa017',
+    name: 'Victoria Chen, CFP®, CAIA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 11,
+    specialties: ['Portfolio Analytics', 'Fund Research', 'Performance Reporting'],
+    aum: '$315M',
+    clientCount: 94,
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'fa018',
+    name: 'Marcus Thompson, CPA/PFS, CFA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Investment Analysis', 'Concentration Management', 'Performance Optimization'],
+    aum: '$465M',
+    clientCount: 78,
+    location: 'Milwaukee, WI'
   }
 ];
 
@@ -630,6 +662,104 @@ export const CLIENTS = [
     objectives: ['Digital Innovation', 'Real-Time Updates', 'Mobile-First Experience'],
     advisor: 'fa013',
     location: 'Chicago, IL'
+  },
+
+  // Account Performance-Focused Clients
+  {
+    id: 'cl036',
+    name: 'Jonathan Mitchell',
+    wealthSegment: 'UHNW',
+    aum: '$15.2M',
+    age: 58,
+    occupation: 'Investment Executive',
+    riskProfile: 'Moderate',
+    objectives: ['Performance Tracking', 'Benchmark Comparison', 'Risk Management'],
+    advisor: 'fa016',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl037',
+    name: 'Patricia Chen',
+    wealthSegment: 'HNW',
+    aum: '$3.8M',
+    age: 52,
+    occupation: 'Financial Consultant',
+    riskProfile: 'Conservative',
+    objectives: ['Consistent Performance', 'Diversification', 'Risk Control'],
+    advisor: 'fa017',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl038',
+    name: 'Marcus Rodriguez',
+    wealthSegment: 'HNW',
+    aum: '$2.4M',
+    age: 45,
+    occupation: 'Portfolio Manager',
+    riskProfile: 'Aggressive',
+    objectives: ['Alpha Generation', 'Active Management', 'Performance Attribution'],
+    advisor: 'fa018',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl039',
+    name: 'Elizabeth Thompson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$785K',
+    age: 41,
+    occupation: 'Corporate Finance Director',
+    riskProfile: 'Moderate',
+    objectives: ['Performance Monitoring', 'Cost Efficiency', 'Strategic Rebalancing'],
+    advisor: 'fa016',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl040',
+    name: 'David Foster',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$325K',
+    age: 38,
+    occupation: 'Investment Analyst',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Performance Optimization', 'Fund Selection', 'Benchmark Tracking'],
+    advisor: 'fa017',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl041',
+    name: 'Sarah Williams',
+    wealthSegment: 'AFFLUENT',
+    aum: '$925K',
+    age: 49,
+    occupation: 'Risk Manager',
+    riskProfile: 'Conservative Moderate',
+    objectives: ['Risk Assessment', 'Performance Analysis', 'Position Monitoring'],
+    advisor: 'fa018',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl042',
+    name: 'Robert Anderson',
+    wealthSegment: 'HNW',
+    aum: '$4.7M',
+    age: 56,
+    occupation: 'Wealth Management Executive',
+    riskProfile: 'Moderate',
+    objectives: ['Institutional Quality', 'Performance Attribution', 'Strategic Allocation'],
+    advisor: 'fa016',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl043',
+    name: 'Michelle Davis',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$85K',
+    age: 32,
+    occupation: 'Financial Advisor',
+    riskProfile: 'Aggressive',
+    objectives: ['Growth Maximization', 'Performance Tracking', 'Learning Opportunities'],
+    advisor: 'fa017',
+    location: 'Indianapolis, IN'
   }
 ];
 
@@ -816,4 +946,79 @@ export const CRM_BUSINESS_BENEFITS = [
   'Efficiency Gains: Reduction in follow-up attempts and time-to-resolution improvements',
   'Satisfaction Scores: Higher client satisfaction and increased referrals from engaged clients',
   'Better Retention Rates: Enhanced client retention through personalized communication strategies'
+];
+
+// Account Performance Insight Category
+export const ACCOUNT_PERFORMANCE_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Account Performance',
+  description: 'These Insights help Financial Advisor to view and act on key Account performance changes vs their target benchmark and client specific risk and goals. These Insights also help with Concentrated positions, small fund positions, unusual inflows and outflows, Morningstar upgrades or downgrades, notable fund performance, SMA Strategies, Overlapping strategies, Notable changes on guidance from Investment council.',
+  displayLabel: 'These Insights help Financial Advisor to view and act on key Account performance changes'
+};
+
+// Account Performance Insights
+export const ACCOUNT_PERFORMANCE_INSIGHTS = [
+  {
+    id: 'ap001',
+    name: 'Performance vs target benchmarks',
+    purpose: 'Performance vs their target benchmarks',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap002',
+    name: 'Concentrated Positions',
+    purpose: 'Concentrated Positions',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap003',
+    name: 'Performance Attribution Analysis',
+    purpose: 'What is working or hurting performance in the opposite direction',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap004',
+    name: 'Small Fund Positions',
+    purpose: 'Small fund positions',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap005',
+    name: 'Morningstar Upgrade/Downgrades',
+    purpose: 'Morningstar Upgrade/Downgrades',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap006',
+    name: 'Overlapping and/or Stale Strategies',
+    purpose: 'Overlapping and/or Stale Strategies',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap007',
+    name: 'Unusual Inflow/Outflows',
+    purpose: 'Unusual Inflow/Outflows',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap008',
+    name: 'Notable Fund Performance',
+    purpose: 'Notable Fund Performance',
+    category: 'Account Performance'
+  },
+  {
+    id: 'ap009',
+    name: 'Chief Investment Office Guidance Changes',
+    purpose: 'Notable changes on guidance from Chief Investment Office',
+    category: 'Account Performance'
+  }
+];
+
+// Business Benefits for Account Performance
+export const ACCOUNT_PERFORMANCE_BUSINESS_BENEFITS = [
+  'Real-time Performance Monitoring: Against benchmarks and client goals',
+  'Proactive Risk Identification: Concentration risks and portfolio optimization opportunities',
+  'Enhanced Client Communication: Through performance attribution analysis',
+  'Timely Action Alerts: On fund rating changes and strategy overlaps',
+  'Improved Client Retention: Through superior performance tracking and explanation'
 ];
