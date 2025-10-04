@@ -234,61 +234,81 @@ export const INSIGHT_EXAMPLES = [
     priority: 'Medium'
   },
 
-  // ALTERNATIVE INVESTMENTS INSIGHTS (5 examples)
+  // ALTERNATIVE INVESTMENTS INSIGHTS (5 examples) - Enhanced with EDJ Propensity Model
   {
     id: 'alt_001',
     insight: 'Alternative Investments',
     title: 'Private Equity Allocation',
-    insightText: 'Client Thomas Garcia with $2,850,000 net worth qualifies for private equity allocation. Recommended allocation: 12% of portfolio. Investment minimums: $250,000. Expected returns: 18% with 7 year lockup.',
+    insightText: 'EDJ Alternative Investments Propensity Model Score: 91.7/100 (Confidence: 89%). Client Thomas Garcia with $2,850,000 net worth qualifies for private equity allocation. Recommended allocation: 12% of portfolio. Investment minimums: $250,000. Expected returns: 18% with 7 year lockup.',
     opportunities: 'Access institutional-quality private equity investments for enhanced returns and diversification, benefit from illiquidity premium, participate in direct company ownership.',
     client: getClient('cl001'),
     advisor: getAdvisor('fa001'),
     category: 'Investment Products',
-    priority: 'High'
+    priority: 'High',
+    source: 'EDJ Alternative Investments Propensity Model',
+    logic: 'Model based',
+    modelRuleName: 'PE_HighNetWorth_Propensity_v2.3',
+    reasoning: 'Advanced propensity modeling indicates exceptionally high suitability based on accredited investor status ($2.85M net worth exceeding $1M threshold), sophisticated investor profile, and diversified portfolio structure. Regulatory compliance verified: meets SEC Regulation D private placement requirements and FINRA Rule 2111 suitability standards. Risk tolerance assessment confirms alignment with illiquid investment horizon (7+ years) and enhanced due diligence documentation completed per institutional guidelines.'
   },
   {
     id: 'alt_002',
     insight: 'Alternative Investments',
     title: 'Infrastructure Investment Platform',
-    insightText: 'Client is suitable for infrastructure investments given long investment horizon. Infrastructure allocation target: 8%. Asset types: toll roads, utilities, airports. Expected yield: 7.5% with inflation protection features.',
+    insightText: 'EDJ Alternative Investments Propensity Model Score: 84.3/100 (Confidence: 82%). Client is suitable for infrastructure investments given long investment horizon. Infrastructure allocation target: 8%. Asset types: toll roads, utilities, airports. Expected yield: 7.5% with inflation protection features.',
     opportunities: 'Add infrastructure investments for stable income generation and inflation protection, diversify into real assets, access long-term investment themes.',
     client: getClient('cl002'),
     advisor: getAdvisor('fa003'),
     category: 'Investment Products',
-    priority: 'Medium'
+    priority: 'Medium',
+    source: 'EDJ Alternative Investments Propensity Model',
+    logic: 'Model based',
+    modelRuleName: 'Infrastructure_LongHorizon_Score_v1.8',
+    reasoning: 'Predictive analysis indicates strong infrastructure investment compatibility based on 15+ year investment horizon, inflation hedging objectives, and income-focused strategy. Regulatory considerations satisfied: qualified client status under Investment Advisers Act Section 3(c)(1) exemption verified. Infrastructure investments comply with ERISA prudent investor standards and meet fiduciary duty requirements for retirement account allocation through qualified opportunity zone structures.'
   },
   {
     id: 'alt_003',
     insight: 'Alternative Investments',
     title: 'Private Debt Allocation Strategy',
-    insightText: 'Private Debt Allocation Strategy. Client\'s moderate risk profile shows strong fit for private debt investments. Target allocation: 10%. Expected returns: 12% vs public bonds 5.25%. Credit focus: senior secured.',
+    insightText: 'EDJ Alternative Investments Propensity Model Score: 78.9/100 (Confidence: 85%). Private Debt Allocation Strategy. Client\'s moderate risk profile shows strong fit for private debt investments. Target allocation: 10%. Expected returns: 12% vs public bonds 5.25%. Credit focus: senior secured.',
     opportunities: 'Enhance fixed income returns through private debt allocation, access higher yields than public markets, benefit from direct lending relationships.',
     client: getClient('cl003'),
     advisor: getAdvisor('fa002'),
     category: 'Investment Products',
-    priority: 'Medium'
+    priority: 'Medium',
+    source: 'EDJ Alternative Investments Propensity Model',
+    logic: 'Model based',
+    modelRuleName: 'PrivateCredit_ModerateRisk_Model_v2.1',
+    reasoning: 'Quantitative modeling demonstrates optimal risk-return profile alignment for private debt strategies with senior secured positioning. Accredited investor verification completed ($750K+ annual income), meeting SEC Rule 501 requirements. Investment structure complies with Regulation D 506(b) private placement rules and satisfies FINRA concentrated position guidelines. Enhanced due diligence protocols ensure compliance with DOL fiduciary standards for retirement accounts.'
   },
   {
     id: 'alt_004',
     insight: 'Alternative Investments',
     title: 'Hedge Fund Strategy Access',
-    insightText: 'Hedge Fund Strategy Access - Client qualifies for hedge fund investments with $750,000 minimum. Strategy focus: long/short equity. Historical performance: 12% with 1.4 Sharpe ratio. Correlation to market: 0.6.',
+    insightText: 'EDJ Alternative Investments Propensity Model Score: 73.2/100 (Confidence: 77%). Hedge Fund Strategy Access - Client qualifies for hedge fund investments with $750,000 minimum. Strategy focus: long/short equity. Historical performance: 12% with 1.4 Sharpe ratio. Correlation to market: 0.6.',
     opportunities: 'Access sophisticated hedge fund strategies for absolute returns and downside protection, reduce portfolio correlation to traditional markets.',
     client: getClient('cl004'),
     advisor: getAdvisor('fa001'),
     category: 'Investment Products',
-    priority: 'Medium'
+    priority: 'Medium',
+    source: 'EDJ Alternative Investments Propensity Model',
+    logic: 'Model based',
+    modelRuleName: 'HedgeFund_QualifiedClient_Algorithm_v1.5',
+    reasoning: 'Machine learning propensity analysis identifies qualified client suitability for hedge fund strategies based on sophisticated investor classification and risk capacity assessment. Regulatory compliance framework satisfied: meets Investment Advisers Act "qualified client" standard ($2.2M+ net worth or $1.1M+ AUM), completed accredited investor verification per Regulation D requirements. Strategy selection aligned with FINRA Rule 2111 suitability obligations and enhanced supervision requirements for alternative investments.'
   },
   {
     id: 'alt_005',
     insight: 'Alternative Investments',
     title: 'Real Estate Investment Trust Strategy',
-    insightText: 'Portfolio lacks real estate exposure. Current REIT allocation: 2%. Recommended: 8-12%. Focus areas: Commercial real estate, data centers, logistics. Expected income yield: 6.2%.',
+    insightText: 'EDJ Alternative Investments Propensity Model Score: 69.4/100 (Confidence: 71%). Portfolio lacks real estate exposure. Current REIT allocation: 2%. Recommended: 8-12%. Focus areas: Commercial real estate, data centers, logistics. Expected income yield: 6.2%.',
     opportunities: 'Add diversified REIT exposure for inflation hedging and income generation, access professional real estate management, enhance portfolio diversification.',
     client: getClient('cl005'),
     advisor: getAdvisor('fa004'),
     category: 'Investment Products',
-    priority: 'Low'
+    priority: 'Low',
+    source: 'EDJ Alternative Investments Propensity Model',
+    logic: 'Model based',
+    modelRuleName: 'REIT_Diversification_Optimizer_v2.0',
+    reasoning: 'Predictive diversification modeling identifies moderate propensity for REIT allocation to enhance portfolio real estate exposure and income generation. Public REIT investments maintain liquidity while providing alternative asset class benefits. Regulatory compliance streamlined through publicly-traded securities maintaining full SEC registration and reporting requirements. Investment recommendation aligns with modern portfolio theory principles and satisfies fiduciary duty standards under ERISA guidelines for qualified retirement accounts.'
   },
 
   // SPECIALIZED STRATEGIES INSIGHTS (5 examples)
