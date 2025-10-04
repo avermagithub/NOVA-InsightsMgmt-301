@@ -25,16 +25,15 @@ const Header = ({ selectedRole, onRoleChange, userRoles }) => {
     <header className="app-header">
       <div className="header-content">
         <div className="app-title">
-          <div className="logo-prominent">
+          <div className="logo-no-whitespace">
             <img 
               src="https://1000logos.net/wp-content/uploads/2021/05/Edward-Jones-logo.png"
               alt="Edward Jones - Making Sense of Investing"
-              className="edward-jones-logo-prominent"
+              className="edward-jones-logo-no-whitespace"
             />
           </div>
           <div className="title-content">
             <span className="main-title">AI Powered Insights and Opportunity Management</span>
-            <span className="version-badge">v1.0</span>
           </div>
         </div>
         
