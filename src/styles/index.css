@@ -6,18 +6,19 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-family: 'Gotham', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.5;
   color: #1f2937;
   background-color: #f8fafc;
   overflow-x: hidden;
 }
 
-/* Edward Jones Brand Colors */
+/* Edward Jones Official Brand Colors */
 :root {
-  --ej-primary: #003366;
+  --ej-primary: #2c2c2c; /* Dark Gray (PMS 2336C equivalent) */
+  --ej-gold: #FAD141; /* Official Edward Jones Gold (PMS 116C) */
   --ej-secondary: #0066cc;
-  --ej-accent: #ff6b35;
+  --ej-accent: #FAD141; /* Using official gold as accent */
   --ej-success: #10b981;
   --ej-warning: #f59e0b;
   --ej-error: #ef4444;
@@ -71,7 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
 }
 
 .app-title .logo img,
@@ -188,9 +189,9 @@ body {
 }
 
 .nav-link.active {
-  background: rgba(0, 51, 102, 0.05);
+  background: rgba(250, 209, 65, 0.1);
   color: var(--ej-primary);
-  border-right-color: var(--ej-primary);
+  border-right-color: var(--ej-gold);
   font-weight: 600;
 }
 
