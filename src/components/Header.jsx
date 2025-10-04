@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown, Building2 } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const Header = ({ selectedRole, onRoleChange, userRoles }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -26,9 +26,34 @@ const Header = ({ selectedRole, onRoleChange, userRoles }) => {
       <div className="header-content">
         <div className="app-title">
           <div className="logo">
-            <Building2 size={18} />
+            <svg
+              width="140"
+              height="32"
+              viewBox="0 0 140 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <text
+                x="2"
+                y="22"
+                fontFamily="'Arial', sans-serif"
+                fontSize="16"
+                fontWeight="bold"
+                fill="white"
+              >
+                Edward Jones
+              </text>
+              <circle
+                cx="125"
+                cy="16"
+                r="6"
+                fill="#ff6b35"
+                stroke="white"
+                strokeWidth="1"
+              />
+            </svg>
           </div>
-          <span>Edward Jones - Insights and Opportunities Management v1</span>
+          <span>Insights and Opportunities Management v1</span>
         </div>
         
         <div className="user-dropdown" ref={dropdownRef}>
