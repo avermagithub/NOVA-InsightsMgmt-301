@@ -12,15 +12,16 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 
 ## 🚀 **Live Application**
 
-**🌐 Live Application:** https://4002-int96ssk733oij52uju5q-6532622b.e2b.dev
+**🌐 Live Application:** https://4003-int96ssk733oij52uju5q-6532622b.e2b.dev
 
-> **📱 Mobile Responsive** | **🔒 Enterprise Ready** | **⚡ Real-Time Updates** | **🤖 AI-Powered Insights** | **🏛️ Annuities Platform**
+> **📱 Mobile Responsive** | **🔒 Enterprise Ready** | **⚡ Real-Time Updates** | **🤖 AI-Powered Insights** | **🏛️ Annuities Platform** | **💰 RMD Compliance**
 
 ### 🚀 **Public Deployment Status:**
 - **✅ LIVE** - Fully functional web application
 - **✅ ENHANCED** - Step 2 comprehensive features implemented
 - **✅ AI PROPENSITY MODEL** - Step 3 EDJ Alternative Investments Propensity Model active
 - **✅ ANNUITIES PLATFORM** - Step 4 EDJ Annuities Propensity Model with 75 insights
+- **✅ RMD COMPLIANCE SUITE** - Step 5 Comprehensive RMD management with 25 insights
 - **✅ TESTED** - All functionality verified and working
 - **✅ RESPONSIVE** - Optimized for desktop, tablet, and mobile devices
 
@@ -96,6 +97,13 @@ Comprehensive insights across **6 investment product categories:**
 - **Deferred annuity strategies** (Growth planning, Scores: 79.6-87.1/100)
 - **Index annuities optimization** (Market participation, Scores: 76.4-85.2/100)
 - **QLAC evaluation and planning** (Longevity protection, Scores: 87.9-92.1/100)
+
+#### 💰 **RMD (Required Minimum Distribution)** (NEW!)
+- **RMD planning opportunities** - Pre-RMD age strategic planning
+- **Tax optimization alerts** - Bracket management and IRMAA coordination
+- **Late distribution warnings** - Critical penalty prevention (25% IRS penalty)
+- **Charitable distribution strategies** - QCD tax-efficient giving
+- **Multi-account coordination** - Cross-custodian RMD management
 
 #### ⚡ **Specialized Strategies**
 - ESG investment integration
@@ -229,6 +237,16 @@ Comprehensive insights across **6 investment product categories:**
 - 💡 **Tax Strategy Integration** - Distribution planning and 1035 exchange optimization
 - 🏛️ **Specialized Products** - QLAC, immediate, deferred, variable, fixed, and index annuities
 
+#### **💰 RMD Compliance Management Suite** (NEW!)
+- 🎯 **Comprehensive RMD Platform** - 25 detailed insights across 5 critical RMD areas
+- ⏰ **Time-Sensitive Alerts** - Critical deadline warnings with penalty calculations
+- 💡 **Tax Optimization Strategies** - Bracket management, IRMAA impact, state tax coordination
+- 📊 **Penalty Prevention** - Real-time compliance monitoring with 25% penalty alerts
+- 🎁 **Charitable Distribution** - QCD strategies and tax-efficient giving opportunities
+- 🏦 **Multi-Account Coordination** - Cross-custodian and multi-account type management
+- 📈 **Planning Support** - Pre-RMD strategic planning and Roth conversion strategies
+- 🛡️ **Regulatory Compliance** - IRS RMD rules, deadline tracking, and calculation accuracy
+
 #### **Enterprise Data**
 - 👥 **11 Diverse Clients** - Across all wealth segments (UHNW to Emerging)
 - 💼 **5 Financial Advisors** - Sterling Wealth Partners team
@@ -236,14 +254,15 @@ Comprehensive insights across **6 investment product categories:**
 - 🎯 **Multiple Priorities** - Critical alerts to low-priority recommendations
 
 ### **🎮 Try It Live:**
-1. **Visit:** https://4002-int96ssk733oij52uju5q-6532622b.e2b.dev
+1. **Visit:** https://4003-int96ssk733oij52uju5q-6532622b.e2b.dev
 2. **Click "Enhanced Insights"** → See immediate overview with search/filters
 3. **Filter by "Investment Products"** → View comprehensive product insights
 4. **Explore "Alternative Investments"** → EDJ Propensity Model with scores
-5. **NEW: Explore "Annuities"** → 75 EDJ Annuities insights with advanced scoring
-6. **Click any insight** → See detailed propensity scores and model reasoning
-7. **Test CRM Integration** → Click Salesforce, Redtail, Wealthbox, JUMP
-8. **View Regulatory Details** → Check compliance and confidence levels
+5. **Explore "Annuities"** → 75 EDJ Annuities insights with advanced scoring
+6. **NEW: Explore "RMD"** → 25 comprehensive RMD compliance and optimization insights
+7. **Click any insight** → See detailed scenarios, tax calculations, and penalty alerts
+8. **Test CRM Integration** → Click Salesforce, Redtail, Wealthbox, JUMP
+9. **View Compliance Details** → Check regulatory requirements and deadline tracking
 
 ## 🚀 **Getting Started**
 
@@ -311,10 +330,10 @@ Both servers provide:
 
 ## 📊 **Application Analytics**
 
-- **📋 Total Insights:** 105+ detailed examples (30 Investment Products + 75 Annuities)
-- **🎯 Insight Categories:** 7 investment product types (6 + Annuities)
-- **👥 Client Profiles:** 16 across all wealth segments (11 original + 5 annuities-focused)  
-- **💼 Advisor Network:** 7 professional profiles (5 original + 2 annuities specialists)
+- **📋 Total Insights:** 130+ detailed examples (30 Investment Products + 75 Annuities + 25 RMD)
+- **🎯 Insight Categories:** 8 investment product types (6 original + Annuities + RMD)
+- **👥 Client Profiles:** 21 across all wealth segments (11 original + 5 annuities + 5 RMD-focused)  
+- **💼 Advisor Network:** 9 professional profiles (5 original + 2 annuities + 2 RMD specialists)
 - **📈 Implementation Rate:** 87%
 - **⭐ Advisor Satisfaction:** 94%
 
@@ -383,11 +402,12 @@ MIT License - see LICENSE file for details
 - **🔄 Version Control** - Complete development history and commits
 
 ### **🚀 Live Application:**
-- **🌍 Public URL:** https://4002-int96ssk733oij52uju5q-6532622b.e2b.dev
+- **🌍 Public URL:** https://4003-int96ssk733oij52uju5q-6532622b.e2b.dev
 - **📱 Device Support** - Desktop, tablet, and mobile responsive
 - **⚡ Performance** - Optimized build with fast loading times
 - **🔒 Enterprise Grade** - Professional UI/UX suitable for financial services
 - **🤖 AI-Powered** - EDJ Alternative Investments & Annuities Propensity Models integrated
+- **💰 RMD Compliant** - Comprehensive Required Minimum Distribution management suite
 
 ### **💻 Local Development:**
 ```bash
@@ -418,9 +438,10 @@ For support and questions:
 
 ## 🏆 **Public Project Status**
 
-**✅ COMPLETE** - All Steps 1, 2, 3, and 4 fully implemented  
+**✅ COMPLETE** - All Steps 1, 2, 3, 4, and 5 fully implemented  
 **✅ AI-POWERED** - EDJ Alternative Investments & Annuities Propensity Models active
-**✅ COMPREHENSIVE** - 105+ insights across 7 investment product categories
+**✅ RMD COMPLIANCE** - Comprehensive Required Minimum Distribution management
+**✅ COMPREHENSIVE** - 130+ insights across 8 investment product categories
 **✅ LIVE** - Publicly accessible web application  
 **✅ OPEN SOURCE** - Full source code available on GitHub  
 **✅ DOCUMENTED** - Comprehensive documentation and guides  
