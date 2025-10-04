@@ -12,9 +12,9 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 
 ## 🚀 **Live Application**
 
-**🌐 Live Application:** https://4004-int96ssk733oij52uju5q-6532622b.e2b.dev
+**🌐 Live Application:** https://3003-int96ssk733oij52uju5q-6532622b.e2b.dev
 
-> **📱 Mobile Responsive** | **🔒 Enterprise Ready** | **⚡ Real-Time Updates** | **🤖 AI-Powered Insights** | **🏛️ Annuities Platform** | **💰 RMD Compliance** | **🎨 Official Branding**
+> **📱 Mobile Responsive** | **🔒 Enterprise Ready** | **⚡ Real-Time Updates** | **🤖 AI-Powered Insights** | **🏛️ Annuities Platform** | **💰 RMD Compliance** | **🎨 Official Edward Jones Branding**
 
 ### 🚀 **Public Deployment Status:**
 - **✅ LIVE** - Fully functional web application
@@ -22,8 +22,30 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 - **✅ AI PROPENSITY MODEL** - Step 3 EDJ Alternative Investments Propensity Model active
 - **✅ ANNUITIES PLATFORM** - Step 4 EDJ Annuities Propensity Model with 75 insights
 - **✅ RMD COMPLIANCE SUITE** - Step 5 Comprehensive RMD management with 25 insights
+- **✅ OFFICIAL BRANDING** - Compliant with Edward Jones brand guidelines
 - **✅ TESTED** - All functionality verified and working
 - **✅ RESPONSIVE** - Optimized for desktop, tablet, and mobile devices
+
+### 🎨 **Official Edward Jones Branding Compliance**
+
+This application adheres to **Edward Jones official branding guidelines** as specified in their graphics vendor instructions:
+
+**🎨 Brand Colors:**
+- **Primary Gold:** `#FAD141` (PMS 116C) - Official Edward Jones signature color
+- **Dark Gray:** `#2c2c2c` (PMS 2336C equivalent) - Official text and logo color  
+- **Black:** `#000000` - Alternative logo color for signage and print
+
+**🔤 Typography:**
+- **Primary Font:** Gotham (official Edward Jones brand font)
+- **Fallback Font:** Arial (approved substitute for local applications)
+- **Logo Typography:** Custom Edward Jones logo font (never recreated)
+
+**📐 Brand Guidelines Compliance:**
+- ✅ Logo never placed in boxes (per guidelines)
+- ✅ Official color usage (PMS 116C, PMS 2336C)
+- ✅ Proper font hierarchy (Gotham > Arial fallback) 
+- ✅ Brand-compliant visual elements and spacing
+- ✅ Professional financial services styling standards
 
 > **Note:** The application is served using a custom Node.js server for optimal performance and React Router compatibility.
 
