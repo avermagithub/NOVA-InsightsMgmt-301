@@ -5,12 +5,13 @@ import FrontOfficeInsights from '../components/FrontOfficeInsights';
 
 const EnhancedInsightsPage = ({ selectedRole }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedGrouping, setSelectedGrouping] = useState('front_office');
+  const [selectedGrouping, setSelectedGrouping] = useState('');
   const [selectedPriority, setSelectedPriority] = useState('');
   const [selectedStatus, setSelectedStatus] = useState('');
   const [showFrontOfficeInsights, setShowFrontOfficeInsights] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [showAllInsights, setShowAllInsights] = useState(true);
+  const [showAllInsights, setShowAllInsights] = useState(false);
+  const [showInsightsByCategory, setShowInsightsByCategory] = useState(true);
 
   const getIconComponent = (iconName) => {
     const icons = {
@@ -33,12 +34,51 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
     }
   };
 
+  // Filter insights based on search term and priority
+  const getFilteredInsights = () => {
+    return INSIGHT_EXAMPLES.filter(insight => {
+      const matchesSearch = searchTerm === '' || 
+        insight.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        insight.insightText?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        insight.client?.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        insight.advisor?.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        insight.category?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        insight.insight?.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      const matchesPriority = selectedPriority === '' || insight.priority === selectedPriority;
+      const matchesStatus = selectedStatus === '' || insight.status === selectedStatus;
+      
+      return matchesSearch && matchesPriority && matchesStatus;
+    });
+  };
+
+  // Group insights by category
+  const getInsightsByCategory = () => {
+    const filteredInsights = getFilteredInsights();
+    const grouped = {};
+    
+    filteredInsights.forEach(insight => {
+      const category = insight.category || 'Uncategorized';
+      if (!grouped[category]) {
+        grouped[category] = [];
+      }
+      grouped[category].push(insight);
+    });
+    
+    return grouped;
+  };
+
   return (
     <div className="fade-in">
       <div className="page-header">
-        <h1 className="page-title">Insights Dashboard</h1>
+        <h1 className="page-title">
+          {showInsightsByCategory ? 'All Insights by Category' : 'Insights Dashboard'}
+        </h1>
         <p className="page-subtitle">
-          Advanced insights and opportunities across all business functions
+          {showInsightsByCategory 
+            ? `Comprehensive view of all ${INSIGHT_EXAMPLES.length} insights organized by category`
+            : 'Advanced insights and opportunities across all business functions'
+          }
         </p>
       </div>
 
@@ -104,6 +144,11 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
                 onChange={(e) => {
                   setSelectedGrouping(e.target.value);
                   setShowAllInsights(false);
+                  if (e.target.value === '') {
+                    setShowInsightsByCategory(true);
+                  } else {
+                    setShowInsightsByCategory(false);
+                  }
                 }}
                 style={{
                   width: '100%',
@@ -115,7 +160,7 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
                   outline: 'none'
                 }}
               >
-                <option value="">All Category Groups</option>
+                <option value="">All Categories (Home View)</option>
                 {INSIGHT_CATEGORY_GROUPINGS.map(group => (
                   <option key={group.id} value={group.id}>{group.name}</option>
                 ))}
@@ -432,8 +477,200 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
         </div>
       )}
 
+      {/* All Insights Grouped by Category - Default Home View */}
+      {showInsightsByCategory && !showFrontOfficeInsights && (
+        <div>
+          {Object.entries(getInsightsByCategory()).map(([categoryName, insights]) => (
+            <div key={categoryName} className="card" style={{ marginBottom: '2rem' }}>
+              <div className="card-header">
+                <h3 className="card-title" style={{ 
+                  color: 'var(--ej-primary)', 
+                  fontSize: '1.3rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem'
+                }}>
+                  {(() => {
+                    const categoryConfig = Object.values(INSIGHT_CATEGORIES_BY_GROUP)
+                      .flat()
+                      .find(cat => cat.name === categoryName || cat.id === categoryName.toLowerCase().replace(/\s+/g, '_'));
+                    
+                    if (categoryConfig) {
+                      const IconComponent = getIconComponent(categoryConfig.icon);
+                      return <IconComponent size={20} />;
+                    }
+                    return null;
+                  })()}
+                  {categoryName} ({insights.length} insights)
+                </h3>
+                <p className="card-subtitle">
+                  {(() => {
+                    const categoryConfig = Object.values(INSIGHT_CATEGORIES_BY_GROUP)
+                      .flat()
+                      .find(cat => cat.name === categoryName || cat.id === categoryName.toLowerCase().replace(/\s+/g, '_'));
+                    return categoryConfig?.description || `${categoryName} insights and recommendations`;
+                  })()}
+                </p>
+              </div>
+              <div className="card-content">
+                <div style={{ 
+                  display: 'grid', 
+                  gap: '1rem',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))'
+                }}>
+                  {insights.slice(0, 6).map((insight, index) => (
+                    <div 
+                      key={insight.id} 
+                      style={{
+                        padding: '1.25rem',
+                        border: '1px solid var(--ej-gray-200)',
+                        borderRadius: '8px',
+                        background: 'var(--ej-white)',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        position: 'relative'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.borderColor = 'var(--ej-primary)';
+                        e.currentTarget.style.transform = 'translateY(-1px)';
+                        e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.borderColor = 'var(--ej-gray-200)';
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = 'none';
+                      }}
+                      onClick={() => {
+                        const category = Object.values(INSIGHT_CATEGORIES_BY_GROUP)
+                          .flat()
+                          .find(cat => cat.name === categoryName);
+                        if (category) {
+                          setSelectedCategory(category);
+                          setShowFrontOfficeInsights(true);
+                          setShowInsightsByCategory(false);
+                        }
+                      }}
+                    >
+                      <div style={{ marginBottom: '0.75rem' }}>
+                        <h4 style={{ 
+                          color: 'var(--ej-primary)', 
+                          margin: '0 0 0.5rem 0',
+                          fontSize: '1rem',
+                          fontWeight: '600',
+                          lineHeight: 1.3
+                        }}>
+                          {insight.title}
+                        </h4>
+                        <p style={{ 
+                          color: 'var(--ej-gray-600)', 
+                          margin: '0 0 0.5rem 0',
+                          fontSize: '0.85rem'
+                        }}>
+                          {insight.client?.name} • {insight.advisor?.name}
+                        </p>
+                      </div>
+                      
+                      <p style={{ 
+                        color: 'var(--ej-gray-700)', 
+                        margin: '0 0 1rem 0',
+                        fontSize: '0.9rem',
+                        lineHeight: 1.4,
+                        overflow: 'hidden',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 3,
+                        WebkitBoxOrient: 'vertical'
+                      }}>
+                        {insight.insightText}
+                      </p>
+                      
+                      <div style={{ 
+                        display: 'flex', 
+                        justifyContent: 'space-between', 
+                        alignItems: 'center',
+                        marginTop: 'auto'
+                      }}>
+                        <span style={{
+                          padding: '0.25rem 0.75rem',
+                          backgroundColor: insight.priority === 'Critical' ? 'var(--ej-error)' :
+                                         insight.priority === 'High' ? 'var(--ej-warning)' :
+                                         insight.priority === 'Medium' ? 'var(--ej-secondary)' : 'var(--ej-success)',
+                          color: 'white',
+                          borderRadius: '12px',
+                          fontSize: '0.75rem',
+                          fontWeight: '500'
+                        }}>
+                          {insight.priority}
+                        </span>
+                        <span style={{
+                          color: 'var(--ej-primary)',
+                          fontSize: '0.8rem',
+                          fontWeight: '500'
+                        }}>
+                          View Details →
+                        </span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {insights.length > 6 && (
+                  <div style={{ 
+                    textAlign: 'center', 
+                    marginTop: '1.5rem',
+                    padding: '1rem',
+                    borderTop: '1px solid var(--ej-gray-200)'
+                  }}>
+                    <button
+                      onClick={() => {
+                        const category = Object.values(INSIGHT_CATEGORIES_BY_GROUP)
+                          .flat()
+                          .find(cat => cat.name === categoryName);
+                        if (category) {
+                          setSelectedCategory(category);
+                          setShowFrontOfficeInsights(true);
+                          setShowInsightsByCategory(false);
+                        }
+                      }}
+                      style={{
+                        padding: '0.75rem 1.5rem',
+                        background: 'var(--ej-accent)',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontSize: '0.9rem',
+                        fontWeight: '500',
+                        transition: 'background 0.2s'
+                      }}
+                      onMouseEnter={(e) => e.target.style.background = 'var(--ej-primary)'}
+                      onMouseLeave={(e) => e.target.style.background = 'var(--ej-accent)'}
+                    >
+                      View All {insights.length} {categoryName} Insights
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+          
+          {Object.keys(getInsightsByCategory()).length === 0 && (
+            <div className="card">
+              <div className="card-content" style={{ textAlign: 'center', padding: '3rem' }}>
+                <Filter size={48} style={{ color: 'var(--ej-gray-400)', marginBottom: '1rem' }} />
+                <h3 style={{ color: 'var(--ej-gray-600)', marginBottom: '0.5rem' }}>
+                  No Insights Found
+                </h3>
+                <p style={{ color: 'var(--ej-gray-500)' }}>
+                  Try adjusting your search criteria or filters
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* Default View when no grouping selected */}
-      {!selectedGrouping && (
+      {!selectedGrouping && !showInsightsByCategory && (
         <div className="card">
           <div className="card-content" style={{ textAlign: 'center', padding: '3rem' }}>
             <Filter size={48} style={{ color: 'var(--ej-gray-400)', marginBottom: '1rem' }} />
@@ -451,7 +688,10 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
       {showFrontOfficeInsights && selectedCategory && (
         <FrontOfficeInsights
           category={selectedCategory}
-          onClose={() => setShowFrontOfficeInsights(false)}
+          onClose={() => {
+            setShowFrontOfficeInsights(false);
+            setShowInsightsByCategory(true);
+          }}
         />
       )}
     </div>
