@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { Search, Filter, TrendingUp, Users, PieChart, Shield, FileCheck } from 'lucide-react';
-import { INSIGHT_CATEGORY_GROUPINGS, INSIGHT_CATEGORIES_BY_GROUP } from '../data/insightExamples';
+import { INSIGHT_CATEGORY_GROUPINGS, INSIGHT_CATEGORIES_BY_GROUP, INSIGHT_EXAMPLES } from '../data/insightExamples';
 import FrontOfficeInsights from '../components/FrontOfficeInsights';
 
 const EnhancedInsightsPage = ({ selectedRole }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedGrouping, setSelectedGrouping] = useState('');
+  const [selectedGrouping, setSelectedGrouping] = useState('front_office');
   const [selectedPriority, setSelectedPriority] = useState('');
   const [selectedStatus, setSelectedStatus] = useState('');
   const [showFrontOfficeInsights, setShowFrontOfficeInsights] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [showAllInsights, setShowAllInsights] = useState(true);
 
   const getIconComponent = (iconName) => {
     const icons = {
@@ -97,7 +98,10 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
               </label>
               <select
                 value={selectedGrouping}
-                onChange={(e) => setSelectedGrouping(e.target.value)}
+                onChange={(e) => {
+                  setSelectedGrouping(e.target.value);
+                  setShowAllInsights(false);
+                }}
                 style={{
                   width: '100%',
                   padding: '0.75rem',
@@ -180,7 +184,7 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
       </div>
 
       {/* Category Groups Display */}
-      {selectedGrouping && (
+      {selectedGrouping && !showAllInsights && (
         <div className="card">
           <div className="card-header">
             <h3 className="card-title">
@@ -261,6 +265,165 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* All Insights View */}
+      {showAllInsights && selectedGrouping === 'front_office' && (
+        <div className="card" style={{ marginBottom: '2rem' }}>
+          <div className="card-header">
+            <h3 className="card-title">All Investment Product Insights</h3>
+            <p className="card-subtitle">
+              Complete overview of client investment opportunities and recommendations
+            </p>
+          </div>
+          <div className="card-content">
+            <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
+              <button
+                onClick={() => setShowAllInsights(false)}
+                style={{
+                  padding: '0.5rem 1rem',
+                  background: 'var(--ej-primary)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
+                  fontSize: '0.9rem',
+                  fontWeight: '500'
+                }}
+              >
+                Browse by Category
+              </button>
+              <button
+                onClick={() => {
+                  setSelectedCategory(INSIGHT_CATEGORIES_BY_GROUP['front_office'][0]);
+                  setShowFrontOfficeInsights(true);
+                }}
+                style={{
+                  padding: '0.5rem 1rem',
+                  background: 'var(--ej-secondary)',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
+                  fontSize: '0.9rem',
+                  fontWeight: '500'
+                }}
+              >
+                View Detailed Insights
+              </button>
+            </div>
+            
+            {/* Import and use the original InsightCategory component */}
+            <div style={{ 
+              background: 'var(--ej-gray-50)', 
+              padding: '1.5rem', 
+              borderRadius: '8px',
+              border: '1px solid var(--ej-gray-200)'
+            }}>
+              <div style={{ marginBottom: '1rem' }}>
+                <h4 style={{ color: 'var(--ej-primary)', marginBottom: '0.5rem' }}>
+                  Quick Access: Investment Products Overview
+                </h4>
+                <p style={{ color: 'var(--ej-gray-600)', fontSize: '0.9rem' }}>
+                  Here's a preview of our investment insights. For full functionality including CRM integration, 
+                  use "View Detailed Insights" above.
+                </p>
+              </div>
+              
+              {/* Show preview of insights */}
+              <div style={{ 
+                maxHeight: '400px', 
+                overflow: 'auto',
+                background: 'white',
+                padding: '1rem',
+                borderRadius: '6px'
+              }}>
+                {INSIGHT_EXAMPLES.slice(0, 5).map((insight, index) => (
+                  <div key={insight.id} style={{
+                    padding: '1rem',
+                    borderBottom: index < 4 ? '1px solid var(--ej-gray-200)' : 'none',
+                    cursor: 'pointer'
+                  }}
+                  onClick={() => {
+                    setSelectedCategory(INSIGHT_CATEGORIES_BY_GROUP['front_office'][0]);
+                    setShowFrontOfficeInsights(true);
+                  }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                      <div style={{ flex: 1 }}>
+                        <h5 style={{ 
+                          color: 'var(--ej-primary)', 
+                          margin: '0 0 0.5rem 0',
+                          fontSize: '1rem',
+                          fontWeight: '600'
+                        }}>
+                          {insight.title}
+                        </h5>
+                        <p style={{ 
+                          color: 'var(--ej-gray-600)', 
+                          margin: '0 0 0.5rem 0',
+                          fontSize: '0.85rem'
+                        }}>
+                          {insight.insight} • {insight.client?.name}
+                        </p>
+                        <p style={{ 
+                          color: 'var(--ej-gray-700)', 
+                          margin: 0,
+                          fontSize: '0.8rem',
+                          lineHeight: 1.4,
+                          overflow: 'hidden',
+                          display: '-webkit-box',
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: 'vertical'
+                        }}>
+                          {insight.insightText}
+                        </p>
+                      </div>
+                      <div style={{ marginLeft: '1rem' }}>
+                        <span style={{
+                          padding: '0.25rem 0.75rem',
+                          backgroundColor: insight.priority === 'Critical' ? 'var(--ej-error)' :
+                                         insight.priority === 'High' ? 'var(--ej-warning)' :
+                                         insight.priority === 'Medium' ? 'var(--ej-secondary)' : 'var(--ej-success)',
+                          color: 'white',
+                          borderRadius: '12px',
+                          fontSize: '0.75rem',
+                          fontWeight: '500'
+                        }}>
+                          {insight.priority}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+                <div style={{ 
+                  textAlign: 'center', 
+                  padding: '1rem',
+                  borderTop: '1px solid var(--ej-gray-200)',
+                  marginTop: '1rem'
+                }}>
+                  <button
+                    onClick={() => {
+                      setSelectedCategory(INSIGHT_CATEGORIES_BY_GROUP['front_office'][0]);
+                      setShowFrontOfficeInsights(true);
+                    }}
+                    style={{
+                      padding: '0.75rem 1.5rem',
+                      background: 'var(--ej-accent)',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '6px',
+                      cursor: 'pointer',
+                      fontSize: '0.9rem',
+                      fontWeight: '500'
+                    }}
+                  >
+                    View All {INSIGHT_EXAMPLES.length} Insights with Full Details
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
