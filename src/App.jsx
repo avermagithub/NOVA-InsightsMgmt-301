@@ -12,6 +12,7 @@ import {
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import InsightsPage from './pages/InsightsPage';
+import EnhancedInsightsPage from './pages/EnhancedInsightsPage';
 import ClientsPage from './pages/ClientsPage';
 import AdvisorsPage from './pages/AdvisorsPage';
 import FieldLeadersPage from './pages/FieldLeadersPage';
@@ -68,7 +69,7 @@ const App = () => {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Navigate to="/insights" replace />} />
-            <Route path="/insights" element={<InsightsPage selectedRole={selectedRole} />} />
+            <Route path="/insights" element={<EnhancedInsightsPage selectedRole={selectedRole} />} />
             <Route path="/clients" element={<ClientsPage selectedRole={selectedRole} />} />
             <Route path="/advisors" element={<AdvisorsPage selectedRole={selectedRole} />} />
             <Route path="/leaders" element={<FieldLeadersPage selectedRole={selectedRole} />} />

@@ -4,6 +4,57 @@ import { CLIENTS, FINANCIAL_ADVISORS } from './mockData.js';
 const getClient = (id) => CLIENTS.find(client => client.id === id);
 const getAdvisor = (id) => FINANCIAL_ADVISORS.find(advisor => advisor.id === id);
 
+// Enhanced Insight Categories and Groupings
+export const INSIGHT_CATEGORY_GROUPINGS = [
+  { id: 'front_office', name: 'Front Office', description: 'Client-facing insights and opportunities' },
+  { id: 'middle_office', name: 'Middle Office', description: 'Operations and risk management insights' },
+  { id: 'back_office', name: 'Back Office', description: 'Administrative and compliance insights' }
+];
+
+export const INSIGHT_CATEGORIES_BY_GROUP = {
+  'front_office': [
+    {
+      id: 'investment_products',
+      name: 'Investment Products',
+      icon: 'TrendingUp',
+      description: 'Investment product recommendations and portfolio optimization',
+      totalInsights: 30
+    },
+    {
+      id: 'client_engagement',
+      name: 'Client Engagement', 
+      icon: 'Users',
+      description: 'Client relationship and engagement opportunities',
+      totalInsights: 15
+    },
+    {
+      id: 'portfolio_analysis',
+      name: 'Portfolio Analysis',
+      icon: 'PieChart',
+      description: 'Portfolio performance and rebalancing insights',
+      totalInsights: 12
+    }
+  ],
+  'middle_office': [
+    {
+      id: 'risk_management',
+      name: 'Risk Management',
+      icon: 'Shield',
+      description: 'Risk assessment and mitigation strategies',
+      totalInsights: 8
+    }
+  ],
+  'back_office': [
+    {
+      id: 'compliance',
+      name: 'Compliance',
+      icon: 'FileCheck',
+      description: 'Regulatory compliance and documentation',
+      totalInsights: 5
+    }
+  ]
+};
+
 // Detailed Insight Examples for Investment Products Category
 export const INSIGHT_EXAMPLES = [
   // STOCKS INSIGHTS (5 examples)
@@ -16,7 +67,16 @@ export const INSIGHT_EXAMPLES = [
     client: getClient('cl003'),
     advisor: getAdvisor('fa002'),
     category: 'Investment Products',
-    priority: 'High'
+    categoryGroup: 'Front Office',
+    priority: 'High',
+    status: 'New',
+    createdDate: '2024-09-15',
+    expiryDate: '2024-12-15',
+    source: 'EDJ Inhouse',
+    logic: 'Model based',
+    modelRuleName: 'TechSector_Growth_Predictor_v2.1',
+    nextBestAction: 'Yes',
+    reasoning: 'The machine learning model analyzed the client\'s current portfolio composition, age (45), high risk tolerance, and technology sector performance trends. The model identified that the client\'s current 65% stock allocation is below the recommended 75% for their risk profile and investment timeline. Market analysis shows technology sector outperformance with 18.5% YTD gains vs S&P 500\'s 12.3%. The client\'s substantial AUM ($3.2M) and professional background as a surgeon indicates capacity for growth-oriented investments with higher volatility tolerance.'
   },
   {
     id: 'stocks_002', 
@@ -27,7 +87,16 @@ export const INSIGHT_EXAMPLES = [
     client: getClient('cl004'),
     advisor: getAdvisor('fa001'),
     category: 'Investment Products',
-    priority: 'Critical'
+    categoryGroup: 'Front Office',
+    priority: 'Critical',
+    status: 'Existing',
+    createdDate: '2024-09-10',
+    expiryDate: '2024-10-10',
+    source: 'Salesforce Einstein',
+    logic: 'Rule based',
+    modelRuleName: 'Concentration_Risk_Rule_v1.5',
+    nextBestAction: 'Yes',
+    reasoning: 'Portfolio concentration rule triggered an alert when AAPL position exceeded 15% threshold (currently at 18%). The rule evaluates single-stock concentration risk based on modern portfolio theory principles and Edward Jones risk management guidelines. With the client\'s aggressive risk profile and substantial portfolio value ($5.7M), diversification is critical to mitigate company-specific risk. The rule considers the client\'s investment banker background and recommends immediate action due to potential impact on overall portfolio performance.'
   },
   {
     id: 'stocks_003',
@@ -38,7 +107,16 @@ export const INSIGHT_EXAMPLES = [
     client: getClient('cl002'),
     advisor: getAdvisor('fa003'),
     category: 'Investment Products',
-    priority: 'Medium'
+    categoryGroup: 'Front Office',
+    priority: 'Medium',
+    status: 'New',
+    createdDate: '2024-09-20',
+    expiryDate: '2024-11-20',
+    source: 'Wealthbox',
+    logic: 'Rule and Model based',
+    modelRuleName: 'Dividend_Growth_Model_v3.2 & Income_Generation_Rule_v2.1',
+    nextBestAction: 'Yes',
+    reasoning: 'Combined approach using dividend prediction model and income generation rules. The model analyzed the client\'s retirement timeline (age 65), conservative risk profile, and need for stable income generation. Historical dividend analysis model identified companies with consistent 10+ year dividend growth patterns. Income generation rule validates current 2.1% yield is below target 3.5% for their wealth segment (UHNW $22.8M). The rule considers their retired status and need for predictable cash flow while the model forecasts optimal sector allocation for sustainable dividend growth.'
   },
   {
     id: 'stocks_004',
@@ -73,7 +151,16 @@ export const INSIGHT_EXAMPLES = [
     client: getClient('cl003'),
     advisor: getAdvisor('fa002'),
     category: 'Investment Products',
-    priority: 'High'
+    categoryGroup: 'Front Office',
+    priority: 'High',
+    status: 'Existing',
+    createdDate: '2024-09-12',
+    expiryDate: '2024-11-12',
+    source: 'JUMP',
+    logic: 'Rule and Model based',
+    modelRuleName: 'Duration_Risk_Model_v2.8 & Interest_Rate_Rule_v1.9',
+    nextBestAction: 'Yes',
+    reasoning: 'The Duration Risk Model combines interest rate forecasting algorithms with portfolio duration analysis rules. The model predicts continued Fed rate increases through Q4 2024, while duration rules flag portfolios exceeding 6-year average duration in rising rate environments. Client\'s surgeon profession and moderate risk profile (Amanda Foster, $3.2M AUM) require balance between yield enhancement and capital preservation. The rule validates that current 4.25% yield is below market opportunities, while the model forecasts duration compression will outweigh yield pickup in current environment.'
   },
   {
     id: 'bonds_002',
@@ -187,7 +274,16 @@ export const INSIGHT_EXAMPLES = [
     client: getClient('cl003'),
     advisor: getAdvisor('fa002'),
     category: 'Investment Products',
-    priority: 'High'
+    categoryGroup: 'Front Office',
+    priority: 'High',
+    status: 'New',
+    createdDate: '2024-09-18',
+    expiryDate: '2024-12-18',
+    source: 'Redtail',
+    logic: 'Rule based',
+    modelRuleName: 'Expense_Ratio_Optimization_Rule_v3.1',
+    nextBestAction: 'Yes',
+    reasoning: 'The Expense Ratio Optimization Rule automatically scans client portfolios for high-fee mutual funds and identifies lower-cost ETF alternatives with similar asset allocation and performance characteristics. The rule triggered when detecting Amanda Foster\'s portfolio expense ratio of 1.45% exceeds Edward Jones\' 0.75% threshold for surgeon professionals in her wealth segment. With $3.2M AUM, the annual fee differential of 1.20% (1.45% - 0.25%) results in $3,840 potential savings. The rule considers her moderate risk profile and ensures ETF alternatives maintain similar sector exposure while providing superior cost efficiency for long-term wealth accumulation.'
   },
   {
     id: 'etf_002',
