@@ -25,6 +25,7 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 - **✅ BANKING PRODUCTS & SERVICES** - Step 6 Complete banking solutions with 38 insights
 - **✅ CRM COMMUNICATION SUITE** - Step 7 Complete CRM insights with 25 communication optimization examples
 - **✅ ACCOUNT PERFORMANCE ANALYTICS** - Step 8 Comprehensive portfolio performance monitoring with 45 detailed insights
+- **✅ INSURANCE PLANNING SUITE** - Step 9 Complete insurance solutions with 25 insights across 5 insurance types + EDJ propensity models
 - **✅ OFFICIAL BRANDING** - Compliant with Edward Jones brand guidelines
 - **✅ TESTED** - All functionality verified and working
 - **✅ RESPONSIVE** - Optimized for desktop, tablet, and mobile devices
@@ -147,6 +148,13 @@ Comprehensive insights across **6 investment product categories:**
 - **Strategy Overlap Detection** - Redundant holdings and stale strategy identification
 - **Cash Flow Analysis** - Unusual inflows/outflows and rebalancing opportunities
 - **Investment Committee Guidance** - CIO recommendations and strategic allocation updates
+
+#### 🛡️ **Insurance Planning** (NEW!)
+- **Term Life Insurance** - Coverage gap analysis, conversion opportunities, laddering strategies
+- **Whole Life Insurance** - Estate liquidity, tax-efficient wealth transfer, permanent protection with EDJ propensity models
+- **Universal Life Insurance** - Premium flexibility, indexed growth potential, policy performance reviews
+- **Long Term Care Insurance** - Asset protection, hybrid solutions, shared care benefits with EDJ propensity models
+- **Disability Insurance** - Income replacement, business protection, professional-specific coverage
 
 #### ⚡ **Specialized Strategies**
 - ESG investment integration
@@ -312,13 +320,25 @@ Comprehensive insights across **6 investment product categories:**
 - 🏛️ **Investment Committee Integration** - CIO guidance implementation and strategic allocation updates
 - 🛡️ **Sterling Wealth Partners** - Complete integration with performance analysis specialists
 
+#### **🛡️ Insurance Planning Suite** (LATEST!)
+- 🔒 **Comprehensive Insurance Platform** - 25 detailed insights across 5 insurance product categories
+- 📝 **Term Life Insurance** - Coverage gap analysis, conversion privileges, laddering strategies
+- 💰 **Whole Life Insurance** - Estate liquidity, tax-efficient wealth transfer, permanent protection with EDJ propensity models (87.3% scores)
+- 🔄 **Universal Life Insurance** - Premium flexibility, indexed growth potential, policy performance reviews
+- 🏥 **Long Term Care Insurance** - Asset protection, hybrid solutions, shared care benefits with EDJ propensity models (91.7% scores)
+- 💼 **Disability Insurance** - Income replacement, business protection, professional-specific coverage
+- 🎯 **EDJ Propensity Models** - Advanced scoring for LTC and Whole Life insurance with 84-91% accuracy rates
+- 👨‍💼 **Insurance Specialists** - Benjamin Walsh, Amanda Rodriguez, Christopher Chen from Sterling Wealth Partners
+- 🏛️ **Sterling Wealth Partners** - Complete integration with insurance planning specialists (CLU®, ChFC®, LTCP®)
+
 #### **Enterprise Data**
-- 👥 **36 Diverse Clients** - Across all wealth segments (UHNW to Emerging) including 8 Account Performance-focused clients
-- 💼 **18 Financial Advisors** - Sterling Wealth Partners team including 3 Account Performance specialists
-- 📈 **238+ Detailed Insights** - Investment products, annuities, RMD, banking, CRM, and account performance with full reasoning
+- 👥 **44 Diverse Clients** - Across all wealth segments (UHNW to Emerging) including 8 Insurance Planning-focused clients
+- 💼 **21 Financial Advisors** - Sterling Wealth Partners team including 3 Insurance Planning specialists
+- 📈 **263+ Detailed Insights** - Investment products, annuities, RMD, banking, CRM, account performance, and insurance planning with full reasoning
 - 🎯 **Multiple Priorities** - Critical alerts to low-priority recommendations
 - 💬 **CRM Specialists** - Rachel Anderson, Michael Foster, Catherine Williams
 - 📊 **Performance Specialists** - Alexander Mitchell, Victoria Chen, Marcus Thompson
+- 🛡️ **Insurance Specialists** - Benjamin Walsh (CLU®, ChFC®), Amanda Rodriguez (CLU®, LTCP®), Christopher Chen (ChFC®, LTCP®)
 
 ### **🎮 Try It Live:**
 1. **Visit:** https://4001-i2a1hshqet2eyzs2iso6r-6532622b.e2b.dev
@@ -329,9 +349,11 @@ Comprehensive insights across **6 investment product categories:**
 6. **Explore "RMD"** → 25 comprehensive RMD compliance and optimization insights
 7. **Explore "CRM"** → 25 communication optimization insights across 5 channels
 8. **NEW: Explore "Account Performance"** → 45 performance analytics across 9 categories
-9. **Click any insight** → See detailed scenarios, performance attribution, and optimization strategies
-10. **Test CRM Integration** → Click Salesforce, Redtail, Wealthbox, JUMP
-11. **View Performance Analytics** → Check benchmark comparisons and portfolio optimization opportunities
+9. **LATEST: Explore "Insurance Planning"** → 25 insurance insights with EDJ propensity models
+10. **Click any insight** → See detailed scenarios, performance attribution, and optimization strategies
+11. **Test CRM Integration** → Click Salesforce, Redtail, Wealthbox, JUMP
+12. **View Performance Analytics** → Check benchmark comparisons and portfolio optimization opportunities
+13. **Test Insurance Planning** → Explore EDJ propensity models for LTC and Whole Life insurance
 
 ## 🚀 **Getting Started**
 
@@ -399,10 +421,10 @@ Both servers provide:
 
 ## 📊 **Application Analytics**
 
-- **📋 Total Insights:** 238+ detailed examples (30 Investment Products + 75 Annuities + 25 RMD + 38 Banking Products + 25 CRM Communication + 45 Account Performance)
-- **🎯 Insight Categories:** 10 comprehensive categories (6 original + Annuities + RMD + CRM + Account Performance)
-- **👥 Client Profiles:** 36 across all wealth segments (11 original + 5 annuities + 5 RMD + 7 CRM-focused + 8 performance-focused)
-- **💼 Advisor Network:** 18 professional profiles (5 original + 2 annuities + 2 RMD + 3 CRM specialists + 3 banking + 3 performance analysts)
+- **📋 Total Insights:** 263+ detailed examples (30 Investment Products + 75 Annuities + 25 RMD + 38 Banking Products + 25 CRM Communication + 45 Account Performance + 25 Insurance Planning)
+- **🎯 Insight Categories:** 11 comprehensive categories (6 original + Annuities + RMD + CRM + Account Performance + Insurance Planning)
+- **👥 Client Profiles:** 44 across all wealth segments (11 original + 5 annuities + 5 RMD + 7 CRM-focused + 8 performance-focused + 8 insurance-focused)
+- **💼 Advisor Network:** 21 professional profiles (5 original + 2 annuities + 2 RMD + 3 CRM specialists + 3 banking + 3 performance analysts + 3 insurance specialists)
 - **📈 Implementation Rate:** 91%
 - **⭐ Advisor Satisfaction:** 97%
 - **💬 CRM Response Rate Improvement:** 34% average increase across communication channels
