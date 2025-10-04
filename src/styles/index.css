@@ -510,6 +510,15 @@ body {
     font-size: 1.1rem;
   }
   
+  .compact-filter-bar > div {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .compact-filter-bar > div > div {
+    min-width: 100% !important;
+  }
+  
   .client-advisor-info {
     flex-direction: column;
   }

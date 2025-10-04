@@ -82,152 +82,170 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
         </p>
       </div>
 
-      {/* Search and Filter Controls */}
-      <div className="card" style={{ marginBottom: '2rem' }}>
-        <div className="card-content">
-          <div className="grid grid-cols-2" style={{ gap: '1.5rem', alignItems: 'end' }}>
-            {/* Search Box */}
-            <div style={{ gridColumn: 'span 2' }}>
-              <label style={{ 
-                display: 'block', 
-                fontSize: '0.9rem', 
-                fontWeight: '500', 
-                color: 'var(--ej-gray-700)', 
-                marginBottom: '0.5rem' 
-              }}>
-                Search Insights
-              </label>
-              <div style={{ position: 'relative' }}>
-                <Search 
-                  size={20} 
-                  style={{ 
-                    position: 'absolute', 
-                    left: '12px', 
-                    top: '50%', 
-                    transform: 'translateY(-50%)', 
-                    color: 'var(--ej-gray-400)' 
-                  }} 
-                />
-                <input
-                  type="text"
-                  placeholder="Search by client name, insight type, or keywords..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  style={{
-                    width: '100%',
-                    padding: '0.75rem 0.75rem 0.75rem 2.5rem',
-                    border: '1px solid var(--ej-gray-300)',
-                    borderRadius: '8px',
-                    fontSize: '0.9rem',
-                    outline: 'none',
-                    transition: 'border-color 0.2s'
-                  }}
-                  onFocus={(e) => e.target.style.borderColor = 'var(--ej-primary)'}
-                  onBlur={(e) => e.target.style.borderColor = 'var(--ej-gray-300)'}
-                />
-              </div>
-            </div>
-
-            {/* Filter Controls */}
-            <div>
-              <label style={{ 
-                display: 'block', 
-                fontSize: '0.9rem', 
-                fontWeight: '500', 
-                color: 'var(--ej-gray-700)', 
-                marginBottom: '0.5rem' 
-              }}>
-                Insight Category Grouping
-              </label>
-              <select
-                value={selectedGrouping}
-                onChange={(e) => {
-                  setSelectedGrouping(e.target.value);
-                  setShowAllInsights(false);
-                  if (e.target.value === '') {
-                    setShowInsightsByCategory(true);
-                  } else {
-                    setShowInsightsByCategory(false);
-                  }
-                }}
+      {/* Compact Horizontal Search and Filter Controls */}
+      <div className="compact-filter-bar" style={{ 
+        marginBottom: '2rem',
+        background: 'var(--ej-white)',
+        border: '1px solid var(--ej-gray-200)',
+        borderRadius: '12px',
+        padding: '1rem',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)'
+      }}>
+        <div style={{
+          display: 'flex',
+          gap: '1rem',
+          alignItems: 'center',
+          flexWrap: 'wrap'
+        }}>
+          {/* Search Dropdown */}
+          <div style={{ flex: '2', minWidth: '300px' }}>
+            <div style={{ position: 'relative' }}>
+              <Search 
+                size={18} 
+                style={{ 
+                  position: 'absolute', 
+                  left: '12px', 
+                  top: '50%', 
+                  transform: 'translateY(-50%)', 
+                  color: 'var(--ej-gray-400)' 
+                }} 
+              />
+              <input
+                type="text"
+                placeholder="Search Insights..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
                 style={{
                   width: '100%',
-                  padding: '0.75rem',
+                  padding: '0.6rem 0.6rem 0.6rem 2.25rem',
                   border: '1px solid var(--ej-gray-300)',
                   borderRadius: '8px',
-                  fontSize: '0.9rem',
-                  backgroundColor: 'white',
-                  outline: 'none'
+                  fontSize: '0.875rem',
+                  outline: 'none',
+                  transition: 'border-color 0.2s',
+                  backgroundColor: 'var(--ej-gray-50)'
                 }}
-              >
-                <option value="">All Categories (Home View)</option>
-                {INSIGHT_CATEGORY_GROUPINGS.map(group => (
-                  <option key={group.id} value={group.id}>{group.name}</option>
-                ))}
-              </select>
-            </div>
-
-            <div>
-              <label style={{ 
-                display: 'block', 
-                fontSize: '0.9rem', 
-                fontWeight: '500', 
-                color: 'var(--ej-gray-700)', 
-                marginBottom: '0.5rem' 
-              }}>
-                Insight Priority
-              </label>
-              <select
-                value={selectedPriority}
-                onChange={(e) => setSelectedPriority(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '0.75rem',
-                  border: '1px solid var(--ej-gray-300)',
-                  borderRadius: '8px',
-                  fontSize: '0.9rem',
-                  backgroundColor: 'white',
-                  outline: 'none'
+                onFocus={(e) => {
+                  e.target.style.borderColor = 'var(--ej-primary)';
+                  e.target.style.backgroundColor = 'white';
                 }}
-              >
-                <option value="">All Priorities</option>
-                <option value="Critical">Critical</option>
-                <option value="High">High</option>
-                <option value="Medium">Medium</option>
-                <option value="Low">Low</option>
-              </select>
-            </div>
-
-            <div>
-              <label style={{ 
-                display: 'block', 
-                fontSize: '0.9rem', 
-                fontWeight: '500', 
-                color: 'var(--ej-gray-700)', 
-                marginBottom: '0.5rem' 
-              }}>
-                Insight Status
-              </label>
-              <select
-                value={selectedStatus}
-                onChange={(e) => setSelectedStatus(e.target.value)}
-                style={{
-                  width: '100%',
-                  padding: '0.75rem',
-                  border: '1px solid var(--ej-gray-300)',
-                  borderRadius: '8px',
-                  fontSize: '0.9rem',
-                  backgroundColor: 'white',
-                  outline: 'none'
+                onBlur={(e) => {
+                  e.target.style.borderColor = 'var(--ej-gray-300)';
+                  e.target.style.backgroundColor = 'var(--ej-gray-50)';
                 }}
-              >
-                <option value="">All Status</option>
-                <option value="Existing">Existing</option>
-                <option value="New">New</option>
-                <option value="Logged to CRM">Logged to CRM</option>
-              </select>
+              />
             </div>
           </div>
+
+          {/* Category Grouping Dropdown */}
+          <div style={{ minWidth: '200px' }}>
+            <select
+              value={selectedGrouping}
+              onChange={(e) => {
+                setSelectedGrouping(e.target.value);
+                setShowAllInsights(false);
+                if (e.target.value === '') {
+                  setShowInsightsByCategory(true);
+                } else {
+                  setShowInsightsByCategory(false);
+                }
+              }}
+              style={{
+                width: '100%',
+                padding: '0.6rem',
+                border: '1px solid var(--ej-gray-300)',
+                borderRadius: '8px',
+                fontSize: '0.875rem',
+                backgroundColor: 'var(--ej-gray-50)',
+                outline: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              <option value="">Insight Category Grouping</option>
+              {INSIGHT_CATEGORY_GROUPINGS.map(group => (
+                <option key={group.id} value={group.id}>{group.name}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Priority Dropdown */}
+          <div style={{ minWidth: '150px' }}>
+            <select
+              value={selectedPriority}
+              onChange={(e) => setSelectedPriority(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '0.6rem',
+                border: '1px solid var(--ej-gray-300)',
+                borderRadius: '8px',
+                fontSize: '0.875rem',
+                backgroundColor: 'var(--ej-gray-50)',
+                outline: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              <option value="">Insight Priority</option>
+              <option value="Critical">Critical</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+
+          {/* Status Dropdown */}
+          <div style={{ minWidth: '150px' }}>
+            <select
+              value={selectedStatus}
+              onChange={(e) => setSelectedStatus(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '0.6rem',
+                border: '1px solid var(--ej-gray-300)',
+                borderRadius: '8px',
+                fontSize: '0.875rem',
+                backgroundColor: 'var(--ej-gray-50)',
+                outline: 'none',
+                cursor: 'pointer'
+              }}
+            >
+              <option value="">Insight Status</option>
+              <option value="Existing">Existing</option>
+              <option value="New">New</option>
+              <option value="Logged to CRM">Logged to CRM</option>
+            </select>
+          </div>
+
+          {/* Clear Filters Button */}
+          {(searchTerm || selectedGrouping || selectedPriority || selectedStatus) && (
+            <button
+              onClick={() => {
+                setSearchTerm('');
+                setSelectedGrouping('');
+                setSelectedPriority('');
+                setSelectedStatus('');
+                setShowInsightsByCategory(true);
+              }}
+              style={{
+                padding: '0.6rem 1rem',
+                background: 'var(--ej-gray-200)',
+                border: '1px solid var(--ej-gray-300)',
+                borderRadius: '8px',
+                fontSize: '0.875rem',
+                cursor: 'pointer',
+                color: 'var(--ej-gray-700)',
+                fontWeight: '500',
+                transition: 'all 0.2s'
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background = 'var(--ej-gray-300)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background = 'var(--ej-gray-200)';
+              }}
+            >
+              Clear All
+            </button>
+          )}
         </div>
       </div>
 
