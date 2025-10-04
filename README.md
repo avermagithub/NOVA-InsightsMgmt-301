@@ -12,14 +12,15 @@ Edward Jones is the largest firm supporting 20+ thousand Financial Services prof
 
 ## 🚀 **Live Application**
 
-**🌐 Live Application:** https://4001-int96ssk733oij52uju5q-6532622b.e2b.dev
+**🌐 Live Application:** https://4002-int96ssk733oij52uju5q-6532622b.e2b.dev
 
-> **📱 Mobile Responsive** | **🔒 Enterprise Ready** | **⚡ Real-Time Updates** | **🤖 AI-Powered Insights**
+> **📱 Mobile Responsive** | **🔒 Enterprise Ready** | **⚡ Real-Time Updates** | **🤖 AI-Powered Insights** | **🏛️ Annuities Platform**
 
 ### 🚀 **Public Deployment Status:**
 - **✅ LIVE** - Fully functional web application
 - **✅ ENHANCED** - Step 2 comprehensive features implemented
 - **✅ AI PROPENSITY MODEL** - Step 3 EDJ Alternative Investments Propensity Model active
+- **✅ ANNUITIES PLATFORM** - Step 4 EDJ Annuities Propensity Model with 75 insights
 - **✅ TESTED** - All functionality verified and working
 - **✅ RESPONSIVE** - Optimized for desktop, tablet, and mobile devices
 
@@ -82,6 +83,19 @@ Comprehensive insights across **6 investment product categories:**
 - **Private debt strategies** (Score: 78.9/100, Confidence: 85%)
 - **Hedge fund access** (Score: 73.2/100, Confidence: 77%)
 - **Real estate investment trusts** (Score: 69.4/100, Confidence: 71%)
+
+#### 🏛️ **Annuities** (🤖 **EDJ Annuities Propensity Model**)
+- **Annuities nearing surrender date** (Time-sensitive alerts, Scores: 85.7-88.4/100)
+- **Annuity product suitability analysis** (Propensity matching, Scores: 79.3-87.9/100)
+- **Variable annuity performance review** (Performance optimization, Scores: 73.1-77.4/100)
+- **Annuity rider benefit analysis** (Protection enhancement, Scores: 81.7-89.2/100)
+- **Fixed annuity rate renewal alerts** (Rate optimization, Scores: 76.8-78.5/100)
+- **Income optimization strategies** (Distribution planning, Scores: 78.2-86.8/100)
+- **Tax-efficient distribution planning** (Tax strategy, Scores: 79.8-87.6/100)
+- **Immediate annuities opportunities** (Income solutions, Scores: 86.3-91.5/100)
+- **Deferred annuity strategies** (Growth planning, Scores: 79.6-87.1/100)
+- **Index annuities optimization** (Market participation, Scores: 76.4-85.2/100)
+- **QLAC evaluation and planning** (Longevity protection, Scores: 87.9-92.1/100)
 
 #### ⚡ **Specialized Strategies**
 - ESG investment integration
@@ -204,6 +218,17 @@ Comprehensive insights across **6 investment product categories:**
 - 📈 **HedgeFund_QualifiedClient_Algorithm_v1.5** - Hedge fund access model
 - 🏘️ **REIT_Diversification_Optimizer_v2.0** - Real estate optimization
 
+#### **🏛️ EDJ Annuities Propensity Model** (NEW!)
+- 🎯 **Comprehensive Annuities Platform** - 75 detailed insights across 15 annuity types
+- 📊 **Advanced Propensity Scoring** - Statistical models (69.4-92.1/100) with confidence levels (77-96%)
+- 🔍 **Time-Sensitive Alerts** - Surrender period notifications and optimization timing
+- 💰 **Income Optimization** - Systematic withdrawal and annuitization strategies
+- 🛡️ **Regulatory Compliance** - FINRA Rule 2330, IRS Section 72, state insurance regulations
+- 📈 **Performance Analytics** - Sub-account analysis and expense optimization
+- 🎛️ **Rider Management** - GMWB, GMAB, LTC, and income doubler optimization
+- 💡 **Tax Strategy Integration** - Distribution planning and 1035 exchange optimization
+- 🏛️ **Specialized Products** - QLAC, immediate, deferred, variable, fixed, and index annuities
+
 #### **Enterprise Data**
 - 👥 **11 Diverse Clients** - Across all wealth segments (UHNW to Emerging)
 - 💼 **5 Financial Advisors** - Sterling Wealth Partners team
@@ -211,12 +236,14 @@ Comprehensive insights across **6 investment product categories:**
 - 🎯 **Multiple Priorities** - Critical alerts to low-priority recommendations
 
 ### **🎮 Try It Live:**
-1. **Visit:** https://4001-int96ssk733oij52uju5q-6532622b.e2b.dev
+1. **Visit:** https://4002-int96ssk733oij52uju5q-6532622b.e2b.dev
 2. **Click "Enhanced Insights"** → See immediate overview with search/filters
-3. **Filter by "Alternative Investments"** → View EDJ Propensity Model insights
-4. **Click any Alternative Investment** → See propensity scores and model reasoning
-5. **Test CRM Integration** → Click Salesforce, Redtail, Wealthbox, JUMP
-6. **View Model Details** → Check regulatory compliance and confidence levels
+3. **Filter by "Investment Products"** → View comprehensive product insights
+4. **Explore "Alternative Investments"** → EDJ Propensity Model with scores
+5. **NEW: Explore "Annuities"** → 75 EDJ Annuities insights with advanced scoring
+6. **Click any insight** → See detailed propensity scores and model reasoning
+7. **Test CRM Integration** → Click Salesforce, Redtail, Wealthbox, JUMP
+8. **View Regulatory Details** → Check compliance and confidence levels
 
 ## 🚀 **Getting Started**
 
@@ -284,10 +311,10 @@ Both servers provide:
 
 ## 📊 **Application Analytics**
 
-- **📋 Total Insights:** 30 detailed examples
-- **🎯 Insight Categories:** 6 investment product types
-- **👥 Client Profiles:** 11 across all wealth segments  
-- **💼 Advisor Network:** 5 professional profiles
+- **📋 Total Insights:** 105+ detailed examples (30 Investment Products + 75 Annuities)
+- **🎯 Insight Categories:** 7 investment product types (6 + Annuities)
+- **👥 Client Profiles:** 16 across all wealth segments (11 original + 5 annuities-focused)  
+- **💼 Advisor Network:** 7 professional profiles (5 original + 2 annuities specialists)
 - **📈 Implementation Rate:** 87%
 - **⭐ Advisor Satisfaction:** 94%
 
@@ -356,11 +383,11 @@ MIT License - see LICENSE file for details
 - **🔄 Version Control** - Complete development history and commits
 
 ### **🚀 Live Application:**
-- **🌍 Public URL:** https://4001-int96ssk733oij52uju5q-6532622b.e2b.dev
+- **🌍 Public URL:** https://4002-int96ssk733oij52uju5q-6532622b.e2b.dev
 - **📱 Device Support** - Desktop, tablet, and mobile responsive
 - **⚡ Performance** - Optimized build with fast loading times
 - **🔒 Enterprise Grade** - Professional UI/UX suitable for financial services
-- **🤖 AI-Powered** - EDJ Alternative Investments Propensity Model integrated
+- **🤖 AI-Powered** - EDJ Alternative Investments & Annuities Propensity Models integrated
 
 ### **💻 Local Development:**
 ```bash
@@ -391,8 +418,9 @@ For support and questions:
 
 ## 🏆 **Public Project Status**
 
-**✅ COMPLETE** - All Steps 1, 2, and 3 fully implemented  
-**✅ AI-POWERED** - EDJ Alternative Investments Propensity Model active
+**✅ COMPLETE** - All Steps 1, 2, 3, and 4 fully implemented  
+**✅ AI-POWERED** - EDJ Alternative Investments & Annuities Propensity Models active
+**✅ COMPREHENSIVE** - 105+ insights across 7 investment product categories
 **✅ LIVE** - Publicly accessible web application  
 **✅ OPEN SOURCE** - Full source code available on GitHub  
 **✅ DOCUMENTED** - Comprehensive documentation and guides  
