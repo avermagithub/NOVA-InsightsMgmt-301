@@ -253,6 +253,38 @@ export const FINANCIAL_ADVISORS = [
     aum: '$325M',
     clientCount: 89,
     location: 'Indianapolis, IN'
+  },
+
+  // Education Planning Specialists
+  {
+    id: 'fa022',
+    name: 'Rebecca Martinez, CFP®, CES®',
+    firm: 'Sterling Wealth Partners',
+    experience: 12,
+    specialties: ['Education Planning', '529 Plans', 'College Funding Strategies', 'Multi-Generational Planning'],
+    aum: '$285M',
+    clientCount: 76,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa023',
+    name: 'Daniel Foster, ChFC®, CES®',
+    firm: 'Sterling Wealth Partners',
+    experience: 9,
+    specialties: ['Education Savings', 'Tax-Advantaged Education Accounts', 'Student Loan Optimization', 'Graduate School Funding'],
+    aum: '$198M',
+    clientCount: 84,
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'fa024',
+    name: 'Ashley Thompson, CFP®, CES®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['529 Plan Management', 'Education Tax Strategies', 'Private School Funding', 'Professional School Planning'],
+    aum: '$315M',
+    clientCount: 67,
+    location: 'Detroit, MI'
   }
 ];
 
@@ -890,6 +922,104 @@ export const CLIENTS = [
     objectives: ['Basic Life Insurance', 'Disability Protection', 'Career Development'],
     advisor: 'fa020',
     location: 'Milwaukee, WI'
+  },
+
+  // Education Planning-Focused Clients
+  {
+    id: 'cl052',
+    name: 'Robert Chen',
+    wealthSegment: 'UHNW',
+    aum: '$12.5M',
+    age: 48,
+    occupation: 'Technology CEO',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['529 Planning', 'Private School Funding', 'Graduate School Planning', 'Multi-Generational Education Planning'],
+    advisor: 'fa022',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl053',
+    name: 'Maria Rodriguez',
+    wealthSegment: 'HNW',
+    aum: '$2.8M',
+    age: 42,
+    occupation: 'Investment Banking VP',
+    riskProfile: 'Aggressive',
+    objectives: ['529 Optimization', 'Education Tax Credits', 'Coverdell ESA Planning', 'Professional School Funding'],
+    advisor: 'fa023',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl054',
+    name: 'James Patterson',
+    wealthSegment: 'HNW',
+    aum: '$4.2M',
+    age: 45,
+    occupation: 'Orthopedic Surgeon',
+    riskProfile: 'Moderate',
+    objectives: ['Medical School Funding', '529 Planning', 'UTMA/UGMA Strategies', 'Student Loan Optimization'],
+    advisor: 'fa022',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl055',
+    name: 'Lisa Thompson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$750K',
+    age: 38,
+    occupation: 'Corporate Lawyer',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['529 Planning', 'Private School Funding', 'Education Tax Strategies', 'Law School Planning'],
+    advisor: 'fa024',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl056',
+    name: 'David Kim',
+    wealthSegment: 'AFFLUENT',
+    aum: '$890K',
+    age: 41,
+    occupation: 'Engineering Manager',
+    riskProfile: 'Moderate',
+    objectives: ['529 Contributions', 'STEM Education Funding', 'Coverdell Planning', 'Graduate School Preparation'],
+    advisor: 'fa023',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl057',
+    name: 'Sarah Johnson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$275K',
+    age: 35,
+    occupation: 'Healthcare Administrator',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['529 Savings', 'Education Tax Credits', 'Student Loan Planning', 'Healthcare Education Funding'],
+    advisor: 'fa024',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl058',
+    name: 'Michael Brown',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$325K',
+    age: 37,
+    occupation: 'Small Business Owner',
+    riskProfile: 'Moderate',
+    objectives: ['529 Planning', 'UTMA/UGMA Accounts', 'Business Education Funding', 'Private School Strategies'],
+    advisor: 'fa022',
+    location: 'Indianapolis, IN'
+  },
+  {
+    id: 'cl059',
+    name: 'Jennifer Wilson',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$85K',
+    age: 32,
+    occupation: 'Teacher',
+    riskProfile: 'Conservative',
+    objectives: ['Education Savings Start', '529 Basics', 'Teacher Loan Forgiveness', 'Education Tax Benefits'],
+    advisor: 'fa024',
+    location: 'Detroit, MI'
   }
 ];
 
@@ -1202,4 +1332,66 @@ export const INSURANCE_PLANNING_BUSINESS_BENEFITS = [
   'Enhanced Financial Security: Appropriate insurance recommendations for client protection',
   'Revenue Diversification: Insurance product sales and commission opportunities',
   'Improved Client Retention: Holistic financial planning approach with risk management'
+];
+
+// Education Planning Insight Category
+export const EDUCATION_PLANNING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Education Planning',
+  description: 'Give Advisor a view into Client\'s Education Planning',
+  displayLabel: 'Give Advisor a view into Client\'s Education Planning'
+};
+
+// Education Planning Insights
+export const EDUCATION_PLANNING_INSIGHTS = [
+  {
+    id: 'ep001',
+    name: '529',
+    purpose: '529',
+    category: 'Education Planning'
+  },
+  {
+    id: 'ep002', 
+    name: 'Coverdell Education Savings Accounts',
+    purpose: 'K-12 and college funding with investment flexibility',
+    category: 'Education Planning'
+  },
+  {
+    id: 'ep003',
+    name: 'UTMA/UGMA Custodial Accounts',
+    purpose: 'Flexible education funding with tax considerations',
+    category: 'Education Planning'
+  },
+  {
+    id: 'ep004',
+    name: 'Education Tax Credits & Deductions',
+    purpose: 'American Opportunity and Lifetime Learning Credit optimization',
+    category: 'Education Planning'
+  },
+  {
+    id: 'ep005',
+    name: 'Student Loan Planning & Optimization',
+    purpose: 'Existing debt management and future borrowing strategies',
+    category: 'Education Planning'
+  },
+  {
+    id: 'ep006',
+    name: 'Private School Funding Strategies',
+    purpose: 'K-12 education funding with grandparent involvement',
+    category: 'Education Planning'
+  },
+  {
+    id: 'ep007',
+    name: 'Graduate School & Professional Funding',
+    purpose: 'Medical, law, MBA, and professional program financing',
+    category: 'Education Planning'
+  }
+];
+
+// Business Benefits for Education Planning
+export const EDUCATION_PLANNING_BUSINESS_BENEFITS = [
+  'Additional annual impact through education planning optimization',
+  'Average college cost savings per family through strategic planning',
+  'Average annual education savings contributions via tax-advantaged accounts',
+  'Improvement in education funding efficiency through multi-generational strategies'
 ];
