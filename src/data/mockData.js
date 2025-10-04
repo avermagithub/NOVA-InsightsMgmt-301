@@ -125,6 +125,38 @@ export const FINANCIAL_ADVISORS = [
     aum: '$287M',
     clientCount: 48,
     location: 'Milwaukee, WI'
+  },
+  
+  // Banking Products & Services Specialists
+  {
+    id: 'fa010',
+    name: 'Jennifer Martinez, CAMS®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['Banking Solutions', 'Credit Optimization', 'Cash Management'],
+    aum: '$245M',
+    clientCount: 82,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa011',
+    name: 'David Thompson, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Mortgage Planning', 'HELOC Strategies', 'Business Banking'],
+    aum: '$312M',
+    clientCount: 67,
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'fa012',
+    name: 'Lisa Chang, CPA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Certificate of Deposits', 'Money Market Optimization', 'Banking Relationship Management'],
+    aum: '$278M',
+    clientCount: 71,
+    location: 'Minneapolis, MN'
   }
 ];
 
@@ -394,6 +426,92 @@ export const CLIENTS = [
     objectives: ['Late RMD Compliance', 'Pension Coordination', 'Medical Expenses'],
     advisor: 'fa008',
     location: 'Springfield, IL'
+  },
+
+  // Banking Products & Services Clients
+  {
+    id: 'cl022',
+    name: 'Amanda Foster',
+    wealthSegment: 'HNW',
+    aum: '$2.8M',
+    age: 42,
+    occupation: 'Corporate Attorney',
+    riskProfile: 'Aggressive',
+    objectives: ['Credit Optimization', 'Cash Flow Management', 'Home Equity Utilization'],
+    advisor: 'fa010',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl023',
+    name: 'Marcus and Diana Brooks',
+    wealthSegment: 'AFFLUENT',
+    aum: '$785K',
+    age: 51,
+    occupation: 'Small Business Owners',
+    riskProfile: 'Moderate',
+    objectives: ['Business Banking Integration', 'Mortgage Optimization', 'Cash Management'],
+    advisor: 'fa011',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl024',
+    name: 'Patricia Nguyen',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$325K',
+    age: 38,
+    occupation: 'Software Engineer',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['CD Strategies', 'Money Market Optimization', 'Debit Card Rewards'],
+    advisor: 'fa012',
+    location: 'Minneapolis, MN'
+  },
+  {
+    id: 'cl025',
+    name: 'Kevin Rodriguez',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$85K',
+    age: 29,
+    occupation: 'Marketing Manager',
+    riskProfile: 'Aggressive',
+    objectives: ['Credit Building', 'Banking Relationship', 'Auto Loan Optimization'],
+    advisor: 'fa010',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl026',
+    name: 'Janet and Robert Kim',
+    wealthSegment: 'HNW',
+    aum: '$4.2M',
+    age: 55,
+    occupation: 'Healthcare Executives',
+    riskProfile: 'Moderate',
+    objectives: ['HELOC Strategy', 'Premium Banking', 'Investment Property Financing'],
+    advisor: 'fa011',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl027',
+    name: 'Christopher Davis',
+    wealthSegment: 'AFFLUENT',
+    aum: '$950K',
+    age: 46,
+    occupation: 'Real Estate Developer',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Construction Loans', 'Business Banking', 'Cash Flow Optimization'],
+    advisor: 'fa011',
+    location: 'Milwaukee, WI'
+  },
+  {
+    id: 'cl028',
+    name: 'Michelle Turner',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$215K',
+    age: 34,
+    occupation: 'Physician Resident',
+    riskProfile: 'Moderate',
+    objectives: ['Student Loan Management', 'Credit Enhancement', 'Banking Optimization'],
+    advisor: 'fa010',
+    location: 'Chicago, IL'
   }
 ];
 
@@ -457,6 +575,60 @@ export const INVESTMENT_INSIGHTS = [
   }
 ];
 
+// Banking Products & Services Insight Category
+export const BANKING_PRODUCTS_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Banking Products & Services',
+  description: 'These Insights help Financial Advisor to guide the client with regard to Banking Products and Services.',
+  displayLabel: 'These Insights help Financial Advisor to guide the client with regard to Banking Products and Services.'
+};
+
+// Banking Products Insights
+export const BANKING_INSIGHTS = [
+  {
+    id: 'bp001',
+    name: 'Credit Card Optimization & Management',
+    purpose: 'Credit Card Optimization & Management',
+    category: 'Banking Products & Services'
+  },
+  {
+    id: 'bp002',
+    name: 'Debit Card Security & Rewards',
+    purpose: 'Debit Card Security & Rewards',
+    category: 'Banking Products & Services'
+  },
+  {
+    id: 'bp003',
+    name: 'Money Market Account Optimization',
+    purpose: 'Money Market Account Optimization',
+    category: 'Banking Products & Services'
+  },
+  {
+    id: 'bp004',
+    name: 'Mortgage & Home Equity Solutions',
+    purpose: 'Mortgage & Home Equity Solutions',
+    category: 'Banking Products & Services'
+  },
+  {
+    id: 'bp005',
+    name: 'Certificate of Deposit (CD) Strategies',
+    purpose: 'Certificate of Deposit (CD) Strategies',
+    category: 'Banking Products & Services'
+  },
+  {
+    id: 'bp006',
+    name: 'Business Banking Integration',
+    purpose: 'Business Banking Integration',
+    category: 'Banking Products & Services'
+  },
+  {
+    id: 'bp007',
+    name: 'Automobile Loans',
+    purpose: 'Automobile Loans',
+    category: 'Banking Products & Services'
+  }
+];
+
 // Business Benefits for Investment Products
 export const BUSINESS_BENEFITS = [
   'Market Timing Intelligence: Real-time analysis of market conditions and sector rotation opportunities.',
@@ -466,4 +638,13 @@ export const BUSINESS_BENEFITS = [
   'Tax Efficiency: Tax-loss harvesting, municipal bonds, and tax-advantaged investment strategies.',
   'Performance Attribution: Detailed analysis of fund manager performance and style consistency.',
   'Risk Management: Concentration risk alerts, correlation analysis, and diversification optimization.'
+];
+
+// Business Benefits for Banking Products & Services
+export const BANKING_BUSINESS_BENEFITS = [
+  'Comprehensive Product Coverage: All major banking products with realistic scenarios and current market rates',
+  'Dynamic Financial Calculations: Real-time interest rate comparisons, savings calculations, and ROI projections',
+  'Smart Priority Management: High priority for time-sensitive opportunities, medium/low for optimization strategies',
+  'Value Potential Ranges: Potential per insight based on financial impact significance',
+  'Market-Current Data: Updates with realistic current interest rates, credit terms, and banking product features'
 ];
