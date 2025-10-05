@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import ClientInsightsModal from './components/ClientInsightsModal';
 import InsightsPage from './pages/InsightsPage';
 import EnhancedInsightsPage from './pages/EnhancedInsightsPage';
 import ClientsPage from './pages/ClientsPage';
@@ -21,6 +22,7 @@ import { USER_ROLES } from './data/mockData';
 
 const App = () => {
   const [selectedRole, setSelectedRole] = useState('Financial Advisor');
+  const [showClientInsights, setShowClientInsights] = useState(false);
   
   const navigationItems = [
     {
@@ -64,7 +66,10 @@ const App = () => {
       />
       
       <div className="main-layout">
-        <Sidebar navigationItems={navigationItems} />
+        <Sidebar 
+          navigationItems={navigationItems} 
+          onClientInsightsClick={() => setShowClientInsights(true)}
+        />
         
         <main className="main-content">
           <Routes>
@@ -77,6 +82,12 @@ const App = () => {
           </Routes>
         </main>
       </div>
+
+      {/* Client Insights Modal */}
+      <ClientInsightsModal 
+        isOpen={showClientInsights}
+        onClose={() => setShowClientInsights(false)}
+      />
     </div>
   );
 };
