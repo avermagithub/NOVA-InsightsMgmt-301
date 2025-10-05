@@ -629,6 +629,102 @@ export const FINANCIAL_ADVISORS = [
     aum: '$456M',
     clientCount: 67,
     location: 'Nashville, TN'
+  },
+
+  // Wire Transfers Specialists
+  {
+    id: 'fa059',
+    name: 'Harrison Blackstone, CFP®, CFA, CAMS',
+    firm: 'Sterling Wealth Partners',
+    experience: 22,
+    specialties: ['Wire Transfer Analysis', 'Anti-Money Laundering', 'Cash Flow Monitoring', 'Private Banking'],
+    aum: '$2.2B',
+    clientCount: 28,
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'fa060',
+    name: 'Victoria Sterling, CFP®, FRM, CPA',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Transfer Compliance', 'Risk Management', 'International Banking', 'Treasury Services'],
+    aum: '$945M',
+    clientCount: 42,
+    location: 'Palo Alto, CA'
+  },
+  {
+    id: 'fa061',
+    name: 'Patricia Whitmore, CFP®, CTFA, JD',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['Transfer Documentation', 'Regulatory Compliance', 'Estate Transfers', 'Trust Services'],
+    aum: '$385K',
+    clientCount: 58,
+    location: 'Denver, CO'
+  },
+
+  // Portfolio Management Specialists
+  {
+    id: 'fa062',
+    name: 'Eleanor Carnegie, CFA, CAIA, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 28,
+    specialties: ['Portfolio Construction', 'Alternative Investments', 'Risk Management', 'Performance Attribution'],
+    aum: '$3.8B',
+    clientCount: 22,
+    location: 'Newport, RI'
+  },
+  {
+    id: 'fa063',
+    name: 'Alexander Morrison, CFA, FRM, CAIA',
+    firm: 'Sterling Wealth Partners',
+    experience: 24,
+    specialties: ['Quantitative Analysis', 'Factor Investing', 'Portfolio Optimization', 'Derivatives Strategy'],
+    aum: '$1.4B',
+    clientCount: 35,
+    location: 'Boston, MA'
+  },
+  {
+    id: 'fa064',
+    name: 'Jonathan Hamilton, CFA, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Tactical Asset Allocation', 'Rebalancing Strategies', 'Tax-Loss Harvesting', 'Multi-Account Management'],
+    aum: '$595M',
+    clientCount: 78,
+    location: 'Minneapolis, MN'
+  },
+
+  // Trading Specialists  
+  {
+    id: 'fa065',
+    name: 'Harrison Whitmore, CFA, CMT, FRM',
+    firm: 'Sterling Wealth Partners',
+    experience: 26,
+    specialties: ['Institutional Trading', 'Market Making', 'Algorithmic Trading', 'Options Strategies'],
+    aum: '$4.2B',
+    clientCount: 18,
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'fa066',
+    name: 'Marcus Richardson, CFA, CMT, CAIA',
+    firm: 'Sterling Wealth Partners',
+    experience: 21,
+    specialties: ['Equity Trading', 'Fixed Income Trading', 'Currency Trading', 'Risk Management'],
+    aum: '$1.8B',
+    clientCount: 28,
+    location: 'Austin, TX'
+  },
+  {
+    id: 'fa067',
+    name: 'Daniel Foster, Series 7, Series 66, CFA',
+    firm: 'Sterling Wealth Partners',
+    experience: 12,
+    specialties: ['Day Trading Coordination', 'Trade Execution', 'Settlement Operations', 'Technology Integration'],
+    aum: '$325M',
+    clientCount: 95,
+    location: 'Miami, FL'
   }
 ];
 
@@ -2182,6 +2278,192 @@ export const CLIENTS = [
     objectives: ['Potential Acceleration in Revenue', 'Commercial Banking', 'Cash Flow Management', 'Human Resources Finance'],
     advisor: 'fa057',
     location: 'Dallas, TX'
+  },
+
+  // Wire Transfers Category Clients
+  {
+    id: 'cl127',
+    name: 'Harrison Mitchell Wellington IV',
+    wealthSegment: 'UHNW',
+    aum: '$28.5M',
+    age: 58,
+    occupation: 'Private Equity Managing Partner',
+    riskProfile: 'Aggressive',
+    objectives: ['Single Wire', 'Multiple Wire transfers to the same firm', 'Wire transfers to New financial institution'],
+    advisor: 'fa059',
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'cl128',
+    name: 'Victoria & James Blackstone III',
+    wealthSegment: 'HNW',
+    aum: '$4.2M',
+    age: 52,
+    occupation: 'Investment Banking Managing Directors',
+    riskProfile: 'Aggressive',
+    objectives: ['Multiple Wire transfers to the same firm', 'Multiple wire transfers to the multiple firms'],
+    advisor: 'fa059',
+    location: 'New York, NY'
+  },
+  {
+    id: 'cl129',
+    name: 'Margaret & Robert Sterling IV',
+    wealthSegment: 'HNW',
+    aum: '$6.8M',
+    age: 47,
+    occupation: 'Technology Entrepreneurs',
+    riskProfile: 'Aggressive',
+    objectives: ['Single Wire', 'Multiple wire transfers to the multiple firms', 'Wire transfers to New financial institution'],
+    advisor: 'fa060',
+    location: 'Palo Alto, CA'
+  },
+  {
+    id: 'cl130',
+    name: 'Catherine & William Thompson IV',
+    wealthSegment: 'AFFLUENT',
+    aum: '$875K',
+    age: 41,
+    occupation: 'Corporate Finance Directors',
+    riskProfile: 'Moderate',
+    objectives: ['Single Wire', 'Multiple Wire transfers to the same firm'],
+    advisor: 'fa060',
+    location: 'Charlotte, NC'
+  },
+  {
+    id: 'cl131',
+    name: 'Patricia & Thomas Rodriguez III',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$385K',
+    age: 38,
+    occupation: 'Healthcare Administrators',
+    riskProfile: 'Moderate',
+    objectives: ['Single Wire', 'Wire transfers to New financial institution'],
+    advisor: 'fa061',
+    location: 'Denver, CO'
+  },
+
+  // Portfolio Management Category Clients
+  {
+    id: 'cl132',
+    name: 'Eleanor & Charles Vanderbilt V',
+    wealthSegment: 'UHNW',
+    aum: '$42.5M',
+    age: 64,
+    occupation: 'Family Office Principal & Retired Investment Banker',
+    riskProfile: 'Conservative',
+    objectives: ['Account Monitoring', 'Performance Tracking', 'Portfolio Rebalancing'],
+    advisor: 'fa062',
+    location: 'Newport, RI'
+  },
+  {
+    id: 'cl133',
+    name: 'Alexander & Sophia Carnegie IV',
+    wealthSegment: 'HNW',
+    aum: '$8.9M',
+    age: 56,
+    occupation: 'Hedge Fund Manager & Philanthropist',
+    riskProfile: 'Aggressive',
+    objectives: ['Performance Tracking', 'Portfolio Rebalancing', 'Account Monitoring'],
+    advisor: 'fa062',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl134',
+    name: 'Jonathan & Elizabeth Morrison IV',
+    wealthSegment: 'HNW',
+    aum: '$3.4M',
+    age: 49,
+    occupation: 'Private Wealth Manager & Attorney',
+    riskProfile: 'Moderate Growth',
+    objectives: ['Portfolio Rebalancing', 'Account Monitoring', 'Performance Tracking'],
+    advisor: 'fa063',
+    location: 'Boston, MA'
+  },
+  {
+    id: 'cl135',
+    name: 'David & Rebecca Hamilton IV',
+    wealthSegment: 'AFFLUENT',
+    aum: '$725K',
+    age: 43,
+    occupation: 'Investment Advisor & CPA',
+    riskProfile: 'Moderate Growth',
+    objectives: ['Account Monitoring', 'Performance Tracking'],
+    advisor: 'fa063',
+    location: 'Minneapolis, MN'
+  },
+  {
+    id: 'cl136',
+    name: 'Michael & Susan Johnson IV',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$295K',
+    age: 36,
+    occupation: 'Financial Analysts',
+    riskProfile: 'Growth',
+    objectives: ['Portfolio Rebalancing', 'Performance Tracking'],
+    advisor: 'fa064',
+    location: 'Atlanta, GA'
+  },
+
+  // Trading Category Clients
+  {
+    id: 'cl137',
+    name: 'Harrison & Grace Whitmore V',
+    wealthSegment: 'UHNW',
+    aum: '$35.2M',
+    age: 61,
+    occupation: 'Institutional Investor & Board Director',
+    riskProfile: 'Moderate Growth',
+    objectives: ['Order Entry and Trade Execution', 'Trade Management and Risk Control'],
+    advisor: 'fa065',
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'cl138',
+    name: 'Marcus & Caroline Richardson V',
+    wealthSegment: 'HNW',
+    aum: '$7.6M',
+    age: 53,
+    occupation: 'Portfolio Manager & Investment Strategist',
+    riskProfile: 'Aggressive',
+    objectives: ['Trade Management and Risk Control', 'Order Entry and Trade Execution'],
+    advisor: 'fa065',
+    location: 'Seattle, WA'
+  },
+  {
+    id: 'cl139',
+    name: 'Daniel & Amanda Foster IV',
+    wealthSegment: 'HNW',
+    aum: '$2.8M',
+    age: 45,
+    occupation: 'Quantitative Analyst & Risk Manager',
+    riskProfile: 'Growth',
+    objectives: ['Order Entry and Trade Execution', 'Trade Management and Risk Control'],
+    advisor: 'fa066',
+    location: 'Austin, TX'
+  },
+  {
+    id: 'cl140',
+    name: 'Robert & Lisa Anderson V',
+    wealthSegment: 'AFFLUENT',
+    aum: '$685K',
+    age: 39,
+    occupation: 'Equity Research Analyst & Trader',
+    riskProfile: 'Growth',
+    objectives: ['Trade Management and Risk Control', 'Order Entry and Trade Execution'],
+    advisor: 'fa066',
+    location: 'Nashville, TN'
+  },
+  {
+    id: 'cl141',
+    name: 'Jennifer & Christopher Davis V',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$325K',
+    age: 33,
+    occupation: 'Day Traders & Financial Bloggers',
+    riskProfile: 'Aggressive',
+    objectives: ['Order Entry and Trade Execution', 'Trade Management and Risk Control'],
+    advisor: 'fa067',
+    location: 'Miami, FL'
   }
 ];
 
@@ -3434,4 +3716,128 @@ export const BUSINESS_OWNERS_BUSINESS_BENEFITS = [
   'Treasury Management, Real Estate Finance, Human Resources Finance',
   'Facilities Management, Executive Search, IPO Advisory',
   'M&A Strategy, Partnership Development, Succession Planning'
+];
+
+// Wire Transfers Insight Category
+export const WIRE_TRANSFERS_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Wire Transfers',
+  description: 'These Insights help Financial Advisors to act on unusual and/or insightful wire transfers. These Insights are related to Single wire transfer to external bank, multiple transfers to the same external bank, multiple transfers to multiple external firms, transfer to a new financial institution.',
+  displayLabel: 'Wire Transfers'
+};
+
+// Wire Transfers Insights
+export const WIRE_TRANSFERS_INSIGHTS = [
+  {
+    id: 'wt001',
+    name: 'Single Wire',
+    purpose: 'Cash balance',
+    category: 'Wire Transfers'
+  },
+  {
+    id: 'wt002',
+    name: 'Multiple Wire transfers to the same firm',
+    purpose: 'Multiple Wire transfers to the same firm',
+    category: 'Wire Transfers'
+  },
+  {
+    id: 'wt003',
+    name: 'Multiple wire transfers to the multiple firms',
+    purpose: 'Multiple wire transfers to the multiple firms',
+    category: 'Wire Transfers'
+  },
+  {
+    id: 'wt004',
+    name: 'Wire transfers to New financial institution',
+    purpose: 'Wire transfers to New financial institution',
+    category: 'Wire Transfers'
+  }
+];
+
+// Portfolio Management Insight Category
+export const PORTFOLIO_MANAGEMENT_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Portfolio Management',
+  description: 'These Insights help Financial Advisors manage Client Portfolios in alignment with Client\'s Financial Plan and Risk profile',
+  displayLabel: 'These Insights help Financial Advisors manage Client Portfolios in alignment with Client\'s Financial Plan and Risk profile'
+};
+
+// Portfolio Management Insights
+export const PORTFOLIO_MANAGEMENT_INSIGHTS = [
+  {
+    id: 'pm001',
+    name: 'Account Monitoring',
+    purpose: 'Monitor Client Accounts',
+    category: 'Portfolio Management'
+  },
+  {
+    id: 'pm002',
+    name: 'Performance Tracking',
+    purpose: 'Track Performance of Client portfolios',
+    category: 'Portfolio Management'
+  },
+  {
+    id: 'pm003',
+    name: 'Portfolio Rebalancing',
+    purpose: 'Perform Portfolio Rebalancing',
+    category: 'Portfolio Management'
+  }
+];
+
+// Portfolio Management Business Benefits
+export const PORTFOLIO_MANAGEMENT_BUSINESS_BENEFITS = [
+  'Portfolio Drift Alerting',
+  'Tax Loss Harvesting',
+  'Duration Risk Management and interest rate sensitivity',
+  'Asset Location Optimization and tax savings through proper account placement',
+  'Multi-Account Coordination',
+  'Currency Exposure Management',
+  'Correlation Risk Mitigation',
+  'Underperformance Analysis',
+  'Benchmark Tracking',
+  'Factor Tilt Analysis',
+  'Sharpe Ratio Optimization',
+  'ESG Performance Review',
+  'Alternative Investment Analysis',
+  'Style Drift Detection',
+  'Cash Drag Alerting',
+  'Sector Concentration',
+  'Fee Impact Analysis',
+  'Liquidity Management',
+  'Dividend Reinvestment',
+  'Correlation Monitoring'
+];
+
+// Trading Insight Category
+export const TRADING_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Trading',
+  description: 'These Insights help Financial Advisors manage trades in Client Portfolios in a timely manner and also keeping Client\'s Financial Plan and Risk profile in context of the trade. The Insights are help to make sure the trades are in alignment with the guidance provided by firm\'s Chief Investment Office.',
+  displayLabel: 'These Insights help Financial Advisors manage trades in Client Portfolios in a timely manner and also keeping Client\'s Financial Plan and Risk profile in context of the trade. The Insights are help to make sure the trades are in alignment with the guidance provided by firm\'s Chief Investment Office.'
+};
+
+// Trading Insights
+export const TRADING_INSIGHTS = [
+  {
+    id: 'tr001',
+    name: 'Order Entry and Trade Execution',
+    purpose: 'Order Entry and Trade Execution',
+    category: 'Trading'
+  },
+  {
+    id: 'tr002',
+    name: 'Trade Management and Risk Control',
+    purpose: 'Trade Management and Risk Control',
+    category: 'Trading'
+  }
+];
+
+// Trading Business Benefits
+export const TRADING_BUSINESS_BENEFITS = [
+  'Trade recommendation based on portfolio allocations',
+  'Tax Savings and annual optimization opportunities',
+  'Yield Improvements with strategic bond and income trades',
+  'Risk Protection and downside protection through systematic risk management',
+  'Performance Enhancement with outperformance through CIO-guided strategies',
+  'Cost Reduction and Annual expense savings through fund optimization'
 ];
