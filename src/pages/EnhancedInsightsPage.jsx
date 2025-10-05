@@ -152,8 +152,18 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
                 borderRadius: '12px',
                 marginBottom: '1.5rem'
               }}>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '700', margin: '0 0 0.5rem' }}>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: '700', margin: '0 0 0.5rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
                   {group.name}
+                  <span style={{
+                    background: 'var(--ej-gold)',
+                    color: 'var(--ej-primary)',
+                    padding: '0.5rem 1rem',
+                    borderRadius: '25px',
+                    fontSize: '0.9rem',
+                    fontWeight: '600'
+                  }}>
+                    {INSIGHT_CATEGORIES_BY_GROUP[group.id]?.reduce((total, category) => total + category.totalInsights, 0)} Total Insights
+                  </span>
                 </h3>
                 <p style={{ fontSize: '1rem', opacity: '0.9', margin: 0 }}>
                   {group.description}
