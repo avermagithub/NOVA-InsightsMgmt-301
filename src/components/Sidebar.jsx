@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { ChevronDown, ChevronRight, TrendingUp, Mail, Video, Phone, FileText, MessageCircle, Eye, Users } from 'lucide-react';
+import { ChevronDown, ChevronRight, TrendingUp, Mail, Video, Phone, FileText, MessageCircle, Eye } from 'lucide-react';
 
-const Sidebar = ({ navigationItems, onClientInsightsClick }) => {
+const Sidebar = ({ navigationItems }) => {
   const location = useLocation();
   const [selectedBusinessBenefit, setSelectedBusinessBenefit] = useState('');
 
@@ -100,43 +100,7 @@ const Sidebar = ({ navigationItems, onClientInsightsClick }) => {
         </ul>
       </nav>
 
-      {/* Client Insights Button */}
-      <div className="sidebar-section" style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--ej-gray-200)' }}>
-        <div style={{ paddingLeft: '1.5rem', paddingRight: '1.5rem' }}>
-          <button
-            onClick={onClientInsightsClick}
-            style={{
-              width: '100%',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.75rem',
-              padding: '0.875rem 1rem',
-              background: 'var(--ej-primary)',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              fontSize: '0.875rem',
-              fontWeight: '600',
-              cursor: 'pointer',
-              transition: 'all 0.2s ease',
-              boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.background = 'var(--ej-gray-800)';
-              e.target.style.transform = 'translateY(-1px)';
-              e.target.style.boxShadow = '0 4px 8px rgba(0,0,0,0.15)';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.background = 'var(--ej-primary)';
-              e.target.style.transform = 'translateY(0)';
-              e.target.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
-            }}
-          >
-            <Users size={18} />
-            <span>Client Insights</span>
-          </button>
-        </div>
-      </div>
+
 
       {/* Business Benefits Section */}
       <div className="sidebar-section" style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid var(--ej-gray-200)' }}>
