@@ -205,7 +205,7 @@ body {
 }
 
 .sidebar {
-  width: 280px;
+  width: 320px;
   background: var(--ej-white);
   border-right: 1px solid var(--ej-gray-200);
   padding: 1.5rem 0;
@@ -250,6 +250,115 @@ body {
 .nav-icon {
   width: 20px;
   height: 20px;
+}
+
+/* Sidebar Sections */
+.sidebar-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--ej-gray-200);
+}
+
+.sidebar-section h4 {
+  color: var(--ej-primary);
+  fontSize: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.sidebar-section select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--ej-gray-300);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  background-color: var(--ej-white);
+  outline: none;
+  cursor: pointer;
+  color: var(--ej-primary);
+  font-weight: 500;
+  transition: border-color 0.2s ease;
+}
+
+.sidebar-section select:focus {
+  border-color: var(--ej-gold);
+}
+
+.sidebar-section select:hover {
+  border-color: var(--ej-gray-400);
+}
+
+.benefits-container {
+  background: var(--ej-gray-50);
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.benefits-title {
+  color: var(--ej-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-item {
+  font-size: 0.8rem;
+  color: var(--ej-gray-700);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.benefit-item::before {
+  content: '#';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  color: var(--ej-gold);
+  font-weight: bold;
+}
+
+.edj-solution-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 8px;
+  background-color: var(--ej-white);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ej-primary);
+}
+
+.edj-solution-item:hover {
+  border-color: var(--ej-gold);
+  background-color: var(--ej-gray-50);
+  transform: translateX(2px);
+}
+
+.edj-solution-icon {
+  width: 32px;
+  height: 32px;
+  background-color: var(--ej-gold);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
 }
 
 .main-content {
