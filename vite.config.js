@@ -7,11 +7,21 @@ export default defineConfig({
   server: {
     port: 3000,
     host: '0.0.0.0',
-    allowedHosts: 'all'
+    allowedHosts: [
+      '.e2b.dev',
+      'localhost',
+      '127.0.0.1',
+      '0.0.0.0',
+      '169.254.0.21'
+    ],
+    hmr: {
+      port: undefined
+    },
+    cors: true
   },
   preview: {
     port: 4173,
-    host: true
+    host: '0.0.0.0'
   },
   build: {
     outDir: 'dist',

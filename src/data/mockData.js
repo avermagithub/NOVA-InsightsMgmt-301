@@ -505,6 +505,68 @@ export const FINANCIAL_ADVISORS = [
     aum: '$156M',
     clientCount: 118,
     location: 'Austin, TX'
+  },
+  // Cash Management Specialists
+  {
+    id: 'fa046',
+    name: 'Alexander Hamilton, CFA, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 23,
+    specialties: ['Cash Flow Management', 'Liquidity Optimization', 'Distribution Planning', 'Strategic Cash Allocation'],
+    aum: '$845M',
+    clientCount: 37,
+    location: 'New York, NY'
+  },
+  {
+    id: 'fa047',
+    name: 'Victoria Sterling, CFP®, CPA',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Cash Management', 'Distribution Strategies', 'Withdrawal Planning', 'Liquidity Analysis'],
+    aum: '$523M',
+    clientCount: 68,
+    location: 'Boston, MA'
+  },
+  {
+    id: 'fa048',
+    name: 'Christopher Davis, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['Basic Cash Planning', 'Distribution Tracking', 'Cash Reserve Management', 'Liquidity Planning'],
+    aum: '$287M',
+    clientCount: 92,
+    location: 'Washington, DC'
+  },
+  // Event Management Specialists
+  {
+    id: 'fa049',
+    name: 'Margaret Pemberton, CFP®, CPWA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 26,
+    specialties: ['Event Planning', 'Client Education', 'Seminar Management', 'Philanthropic Events'],
+    aum: '$734M',
+    clientCount: 41,
+    location: 'Newport, RI'
+  },
+  {
+    id: 'fa050',
+    name: 'Harrison Thornton, CFP®, CFA',
+    firm: 'Sterling Wealth Partners',
+    experience: 21,
+    specialties: ['Investment Conferences', 'Educational Webinars', 'Professional Networking', 'Market Analysis Events'],
+    aum: '$612M',
+    clientCount: 54,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa051',
+    name: 'Catherine Montgomery, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Executive Events', 'Young Professional Programs', 'Educational Series', 'Career Development Workshops'],
+    aum: '$378M',
+    clientCount: 76,
+    location: 'Atlanta, GA'
   }
 ];
 
@@ -1778,6 +1840,140 @@ export const CLIENTS = [
     objectives: ['Market Share Monitoring', 'External Investment Tracking', 'Competitive Analysis', 'Account Intelligence'],
     advisor: 'fa045',
     location: 'Austin, TX'
+  },
+  // Cash Management Clients
+  {
+    id: 'cl104',
+    name: 'Harrison Blackstone Jr.',
+    wealthSegment: 'UHNW',
+    aum: '$32M',
+    age: 58,
+    occupation: 'Investment Fund Manager',
+    riskProfile: 'Aggressive',
+    objectives: ['Cash Flow Optimization', 'Liquidity Management', 'Distribution Planning', 'Strategic Cash Allocation'],
+    advisor: 'fa046',
+    location: 'New York, NY'
+  },
+  {
+    id: 'cl105',
+    name: 'Victoria & James Sterling II',
+    wealthSegment: 'HNW',
+    aum: '$9.4M',
+    age: 63,
+    occupation: 'Retired Business Owners',
+    riskProfile: 'Conservative',
+    objectives: ['Cash Distribution Management', 'Withdrawal Planning', 'Income Generation', 'Liquidity Preservation'],
+    advisor: 'fa046',
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'cl106',
+    name: 'Michael & Sarah Thompson',
+    wealthSegment: 'HNW',
+    aum: '$4.8M',
+    age: 54,
+    occupation: 'Healthcare Executives',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Cash Balance Optimization', 'Distribution Timing', 'Emergency Liquidity', 'Cash Flow Planning'],
+    advisor: 'fa047',
+    location: 'Boston, MA'
+  },
+  {
+    id: 'cl107',
+    name: 'Christopher & Amanda Wilson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$680K',
+    age: 47,
+    occupation: 'Technology Professionals',
+    riskProfile: 'Moderate',
+    objectives: ['Cash Management', 'Distribution Optimization', 'Liquidity Planning', 'Investment Cash Flow'],
+    advisor: 'fa047',
+    location: 'Seattle, WA'
+  },
+  {
+    id: 'cl108',
+    name: 'Daniel & Rebecca Martinez',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$295K',
+    age: 39,
+    occupation: 'Government Employees',
+    riskProfile: 'Conservative',
+    objectives: ['Basic Cash Planning', 'Distribution Tracking', 'Withdrawal Management', 'Cash Reserve Building'],
+    advisor: 'fa048',
+    location: 'Washington, DC'
+  },
+  // Event Planning Clients
+  {
+    id: 'cl109',
+    name: 'Eleanor Vanderbilt II',
+    wealthSegment: 'UHNW',
+    aum: '$45M',
+    age: 69,
+    occupation: 'Philanthropist',
+    riskProfile: 'Conservative',
+    objectives: ['Educational Seminars', 'Charitable Events', 'Networking Opportunities', 'Legacy Planning Workshops'],
+    advisor: 'fa049',
+    location: 'Newport, RI'
+  },
+  {
+    id: 'cl110',
+    name: 'William & Elizabeth Carnegie',
+    wealthSegment: 'UHNW',
+    aum: '$26M',
+    age: 61,
+    occupation: 'Technology Entrepreneurs',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Investment Conferences', 'Technology Seminars', 'Entrepreneurship Events', 'Innovation Workshops'],
+    advisor: 'fa049',
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'cl111',
+    name: 'Charles & Margaret Whitmore',
+    wealthSegment: 'HNW',
+    aum: '$7.2M',
+    age: 56,
+    occupation: 'Investment Professionals',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Market Analysis Events', 'Investment Webinars', 'Professional Networking', 'Educational Series'],
+    advisor: 'fa050',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl112',
+    name: 'Patricia & George Hamilton Jr.',
+    wealthSegment: 'HNW',
+    aum: '$3.9M',
+    age: 52,
+    occupation: 'Medical Professionals',
+    riskProfile: 'Moderate',
+    objectives: ['Healthcare Seminars', 'Retirement Workshops', 'Tax Planning Events', 'Professional Development'],
+    advisor: 'fa050',
+    location: 'Dallas, TX'
+  },
+  {
+    id: 'cl113',
+    name: 'Richard & Laura Anderson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$825K',
+    age: 48,
+    occupation: 'Corporate Executives',
+    riskProfile: 'Moderate',
+    objectives: ['Executive Seminars', 'Leadership Workshops', 'Financial Planning Events', 'Networking Opportunities'],
+    advisor: 'fa051',
+    location: 'Atlanta, GA'
+  },
+  {
+    id: 'cl114',
+    name: 'Steven & Marie Johnson Jr.',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$245K',
+    age: 41,
+    occupation: 'Young Professionals',
+    riskProfile: 'Moderate',
+    objectives: ['Young Professional Events', 'Educational Webinars', 'Career Development Workshops', 'Investment Seminars'],
+    advisor: 'fa051',
+    location: 'Denver, CO'
   }
 ];
 
@@ -2748,4 +2944,105 @@ export const CLIENT_360_BUSINESS_BENEFITS = [
   'Improved client engagement through timely outreach and communication',
   'Strategic opportunity identification for service expansion',
   'Deeper client insights for personalized advisory services'
+];
+
+// Cash Insight Category
+export const CASH_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Cash',
+  description: 'These Insights help Financial Advisors to identify and act on unusual and insightful cash in the account(s). These insights can provide useful information and actions related to cash balances, cash withdrawals and upcoming cash distributions',
+  displayLabel: 'Cash balances, distributed and withdrawals'
+};
+
+// Cash Insights
+export const CASH_INSIGHTS = [
+  {
+    id: 'cash001',
+    name: 'Cash Balance',
+    purpose: 'Cash balance',
+    category: 'Cash'
+  },
+  {
+    id: 'cash002',
+    name: 'Cash Distributed',
+    purpose: 'Cash Distributed',
+    category: 'Cash'
+  },
+  {
+    id: 'cash003',
+    name: 'Cash Withdrawals',
+    purpose: 'Cash Withdrawals',
+    category: 'Cash'
+  },
+  {
+    id: 'cash004',
+    name: 'Upcoming Cash Distribution',
+    purpose: 'Upcoming Cash Distribution',
+    category: 'Cash'
+  }
+];
+
+// Business Benefits for Cash
+export const CASH_BUSINESS_BENEFITS = [
+  'Proactive cash management and liquidity optimization strategies',
+  'Enhanced portfolio efficiency through strategic cash allocation',
+  'Improved client engagement through timely cash flow insights',
+  'Strategic opportunity identification for cash deployment and investment',
+  'Enhanced cash flow monitoring and optimization for client benefit'
+];
+
+// Events Insight Category
+export const EVENTS_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Events',
+  description: 'These Insights help Financial Advisors to identify clients and prospects that will be interested in joining a event that is organized by the Advisor on specific topics',
+  displayLabel: 'These Insights help Financial Advisors to identify clients and prospects that will be interested in joining a event that is organized by the Advisor on specific topics'
+};
+
+// Events Insights
+export const EVENTS_INSIGHTS = [
+  {
+    id: 'events001',
+    name: 'Seminar Targeting',
+    purpose: 'Historical attendance analysis with satisfaction ratings for targeted seminars invitations',
+    category: 'Events'
+  },
+  {
+    id: 'events002',
+    name: 'Webinar Optimization',
+    purpose: 'Engagement tracking and completion rates for improved Webinar based education',
+    category: 'Events'
+  },
+  {
+    id: 'events003',
+    name: 'Conference Networking',
+    purpose: 'Investment interest matching for peer learning opportunities based on similar profile clients',
+    category: 'Events'
+  },
+  {
+    id: 'events004',
+    name: 'Workshop Planning',
+    purpose: 'Interactive learning preferences for hands-on educational experiences in an workshop',
+    category: 'Events'
+  },
+  {
+    id: 'events005',
+    name: 'Networking Events',
+    purpose: 'Peer group curation for relationship building and knowledge sharing',
+    category: 'Events'
+  },
+  {
+    id: 'events006',
+    name: 'Educational Series',
+    purpose: 'Multi-session program development for comprehensive client education',
+    category: 'Events'
+  }
+];
+
+// Business Benefits for Events
+export const EVENTS_BUSINESS_BENEFITS = [
+  'Additional annual impact through event optimization',
+  'Average annual revenue per event participant through enhanced engagement',
+  'Improvement in client engagement efficiency through targeted event invitations',
+  'Improvement in prospect conversion rates through educational events'
 ];
