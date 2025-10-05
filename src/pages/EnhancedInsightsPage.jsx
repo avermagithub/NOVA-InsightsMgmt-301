@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, TrendingUp, Users, PieChart, Shield, FileCheck, CreditCard, MessageSquare, BarChart3, GraduationCap, Target, Calendar, Calculator, Eye, DollarSign } from 'lucide-react';
+import { Search, Filter, TrendingUp, Users, PieChart, Shield, FileCheck, CreditCard, MessageSquare, BarChart3, GraduationCap, Target, Calendar, Calculator, Eye, DollarSign, Briefcase } from 'lucide-react';
 import { INSIGHT_CATEGORY_GROUPINGS, INSIGHT_CATEGORIES_BY_GROUP, INSIGHT_EXAMPLES } from '../data/insightExamples';
 import FrontOfficeInsights from '../components/FrontOfficeInsights';
 
@@ -28,13 +28,14 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
       Calendar,
       Calculator,
       Eye,
-      DollarSign
+      DollarSign,
+      Briefcase
     };
     return icons[iconName] || TrendingUp;
   };
 
   const handleCategoryClick = (category) => {
-    if (category.id === 'investment_products' || category.id === 'banking_products' || category.id === 'crm' || category.id === 'account_performance' || category.id === 'insurance_planning' || category.id === 'education_planning' || category.id === 'sbl' || category.id === 'financial_planning' || category.id === 'retirement_planning' || category.id === 'estate_planning' || category.id === 'trust_planning' || category.id === 'tax_planning' || category.id === 'client_360' || category.id === 'cash' || category.id === 'events') {
+    if (category.id === 'investment_products' || category.id === 'banking_products' || category.id === 'crm' || category.id === 'account_performance' || category.id === 'insurance_planning' || category.id === 'education_planning' || category.id === 'sbl' || category.id === 'financial_planning' || category.id === 'retirement_planning' || category.id === 'estate_planning' || category.id === 'trust_planning' || category.id === 'tax_planning' || category.id === 'client_360' || category.id === 'cash' || category.id === 'events' || category.id === 'referrals' || category.id === 'business_owners') {
       setSelectedCategory(category);
       setShowFrontOfficeInsights(true);
     }

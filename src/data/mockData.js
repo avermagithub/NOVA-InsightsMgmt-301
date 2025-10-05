@@ -567,6 +567,68 @@ export const FINANCIAL_ADVISORS = [
     aum: '$378M',
     clientCount: 76,
     location: 'Atlanta, GA'
+  },
+  // Referral Network Specialists
+  {
+    id: 'fa052',
+    name: 'Alexander Pemberton, CFP®, CPWA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 28,
+    specialties: ['Board Network Development', 'Professional Network Analysis', 'Ultra-Wealthy Referrals', 'Community Connection Mapping'],
+    aum: '$1.2B',
+    clientCount: 24,
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'fa053',
+    name: 'Victoria Blackwood, CFP®, CFA',
+    firm: 'Sterling Wealth Partners',
+    experience: 22,
+    specialties: ['Alumni Network Targeting', 'Industry Association Leverage', 'Executive Referral Programs', 'Professional Network Analysis'],
+    aum: '$687M',
+    clientCount: 41,
+    location: 'Boston, MA'
+  },
+  {
+    id: 'fa054',
+    name: 'Harrison Sterling III, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 19,
+    specialties: ['Technology Network Referrals', 'Business Partner Programs', 'Community Engagement', 'Family Network Development'],
+    aum: '$534M',
+    clientCount: 58,
+    location: 'San Francisco, CA'
+  },
+  // Business Owner Specialists  
+  {
+    id: 'fa055',
+    name: 'Margaret Whitmore, JD, CFP®, CPA',
+    firm: 'Sterling Wealth Partners',
+    experience: 25,
+    specialties: ['M&A Advisory', 'IPO Advisory', 'Succession Planning & Exit Planning', 'Private Equity Services'],
+    aum: '$1.8B',
+    clientCount: 18,
+    location: 'New York, NY'
+  },
+  {
+    id: 'fa056',
+    name: 'Charles Hamilton IV, CFP®, CFA, MBA',
+    firm: 'Sterling Wealth Partners',
+    experience: 20,
+    specialties: ['Business Growth Strategy', 'Acquisition Financing', 'Commercial Banking', 'Executive Compensation'],
+    aum: '$892M',
+    clientCount: 32,
+    location: 'Austin, TX'
+  },
+  {
+    id: 'fa057',
+    name: 'Catherine Davis, CFP®, ChFC®, CPA',
+    firm: 'Sterling Wealth Partners',
+    experience: 17,
+    specialties: ['Cash Flow Management', 'Commercial Lending', 'Treasury Management', 'Small Business Services'],
+    aum: '$456M',
+    clientCount: 67,
+    location: 'Nashville, TN'
   }
 ];
 
@@ -1974,6 +2036,152 @@ export const CLIENTS = [
     objectives: ['Young Professional Events', 'Educational Webinars', 'Career Development Workshops', 'Investment Seminars'],
     advisor: 'fa051',
     location: 'Denver, CO'
+  },
+  // Referrals Network Clients
+  {
+    id: 'cl115',
+    name: 'Margaret Vanderbilt III',
+    wealthSegment: 'UHNW',
+    aum: '$48M',
+    age: 72,
+    occupation: 'Board Chair & Philanthropist',
+    riskProfile: 'Conservative',
+    objectives: ['Board Network Referrals', 'Professional Network Analysis', 'Community Connection Mapping', 'Alumni Network Targeting'],
+    advisor: 'fa052',
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'cl116',
+    name: 'Alexander Carnegie II',
+    wealthSegment: 'UHNW',
+    aum: '$35M',
+    age: 67,
+    occupation: 'Investment Fund Chairman',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Industry Association Leverage', 'Professional Network Analysis', 'Business Partner Programs', 'Board Connection Strategy'],
+    advisor: 'fa052',
+    location: 'New York, NY'
+  },
+  {
+    id: 'cl117',
+    name: 'Victoria & James Wellington',
+    wealthSegment: 'HNW',
+    aum: '$8.5M',
+    age: 59,
+    occupation: 'Corporate Executives',
+    riskProfile: 'Moderate',
+    objectives: ['Alumni Network Targeting', 'Professional Network Analysis', 'Community Connection Mapping', 'Neighborhood Network Development'],
+    advisor: 'fa053',
+    location: 'Boston, MA'
+  },
+  {
+    id: 'cl118',
+    name: 'Harrison & Elizabeth Montgomery',
+    wealthSegment: 'HNW',
+    aum: '$5.2M',
+    age: 55,
+    occupation: 'Healthcare Executives',
+    riskProfile: 'Moderate',
+    objectives: ['Professional Network Analysis', 'Industry Association Leverage', 'Community Connection Mapping', 'Family Network Opportunities'],
+    advisor: 'fa053',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl119',
+    name: 'Christopher & Amanda Sterling',
+    wealthSegment: 'AFFLUENT',
+    aum: '$750K',
+    age: 48,
+    occupation: 'Technology Executives',
+    riskProfile: 'Moderate Aggressive',
+    objectives: ['Alumni Network Targeting', 'Professional Network Analysis', 'Business Partner Programs', 'Industry Association Leverage'],
+    advisor: 'fa054',
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'cl120',
+    name: 'Daniel & Rebecca Hamilton',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$385K',
+    age: 43,
+    occupation: 'Community Leaders',
+    riskProfile: 'Moderate',
+    objectives: ['Community Connection Mapping', 'Neighborhood Network Development', 'Family Network Opportunities', 'Professional Network Analysis'],
+    advisor: 'fa054',
+    location: 'Atlanta, GA'
+  },
+  // Business Owner Clients
+  {
+    id: 'cl121',
+    name: 'William Blackstone III',
+    wealthSegment: 'UHNW',
+    aum: '$62M',
+    age: 58,
+    occupation: 'Private Equity Founder',
+    riskProfile: 'Aggressive',
+    objectives: ['M&A Advisory', 'IPO Advisory', 'Succession Planning & Exit Planning', 'Executive Compensation'],
+    advisor: 'fa055',
+    location: 'New York, NY'
+  },
+  {
+    id: 'cl122',
+    name: 'Eleanor & Robert Thornton',
+    wealthSegment: 'UHNW',
+    aum: '$41M',
+    age: 63,
+    occupation: 'Manufacturing Business Owners',
+    riskProfile: 'Moderate Conservative',
+    objectives: ['Business Growth Strategy', 'Succession Planning & Exit Planning', 'Commercial Banking', 'Real Estate Finance'],
+    advisor: 'fa055',
+    location: 'Detroit, MI'
+  },
+  {
+    id: 'cl123',
+    name: 'Charles & Patricia Whitmore II',
+    wealthSegment: 'HNW',
+    aum: '$12.8M',
+    age: 56,
+    occupation: 'Technology Company Owners',
+    riskProfile: 'Aggressive',
+    objectives: ['Potential Acceleration in Revenue', 'Acquisition Financing', 'IPO Advisory', 'Executive Compensation'],
+    advisor: 'fa056',
+    location: 'Austin, TX'
+  },
+  {
+    id: 'cl124',
+    name: 'Michael & Sarah Davidson',
+    wealthSegment: 'HNW',
+    aum: '$7.4M',
+    age: 52,
+    occupation: 'Healthcare Practice Owners',
+    riskProfile: 'Moderate',
+    objectives: ['Cash Flow Management', 'Commercial Lending', 'Real Estate Finance', 'Succession Planning & Exit Planning'],
+    advisor: 'fa056',
+    location: 'Phoenix, AZ'
+  },
+  {
+    id: 'cl125',
+    name: 'Richard & Laura Thompson II',
+    wealthSegment: 'AFFLUENT',
+    aum: '$980K',
+    age: 49,
+    occupation: 'Restaurant Chain Owners',
+    riskProfile: 'Moderate',
+    objectives: ['Business Growth Strategy', 'Commercial Lending', 'Facilities Management', 'Treasury Management'],
+    advisor: 'fa057',
+    location: 'Nashville, TN'
+  },
+  {
+    id: 'cl126',
+    name: 'Steven & Jennifer Martinez II',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$425K',
+    age: 44,
+    occupation: 'Franchise Owners',
+    riskProfile: 'Moderate',
+    objectives: ['Potential Acceleration in Revenue', 'Commercial Banking', 'Cash Flow Management', 'Human Resources Finance'],
+    advisor: 'fa057',
+    location: 'Dallas, TX'
   }
 ];
 
@@ -3045,4 +3253,185 @@ export const EVENTS_BUSINESS_BENEFITS = [
   'Average annual revenue per event participant through enhanced engagement',
   'Improvement in client engagement efficiency through targeted event invitations',
   'Improvement in prospect conversion rates through educational events'
+];
+
+// Referrals Insight Category
+export const REFERRALS_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Referrals',
+  description: 'These Insights help Financial Advisors to identify clients who can provide referrals of individuals from specific demographics and also specific professional and personal relationship networks',
+  displayLabel: 'These Insights help Financial Advisors to identify clients who can provide referrals of specific demographics and specifics relationship networks related to communities and in workplace'
+};
+
+// Referrals Insights
+export const REFERRALS_INSIGHTS = [
+  {
+    id: 'ref001',
+    name: 'Professional Network Analysis',
+    purpose: 'Systematic identification of workplace and industry connections with referral potential',
+    category: 'Referrals'
+  },
+  {
+    id: 'ref002',
+    name: 'Community Connection Mapping',
+    purpose: 'Local market penetration of Client\'s network in the community events',
+    category: 'Referrals'
+  },
+  {
+    id: 'ref003',
+    name: 'Alumni Network Targeting',
+    purpose: 'Educational institution relationships for systematic outreach',
+    category: 'Referrals'
+  },
+  {
+    id: 'ref004',
+    name: 'Industry Association Leverage',
+    purpose: 'Professional organization connections and leadership roles',
+    category: 'Referrals'
+  },
+  {
+    id: 'ref005',
+    name: 'Board Connection Strategy',
+    purpose: 'Executive and nonprofit board relationship utilization',
+    category: 'Referrals'
+  },
+  {
+    id: 'ref006',
+    name: 'Neighborhood Network Development',
+    purpose: 'Residential community engagement and local relationships',
+    category: 'Referrals'
+  },
+  {
+    id: 'ref007',
+    name: 'Business Partner Programs',
+    purpose: 'Joint venture and partnership network expansion',
+    category: 'Referrals'
+  },
+  {
+    id: 'ref008',
+    name: 'Family Network Opportunities',
+    purpose: 'Multi-generational wealth planning with extended family engagement',
+    category: 'Referrals'
+  }
+];
+
+// Business Benefits for Referrals
+export const REFERRALS_BUSINESS_BENEFITS = [
+  'Professional network analysis with conversion tracking and success rate optimization',
+  'Community and social connection mapping for local market penetration',
+  'Alumni network targeting with educational institution relationship development',
+  'Industry association member identification with professional credential analysis',
+  'Board connection referral strategies with executive network access',
+  'Neighborhood network development with residential community engagement',
+  'Business partner referral programs with joint venture relationship leverage',
+  'Family network referral opportunities with multi-generational wealth planning',
+  'Average annual value per successful referral',
+  'Improvement in referral conversion rates',
+  'Increase in qualified prospect pipeline',
+  'Clients actively participating in structured referral programs'
+];
+
+// Business Owners Insight Category
+export const BUSINESS_OWNERS_CATEGORY = {
+  grouping: 'Front Office',
+  name: 'Business Owners',
+  description: 'These Insights help Financial Advisor to know more about Clients and Prospects who are business owners. These Insights are related to Potential acceleration in revenue, Acquisition financing, Line of credit, Business Loans, Cash Management, Commercial Real estate financing, Key employee changes, Facility relocation, Hiring executives, Mergers and Acquisitions, Succession planning',
+  displayLabel: 'Insight about Clients and Prospects who are Business Owners. This can be used for Prospecting and providing other services and products for Clients'
+};
+
+// Business Owners Insights
+export const BUSINESS_OWNERS_INSIGHTS = [
+  {
+    id: 'bo001',
+    name: 'Potential Acceleration in Revenue',
+    purpose: 'Potential Acceleration in Revenue',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo002',
+    name: 'Acquisition Financing',
+    purpose: 'Acquisition Financing',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo003',
+    name: 'Succession Planning & Exit Planning',
+    purpose: 'Succession Planning & Exit Planning',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo004',
+    name: 'Business Growth Strategy',
+    purpose: 'Business Growth Strategy',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo005',
+    name: 'Commercial Lending',
+    purpose: 'Commercial Lending',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo006',
+    name: 'M&A Advisory',
+    purpose: 'M&A Advisory',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo007',
+    name: 'Cash Flow Management',
+    purpose: 'Cash Flow Management',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo008',
+    name: 'Executive Compensation',
+    purpose: 'Executive Compensation',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo009',
+    name: 'Commercial Banking',
+    purpose: 'Commercial Banking',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo010',
+    name: 'Treasury Management',
+    purpose: 'Treasury Management',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo011',
+    name: 'Real Estate Finance',
+    purpose: 'Real Estate Finance',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo012',
+    name: 'Human Resources Finance',
+    purpose: 'Human Resources Finance',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo013',
+    name: 'Facilities Management',
+    purpose: 'Facilities Management',
+    category: 'Business Owners'
+  },
+  {
+    id: 'bo014',
+    name: 'IPO Advisory',
+    purpose: 'IPO Advisory',
+    category: 'Business Owners'
+  }
+];
+
+// Business Benefits for Business Owners
+export const BUSINESS_OWNERS_BUSINESS_BENEFITS = [
+  'Business Growth Strategy, Commercial Lending, M&A Advisory',
+  'Cash Flow Management, Executive Compensation, Commercial Banking',
+  'Treasury Management, Real Estate Finance, Human Resources Finance',
+  'Facilities Management, Executive Search, IPO Advisory',
+  'M&A Strategy, Partnership Development, Succession Planning'
 ];
