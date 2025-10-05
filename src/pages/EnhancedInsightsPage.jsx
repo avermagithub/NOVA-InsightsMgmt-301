@@ -78,18 +78,216 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
     return grouped;
   };
 
+  // Helper function to get example insights for each category
+  const getCategoryExampleInsight = (categoryName) => {
+    const categoryInsights = INSIGHT_EXAMPLES.filter(insight => insight.category === categoryName);
+    return categoryInsights.length > 0 ? categoryInsights[0] : null;
+  };
+
+  // Business benefits mapping for categories
+  const getCategoryBusinessBenefits = (categoryId) => {
+    const benefitsMap = {
+      'investment_products': '+2.8% performance, $6,200 tax savings, $2,800 cost reduction',
+      'banking_products': '$65,000 lifetime mortgage savings, +4.5% APY improvements', 
+      'crm': '$18.5M growth potential, 87% engagement scores',
+      'account_performance': '$14.2M additional client returns, +24% advisor adoption',
+      'insurance_planning': '$12,950 surrender penalty avoidance, +2.8% performance improvement',
+      'education_planning': '$27,500 penalty prevention, 22-37% tax bracket optimization',
+      'sbl': '$8,400 fee reduction, $2,900 cash drag elimination',
+      'financial_planning': '$2.5M+ Annual ROI Potential per advisor',
+      'retirement_planning': '$27,500 penalty prevention, Social Security optimization',
+      'estate_planning': '$4,200 tax-loss harvesting, estate tax minimization',
+      'trust_planning': 'Advanced trust strategies, wealth transfer optimization',
+      'tax_planning': '$6,200 tax savings, +3.2% sector rotation alpha',
+      'client_360': 'Comprehensive client intelligence, relationship monitoring',
+      'cash': '$2,900 cash drag elimination, liquidity optimization',
+      'events': 'Client event planning, educational program optimization',
+      'referrals': '$390M AUM potential identification, 78% conversion likelihood',
+      'business_owners': '$18.5M growth potential, business advisory services',
+      'wire_transfers': '$200K-$600K operational savings, compliance monitoring',
+      'portfolio_management': '$8,400 fee reduction, performance optimization',
+      'trading': '$4,200 tax-loss harvesting, trade execution optimization',
+      'advisory_service': '$2.5M+ Annual ROI, service expansion opportunities',
+      'investment_proposal': 'Investment proposal optimization, conversion enhancement',
+      'investment_research': 'Research distribution analytics, client engagement insights',
+      'client_reporting': 'Reporting optimization, performance analytics enhancement',
+      'life_events': 'Life event detection, proactive outreach optimization',
+      'client_portal_engagement': 'Digital engagement analytics, portal optimization',
+      'advisor_client_engagement': 'Relationship analytics, communication optimization',
+      'client_surveys': 'Satisfaction measurement, service improvement insights',
+      'client_onboarding': 'Onboarding optimization, compliance processing',
+      'risk_management': '$200K-$600K penalty avoidance, 92% early detection rate',
+      'compliance': '95% compliance vs 78% industry, zero penalties achieved'
+    };
+    return benefitsMap[categoryId] || 'Operational efficiency and performance optimization';
+  };
+
   return (
     <div className="fade-in">
       <div className="page-header">
         <h1 className="page-title">
-          {showInsightsByCategory ? 'All Insights by Category' : 'Insights Dashboard'}
+          Welcome to EDJ Insights & Opportunities Management
         </h1>
-        <p className="page-subtitle">
-          {showInsightsByCategory 
-            ? `Comprehensive view of all ${INSIGHT_EXAMPLES.length} insights organized by category`
-            : 'Advanced insights and opportunities across all business functions'
-          }
+        <p className="page-subtitle" style={{ marginBottom: '1.5rem' }}>
+          Empowering Financial Advisors, Middle Office Support Teams, Back Office Support Teams, Field Leaders, Regional and National Field Management Teams, Advisor Recruitment Teams, Home Office Teams with AI Powered Insights and Opportunities
         </p>
+      </div>
+
+      {/* Comprehensive Insight Category Overview */}
+      <div className="card" style={{ marginBottom: '2rem' }}>
+        <div className="card-header">
+          <h3 className="card-title">Platform Overview: Insight Categories & Business Impact</h3>
+          <p className="card-subtitle">
+            Comprehensive guide to our {Object.values(INSIGHT_CATEGORIES_BY_GROUP).flat().length} insight categories across {INSIGHT_CATEGORY_GROUPINGS.length} business function groups, delivering measurable ROI and operational excellence
+          </p>
+        </div>
+        <div className="card-content" style={{ padding: '2rem' }}>
+          {INSIGHT_CATEGORY_GROUPINGS.map((group) => (
+            <div key={group.id} style={{ marginBottom: '3rem' }}>
+              {/* Group Header */}
+              <div style={{ 
+                background: 'linear-gradient(135deg, var(--ej-primary) 0%, var(--ej-gray-800) 100%)',
+                color: 'white',
+                padding: '1.5rem',
+                borderRadius: '12px',
+                marginBottom: '1.5rem'
+              }}>
+                <h3 style={{ fontSize: '1.5rem', fontWeight: '700', margin: '0 0 0.5rem' }}>
+                  {group.name}
+                </h3>
+                <p style={{ fontSize: '1rem', opacity: '0.9', margin: 0 }}>
+                  {group.description}
+                </p>
+              </div>
+
+              {/* Categories in this Group */}
+              <div style={{ display: 'grid', gap: '2rem' }}>
+                {INSIGHT_CATEGORIES_BY_GROUP[group.id]?.map((category) => {
+                  const IconComponent = getIconComponent(category.icon);
+                  const exampleInsight = getCategoryExampleInsight(category.name);
+                  const businessBenefits = getCategoryBusinessBenefits(category.id);
+
+                  return (
+                    <div key={category.id} style={{
+                      border: '1px solid var(--ej-gray-200)',
+                      borderRadius: '12px',
+                      padding: '1.5rem',
+                      background: 'var(--ej-white)',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
+                      transition: 'all 0.2s ease'
+                    }}>
+                      {/* Category Header */}
+                      <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', marginBottom: '1rem' }}>
+                        <div style={{
+                          width: '50px',
+                          height: '50px',
+                          background: 'var(--ej-primary)',
+                          color: 'white',
+                          borderRadius: '10px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexShrink: 0
+                        }}>
+                          <IconComponent size={24} />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                          <h4 style={{ 
+                            color: 'var(--ej-primary)', 
+                            fontSize: '1.25rem', 
+                            fontWeight: '600',
+                            margin: '0 0 0.5rem'
+                          }}>
+                            {category.name}
+                            <span style={{
+                              background: 'var(--ej-gold)',
+                              color: 'var(--ej-primary)',
+                              padding: '0.25rem 0.75rem',
+                              borderRadius: '20px',
+                              fontSize: '0.8rem',
+                              fontWeight: '600',
+                              marginLeft: '1rem'
+                            }}>
+                              {category.totalInsights} Insights
+                            </span>
+                          </h4>
+                          <p style={{ 
+                            color: 'var(--ej-gray-600)', 
+                            fontSize: '1rem',
+                            margin: '0',
+                            lineHeight: '1.5'
+                          }}>
+                            {category.description}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Example Insight */}
+                      {exampleInsight && (
+                        <div style={{
+                          background: 'var(--ej-gray-50)',
+                          border: '1px solid var(--ej-gray-200)',
+                          borderRadius: '8px',
+                          padding: '1rem',
+                          marginBottom: '1rem'
+                        }}>
+                          <h5 style={{
+                            color: 'var(--ej-primary)',
+                            fontSize: '0.9rem',
+                            fontWeight: '600',
+                            margin: '0 0 0.5rem',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem'
+                          }}>
+                            <Eye size={16} />
+                            Example Insight: {exampleInsight.title}
+                          </h5>
+                          <p style={{
+                            color: 'var(--ej-gray-700)',
+                            fontSize: '0.85rem',
+                            margin: '0',
+                            lineHeight: '1.4'
+                          }}>
+                            {exampleInsight.insightText?.substring(0, 200) + (exampleInsight.insightText?.length > 200 ? '...' : '')}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Business Benefits */}
+                      <div style={{
+                        background: 'linear-gradient(135deg, var(--ej-gold) 0%, #FFD700 100%)',
+                        color: 'var(--ej-primary)',
+                        borderRadius: '8px',
+                        padding: '1rem'
+                      }}>
+                        <h5 style={{
+                          fontSize: '0.9rem',
+                          fontWeight: '600',
+                          margin: '0 0 0.5rem',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.5rem'
+                        }}>
+                          <TrendingUp size={16} />
+                          Business Benefits
+                        </h5>
+                        <p style={{
+                          fontSize: '0.85rem',
+                          margin: '0',
+                          lineHeight: '1.4',
+                          fontWeight: '500'
+                        }}>
+                          {businessBenefits}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Compact Horizontal Search and Filter Controls */}

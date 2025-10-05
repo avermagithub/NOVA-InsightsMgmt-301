@@ -373,15 +373,92 @@ body {
 }
 
 .page-title {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.25rem;
+  font-weight: 700;
   color: var(--ej-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
 }
 
 .page-subtitle {
   color: var(--ej-gray-600);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+/* Platform Overview Styles */
+.platform-overview {
+  background: var(--ej-white);
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.group-header {
+  background: linear-gradient(135deg, var(--ej-primary) 0%, var(--ej-gray-800) 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.category-card {
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: var(--ej-white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.category-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--ej-primary);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.insights-badge {
+  background: var(--ej-gold);
+  color: var(--ej-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.example-insight {
+  background: var(--ej-gray-50);
+  border: 1px solid var(--ej-gray-200);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.business-benefits {
+  background: linear-gradient(135deg, var(--ej-gold) 0%, #FFD700 100%);
+  color: var(--ej-primary);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Cards */
