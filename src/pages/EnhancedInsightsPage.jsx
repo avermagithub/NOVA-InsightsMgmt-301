@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Filter, TrendingUp, Users, PieChart, Shield, FileCheck, CreditCard, MessageSquare, BarChart3, GraduationCap, Target, Calendar, Calculator, Eye, DollarSign, Briefcase, Monitor, Activity } from 'lucide-react';
+import { Search, Filter, TrendingUp, Users, PieChart, Shield, FileCheck, CreditCard, MessageSquare, BarChart3, GraduationCap, Target, Calendar, Calculator, Eye, DollarSign, Briefcase, Monitor, Activity, UserCheck } from 'lucide-react';
 import { INSIGHT_CATEGORY_GROUPINGS, INSIGHT_CATEGORIES_BY_GROUP, INSIGHT_EXAMPLES } from '../data/insightExamples';
 import FrontOfficeInsights from '../components/FrontOfficeInsights';
 
@@ -31,13 +31,14 @@ const EnhancedInsightsPage = ({ selectedRole }) => {
       DollarSign,
       Briefcase,
       Monitor,
-      Activity
+      Activity,
+      UserCheck
     };
     return icons[iconName] || TrendingUp;
   };
 
   const handleCategoryClick = (category) => {
-    if (category.id === 'investment_products' || category.id === 'banking_products' || category.id === 'crm' || category.id === 'account_performance' || category.id === 'insurance_planning' || category.id === 'education_planning' || category.id === 'sbl' || category.id === 'financial_planning' || category.id === 'retirement_planning' || category.id === 'estate_planning' || category.id === 'trust_planning' || category.id === 'tax_planning' || category.id === 'client_360' || category.id === 'cash' || category.id === 'events' || category.id === 'referrals' || category.id === 'business_owners' || category.id === 'wire_transfers' || category.id === 'portfolio_management' || category.id === 'trading') {
+    if (category.id === 'investment_products' || category.id === 'banking_products' || category.id === 'crm' || category.id === 'account_performance' || category.id === 'insurance_planning' || category.id === 'education_planning' || category.id === 'sbl' || category.id === 'financial_planning' || category.id === 'retirement_planning' || category.id === 'estate_planning' || category.id === 'trust_planning' || category.id === 'tax_planning' || category.id === 'client_360' || category.id === 'cash' || category.id === 'events' || category.id === 'referrals' || category.id === 'business_owners' || category.id === 'wire_transfers' || category.id === 'portfolio_management' || category.id === 'trading' || category.id === 'advisory_service' || category.id === 'investment_proposal' || category.id === 'investment_research' || category.id === 'client_reporting' || category.id === 'life_events' || category.id === 'client_portal_engagement' || category.id === 'advisor_client_engagement' || category.id === 'client_surveys' || category.id === 'client_onboarding') {
       setSelectedCategory(category);
       setShowFrontOfficeInsights(true);
     }

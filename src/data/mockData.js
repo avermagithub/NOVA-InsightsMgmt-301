@@ -725,6 +725,314 @@ export const FINANCIAL_ADVISORS = [
     aum: '$325M',
     clientCount: 95,
     location: 'Miami, FL'
+  },
+
+  // ADVISORY SERVICE SPECIALISTS (fa068-fa070)
+  {
+    id: 'fa068',
+    name: 'Katherine Thompson, CFP®, CFA, CIMA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 19,
+    specialties: ['Advisory Service Development', 'Brokerage to Advisory Conversion', 'Fee Analysis', 'High Net Worth Advisory'],
+    aum: '$2.8B',
+    clientCount: 42,
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'fa069',
+    name: 'Michael Rodriguez, Series 65, CFP®, ChFC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['Advisory Account Setup', 'Service Integration', 'Fee Optimization', 'Client Conversion Strategies'],
+    aum: '$1.2B',
+    clientCount: 78,
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'fa070',
+    name: 'Jennifer Chen, Series 7, Series 66, CRPC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 11,
+    specialties: ['Advisory Service Utilization', 'Young Professional Advisory', 'Fee Transparency', 'Digital Advisory Integration'],
+    aum: '$485M',
+    clientCount: 125,
+    location: 'Boston, MA'
+  },
+
+  // INVESTMENT PROPOSAL SPECIALISTS (fa071-fa073)
+  {
+    id: 'fa071',
+    name: 'Robert Johnson, CFA, CFP®, CAIA',
+    firm: 'Sterling Wealth Partners',
+    experience: 22,
+    specialties: ['Investment Proposal Development', 'Retirement Planning Proposals', 'Tax-Advantaged Strategies', 'UHNW Proposals'],
+    aum: '$3.4B',
+    clientCount: 35,
+    location: 'Manhattan, NY'
+  },
+  {
+    id: 'fa072',
+    name: 'Sarah Wilson, CFP®, CIMA®, CEPA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Alternative Investment Proposals', 'Sustainable Investing', 'Wealth Transfer Proposals', 'ESG Integration'],
+    aum: '$1.8B',
+    clientCount: 58,
+    location: 'Washington, DC'
+  },
+  {
+    id: 'fa073',
+    name: 'David Martinez, Series 7, Series 66, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 13,
+    specialties: ['Business Owner Investment Proposals', 'Tax Optimization Proposals', 'Young Professional Planning', 'Growth Strategies'],
+    aum: '$725M',
+    clientCount: 89,
+    location: 'Austin, TX'
+  },
+
+  // INVESTMENT RESEARCH SPECIALISTS (fa074-fa078)
+  {
+    id: 'fa074',
+    name: 'Alexandra Foster, CFA, CAIA, FRM',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Investment Research Analysis', 'Hedge Fund Research', 'Alternative Investment Research', 'Economic Research Integration'],
+    aum: '$4.2B',
+    clientCount: 28,
+    location: 'Hamptons, NY'
+  },
+  {
+    id: 'fa075',
+    name: 'Marcus Thompson, CFA, ESG, CAIA',
+    firm: 'Sterling Wealth Partners',
+    experience: 17,
+    specialties: ['ESG Research Integration', 'Analyst Coverage', 'Private Equity Research', 'Sustainability Analysis'],
+    aum: '$2.1B',
+    clientCount: 46,
+    location: 'Charlotte, NC'
+  },
+  {
+    id: 'fa076',
+    name: 'Lisa Rodriguez, CFA, CMT, CIPM',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['Sector Analysis', 'Healthcare Research', 'Individual Stock Research', 'Earnings Analysis'],
+    aum: '$1.4B',
+    clientCount: 67,
+    location: 'Atlanta, GA'
+  },
+  {
+    id: 'fa077',
+    name: 'Benjamin Chen, CFA, Series 86/87',
+    firm: 'Sterling Wealth Partners',
+    experience: 12,
+    specialties: ['Technology Research', 'Energy Research', 'Research Readership Analytics', 'Economic Indicators'],
+    aum: '$895M',
+    clientCount: 84,
+    location: 'Houston, TX'
+  },
+  {
+    id: 'fa078',
+    name: 'Rachel Davis, Series 7, Series 66, CFA',
+    firm: 'Sterling Wealth Partners',
+    experience: 9,
+    specialties: ['Research Education', 'Junior Analyst Coordination', 'Market Analysis Training', 'Investment Research Distribution'],
+    aum: '$385M',
+    clientCount: 106,
+    location: 'Phoenix, AZ'
+  },
+
+  // CLIENT REPORTING SPECIALISTS (fa079-fa081)
+  {
+    id: 'fa079',
+    name: 'William Anderson, CFP®, CIMA®, CPWA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 20,
+    specialties: ['Client Reporting Excellence', 'Performance Analytics', 'Benchmark Reporting', 'ESG Impact Reporting'],
+    aum: '$2.6B',
+    clientCount: 41,
+    location: 'Naples, FL'
+  },
+  {
+    id: 'fa080',
+    name: 'Catherine Wilson, Series 65, CFP®, PMP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 14,
+    specialties: ['Goal Progress Tracking', 'Interactive Reporting', 'Mobile Optimization', 'Data Visualization'],
+    aum: '$1.1B',
+    clientCount: 73,
+    location: 'San Antonio, TX'
+  },
+  {
+    id: 'fa081',
+    name: 'Daniel Park, Series 7, Series 66, CRPC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 10,
+    specialties: ['Tax Optimization Reporting', 'Quarterly Reports', 'Performance Metrics', 'Client Analytics'],
+    aum: '$525M',
+    clientCount: 92,
+    location: 'Jacksonville, FL'
+  },
+
+  // LIFE EVENTS SPECIALISTS (fa082-fa084)
+  {
+    id: 'fa082',
+    name: 'Victoria Martinez, CFP®, ChFC®, CLU®',
+    firm: 'Sterling Wealth Partners',
+    experience: 21,
+    specialties: ['Life Event Planning', 'Succession Planning', 'Estate Transition', 'Executive Transitions'],
+    aum: '$3.1B',
+    clientCount: 38,
+    location: 'Boston, MA'
+  },
+  {
+    id: 'fa083',
+    name: 'Christopher Johnson, Series 65, CFP®, CEPA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 15,
+    specialties: ['Career Transition Planning', 'Stock Option Planning', 'Technology Executive Advisory', 'Startup Wealth Management'],
+    aum: '$1.6B',
+    clientCount: 62,
+    location: 'Austin, TX'
+  },
+  {
+    id: 'fa084',
+    name: 'Amanda Thompson, Series 7, Series 66, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 12,
+    specialties: ['Young Professional Life Events', 'Career Launch Planning', 'First Home Purchase', 'Student Loan Strategies'],
+    aum: '$745M',
+    clientCount: 97,
+    location: 'Atlanta, GA'
+  },
+
+  // CLIENT PORTAL ENGAGEMENT SPECIALISTS (fa085-fa087)
+  {
+    id: 'fa085',
+    name: 'Gregory Foster, Series 65, CFP®, CAP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Digital Engagement Analytics', 'Portal Optimization', 'Client Technology Adoption', 'Digital Strategy'],
+    aum: '$2.4B',
+    clientCount: 44,
+    location: 'Charleston, SC'
+  },
+  {
+    id: 'fa086',
+    name: 'Patricia Chen, Series 7, Series 66, CDFA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 13,
+    specialties: ['Portal Analytics', 'Search Behavior Analysis', 'Digital Client Engagement', 'Technology Integration'],
+    aum: '$1.3B',
+    clientCount: 69,
+    location: 'Denver, CO'
+  },
+  {
+    id: 'fa087',
+    name: 'Steven Rodriguez, Series 66, CFP®, CTI',
+    firm: 'Sterling Wealth Partners',
+    experience: 11,
+    specialties: ['Digital Native Engagement', 'Portal Feature Development', 'Technology Optimization', 'Young Client Digital Strategies'],
+    aum: '$685M',
+    clientCount: 88,
+    location: 'Seattle, WA'
+  },
+
+  // ADVISOR-CLIENT ENGAGEMENT SPECIALISTS (fa088-fa090)
+  {
+    id: 'fa088',
+    name: 'Elizabeth Davis, CFP®, CIMA®, CPCC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 19,
+    specialties: ['Client Engagement Analytics', 'Communication Optimization', 'Relationship Management', 'High-Touch Service'],
+    aum: '$3.6B',
+    clientCount: 33,
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'fa089',
+    name: 'Jonathan Wilson, Series 65, CFP®, ACC',
+    firm: 'Sterling Wealth Partners',
+    experience: 16,
+    specialties: ['Multi-Channel Engagement', 'Communication Analytics', 'Client Relationship Optimization', 'Engagement Measurement'],
+    aum: '$1.7B',
+    clientCount: 56,
+    location: 'Dallas, TX'
+  },
+  {
+    id: 'fa090',
+    name: 'Michelle Park, Series 7, Series 66, CRPC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 8,
+    specialties: ['Digital Communication', 'Peer Benchmarking', 'Engagement Analytics', 'Client Experience Optimization'],
+    aum: '$445M',
+    clientCount: 103,
+    location: 'Orlando, FL'
+  },
+
+  // CLIENT SURVEYS SPECIALISTS (fa091-fa093)
+  {
+    id: 'fa091',
+    name: 'Harrison Thompson, CFP®, ChFC®, RICP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 23,
+    specialties: ['Client Satisfaction Measurement', 'Net Promoter Score Optimization', 'Feedback Analytics', 'Service Excellence'],
+    aum: '$4.8B',
+    clientCount: 29,
+    location: 'Manhattan, NY'
+  },
+  {
+    id: 'fa092',
+    name: 'Samantha Rodriguez, Series 65, CFP®, CDFA®',
+    firm: 'Sterling Wealth Partners',
+    experience: 17,
+    specialties: ['Trust and Confidence Measurement', 'Value Perception Analysis', 'Client Survey Analytics', 'Relationship Enhancement'],
+    aum: '$2.2B',
+    clientCount: 48,
+    location: 'Miami, FL'
+  },
+  {
+    id: 'fa093',
+    name: 'Kevin Chen, Series 7, Series 66, CRPC®',
+    firm: 'Sterling Wealth Partners',
+    experience: 10,
+    specialties: ['Survey Response Analytics', 'Feedback Integration', 'Client Loyalty Tracking', 'Service Improvement Analytics'],
+    aum: '$585M',
+    clientCount: 94,
+    location: 'Kansas City, MO'
+  },
+
+  // CLIENT ONBOARDING SPECIALISTS (fa094-fa096)
+  {
+    id: 'fa094',
+    name: 'Margaret Foster-Wilson, CFP®, CAMS, CISA',
+    firm: 'Sterling Wealth Partners',
+    experience: 25,
+    specialties: ['KYC/AML Excellence', 'Sophisticated Client Onboarding', 'Compliance Integration', 'Regulatory Expertise'],
+    aum: '$5.4B',
+    clientCount: 26,
+    location: 'Napa Valley, CA'
+  },
+  {
+    id: 'fa095',
+    name: 'Robert Martinez, Series 65, CFP®, CAMS',
+    firm: 'Sterling Wealth Partners',
+    experience: 18,
+    specialties: ['Account Opening Optimization', 'KYC Efficiency', 'Compliance Processing', 'Regulatory Affairs'],
+    aum: '$2.8B',
+    clientCount: 43,
+    location: 'Boston, MA'
+  },
+  {
+    id: 'fa096',
+    name: 'Jessica Johnson, Series 7, Series 66, CFP®',
+    firm: 'Sterling Wealth Partners',
+    experience: 7,
+    specialties: ['Digital Onboarding', 'First-Time Client Experience', 'Educational Integration', 'Young Professional Onboarding'],
+    aum: '$325M',
+    clientCount: 118,
+    location: 'Nashville, TN'
   }
 ];
 
@@ -2464,6 +2772,624 @@ export const CLIENTS = [
     objectives: ['Order Entry and Trade Execution', 'Trade Management and Risk Control'],
     advisor: 'fa067',
     location: 'Miami, FL'
+  },
+
+  // ADVISORY SERVICE CLIENTS (cl142-cl146)
+  {
+    id: 'cl142',
+    name: 'Richard & Patricia Blackstone',
+    wealthSegment: 'UHNW',
+    aum: '$8.5M',
+    age: 62,
+    occupation: 'Private Equity Managing Director & Healthcare Executive',
+    riskProfile: 'Moderate',
+    objectives: ['Advisory Service Expansion', 'Brokerage to Advisory Conversion', 'Fee Optimization'],
+    advisor: 'fa068',
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'cl143',
+    name: 'Amanda Martinez-Williams',
+    wealthSegment: 'HNW',
+    aum: '$2.8M',
+    age: 45,
+    occupation: 'Technology Entrepreneur & Angel Investor',
+    riskProfile: 'Aggressive',
+    objectives: ['Advisory Account Funding', 'Advisory Service Utilization', 'Performance Monitoring'],
+    advisor: 'fa068',
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'cl144',
+    name: 'Jonathan & Sarah Henderson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.4M',
+    age: 38,
+    occupation: 'Corporate Lawyers & Legal Consultants',
+    riskProfile: 'Moderate-Conservative',
+    objectives: ['Brokerage to Advisory Conversion', 'Advisory Service Integration', 'Fee Transparency'],
+    advisor: 'fa069',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl145',
+    name: 'Kevin Park',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$750K',
+    age: 35,
+    occupation: 'Software Engineering Manager',
+    riskProfile: 'Moderate-Aggressive',
+    objectives: ['Advisory Account Setup', 'Service Expansion', 'Technology Integration'],
+    advisor: 'fa069',
+    location: 'Seattle, WA'
+  },
+  {
+    id: 'cl146',
+    name: 'Lisa & Michael Thompson',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$425K',
+    age: 29,
+    occupation: 'Healthcare Professionals & Medical Residents',
+    riskProfile: 'Growth',
+    objectives: ['Advisory Service Introduction', 'Fee Optimization', 'Service Utilization'],
+    advisor: 'fa070',
+    location: 'Boston, MA'
+  },
+
+  // INVESTMENT PROPOSAL CLIENTS (cl147-cl151)
+  {
+    id: 'cl147',
+    name: 'Charles & Victoria Ashworth III',
+    wealthSegment: 'UHNW',
+    aum: '$12.2M',
+    age: 58,
+    occupation: 'Investment Banking Managing Director & Private Foundation Executive',
+    riskProfile: 'Conservative-Moderate',
+    objectives: ['Retirement Planning Proposal', 'Wealth Transfer Strategy', 'Tax Optimization'],
+    advisor: 'fa071',
+    location: 'Manhattan, NY'
+  },
+  {
+    id: 'cl148',
+    name: 'Daniel Rodriguez-Chen',
+    wealthSegment: 'HNW',
+    aum: '$3.6M',
+    age: 52,
+    occupation: 'Business Owner & Real Estate Developer',
+    riskProfile: 'Moderate-Aggressive',
+    objectives: ['Business Owner Investment Proposal', 'Alternative Investments', 'Tax Strategy'],
+    advisor: 'fa071',
+    location: 'Dallas, TX'
+  },
+  {
+    id: 'cl149',
+    name: 'Jennifer & Robert Kumar',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.8M',
+    age: 43,
+    occupation: 'Management Consultants & Strategy Directors',
+    riskProfile: 'Moderate',
+    objectives: ['Alternative Investment Proposal', 'Sustainable Investing', 'Wealth Transfer'],
+    advisor: 'fa072',
+    location: 'Washington, DC'
+  },
+  {
+    id: 'cl150',
+    name: 'Rachel Green-Martinez',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$925K',
+    age: 39,
+    occupation: 'Sustainable Energy Consultant',
+    riskProfile: 'Growth-ESG',
+    objectives: ['Sustainable Investing Proposal', 'ESG Integration', 'Impact Investing'],
+    advisor: 'fa072',
+    location: 'Portland, OR'
+  },
+  {
+    id: 'cl151',
+    name: 'Anthony & Maria Santos',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$485K',
+    age: 31,
+    occupation: 'Marketing Directors & Brand Managers',
+    riskProfile: 'Aggressive',
+    objectives: ['Retirement Planning Proposal', 'Tax-Advantaged Strategies', 'Growth Investing'],
+    advisor: 'fa073',
+    location: 'Austin, TX'
+  },
+
+  // INVESTMENT RESEARCH CLIENTS (cl152-cl161)
+  {
+    id: 'cl152',
+    name: 'William & Catherine Morrison IV',
+    wealthSegment: 'UHNW',
+    aum: '$15.8M',
+    age: 64,
+    occupation: 'Hedge Fund Founder & Investment Committee Chair',
+    riskProfile: 'Sophisticated-Aggressive',
+    objectives: ['Research Readership', 'Analyst Coverage', 'Economic Research'],
+    advisor: 'fa074',
+    location: 'Hamptons, NY'
+  },
+  {
+    id: 'cl153',
+    name: 'Alexandra Chen-Williams',
+    wealthSegment: 'UHNW',
+    aum: '$9.4M',
+    age: 49,
+    occupation: 'Biotech CEO & Healthcare Innovation Leader',
+    riskProfile: 'Aggressive-Sector',
+    objectives: ['Sector Analysis', 'Individual Stock Research', 'Earnings Previews'],
+    advisor: 'fa074',
+    location: 'Palo Alto, CA'
+  },
+  {
+    id: 'cl154',
+    name: 'Marcus Johnson-Taylor',
+    wealthSegment: 'HNW',
+    aum: '$4.2M',
+    age: 55,
+    occupation: 'Private Equity Principal & Investment Advisor',
+    riskProfile: 'Moderate-Aggressive',
+    objectives: ['Alternative Investment Research', 'Economic Analysis', 'Upgrade/Downgrade Alerts'],
+    advisor: 'fa075',
+    location: 'Charlotte, NC'
+  },
+  {
+    id: 'cl155',
+    name: 'Elizabeth Rodriguez-Kim',
+    wealthSegment: 'HNW',
+    aum: '$2.9M',
+    age: 46,
+    occupation: 'ESG Investment Director & Sustainability Consultant',
+    riskProfile: 'Moderate-ESG',
+    objectives: ['ESG Research Integration', 'Sustainability Analysis', 'Impact Research'],
+    advisor: 'fa075',
+    location: 'Denver, CO'
+  },
+  {
+    id: 'cl156',
+    name: 'David & Jennifer Walsh',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.6M',
+    age: 41,
+    occupation: 'Financial Analysts & Investment Research Associates',
+    riskProfile: 'Moderate',
+    objectives: ['Research Readership', 'Analyst Reports', 'Sector Analysis'],
+    advisor: 'fa076',
+    location: 'Atlanta, GA'
+  },
+  {
+    id: 'cl157',
+    name: 'Christine Park-Anderson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.3M',
+    age: 38,
+    occupation: 'Healthcare Research Analyst',
+    riskProfile: 'Growth-Healthcare',
+    objectives: ['Healthcare Research', 'Earnings Analysis', 'FDA Research'],
+    advisor: 'fa076',
+    location: 'San Diego, CA'
+  },
+  {
+    id: 'cl158',
+    name: 'Robert & Amanda Foster',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$825K',
+    age: 34,
+    occupation: 'Technology Research Associates',
+    riskProfile: 'Aggressive-Tech',
+    objectives: ['Technology Research', 'Sector Reports', 'Economic Indicators'],
+    advisor: 'fa077',
+    location: 'Nashville, TN'
+  },
+  {
+    id: 'cl159',
+    name: 'Michael Thompson-Davis',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$695K',
+    age: 36,
+    occupation: 'Energy Sector Analyst',
+    riskProfile: 'Moderate-Energy',
+    objectives: ['Energy Research', 'Commodity Analysis', 'ESG Integration'],
+    advisor: 'fa077',
+    location: 'Houston, TX'
+  },
+  {
+    id: 'cl160',
+    name: 'Sarah & Kevin Martinez',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$445K',
+    age: 28,
+    occupation: 'Junior Research Analysts & Investment Associates',
+    riskProfile: 'Growth',
+    objectives: ['Research Education', 'Market Analysis', 'Investment Learning'],
+    advisor: 'fa078',
+    location: 'Phoenix, AZ'
+  },
+  {
+    id: 'cl161',
+    name: 'Jessica & Andrew Wilson',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$385K',
+    age: 30,
+    occupation: 'Financial Planning Associates & Investment Trainees',
+    riskProfile: 'Moderate-Growth',
+    objectives: ['Research Readership', 'Market Education', 'Portfolio Analysis'],
+    advisor: 'fa078',
+    location: 'Tampa, FL'
+  },
+
+  // CLIENT REPORTING CLIENTS (cl162-cl166)
+  {
+    id: 'cl162',
+    name: 'Harrison & Margaret Blackwood',
+    wealthSegment: 'UHNW',
+    aum: '$11.7M',
+    age: 67,
+    occupation: 'Retired Investment Executive & Philanthropist',
+    riskProfile: 'Conservative',
+    objectives: ['Quarterly Performance Reports', 'ESG Impact Reporting', 'Goal Progress Tracking'],
+    advisor: 'fa079',
+    location: 'Naples, FL'
+  },
+  {
+    id: 'cl163',
+    name: 'Victoria Santos-Chen',
+    wealthSegment: 'HNW',
+    aum: '$3.4M',
+    age: 51,
+    occupation: 'Corporate Executive & Board Director',
+    riskProfile: 'Moderate',
+    objectives: ['Benchmark Reporting', 'Tax Optimization Reports', 'Sector Performance'],
+    advisor: 'fa079',
+    location: 'Minneapolis, MN'
+  },
+  {
+    id: 'cl164',
+    name: 'James & Patricia Rodriguez',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.5M',
+    age: 44,
+    occupation: 'Engineering Directors & Project Managers',
+    riskProfile: 'Moderate-Aggressive',
+    objectives: ['Goal Progress Tracking', 'Performance Analytics', 'Mobile Reporting'],
+    advisor: 'fa080',
+    location: 'San Antonio, TX'
+  },
+  {
+    id: 'cl165',
+    name: 'Angela Kim-Thompson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$775K',
+    age: 37,
+    occupation: 'Data Analytics Manager',
+    riskProfile: 'Growth',
+    objectives: ['Interactive Reporting', 'Data Visualization', 'Performance Metrics'],
+    advisor: 'fa080',
+    location: 'Raleigh, NC'
+  },
+  {
+    id: 'cl166',
+    name: 'Christopher & Rachel Davis',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$425K',
+    age: 32,
+    occupation: 'Financial Analysts & Budget Managers',
+    riskProfile: 'Moderate-Growth',
+    objectives: ['Mobile Reporting', 'Goal Tracking', 'Performance Analysis'],
+    advisor: 'fa081',
+    location: 'Jacksonville, FL'
+  },
+
+  // LIFE EVENTS CLIENTS (cl167-cl171)
+  {
+    id: 'cl167',
+    name: 'Theodore & Caroline Winchester',
+    wealthSegment: 'UHNW',
+    aum: '$14.2M',
+    age: 59,
+    occupation: 'Investment Firm Partner & Trust Executive',
+    riskProfile: 'Conservative-Moderate',
+    objectives: ['Life Event Detection', 'Succession Planning', 'Estate Transition'],
+    advisor: 'fa082',
+    location: 'Boston, MA'
+  },
+  {
+    id: 'cl168',
+    name: 'Isabella Martinez-Johnson',
+    wealthSegment: 'HNW',
+    aum: '$2.7M',
+    age: 42,
+    occupation: 'Management Consulting Partner & Executive Coach',
+    riskProfile: 'Moderate-Aggressive',
+    objectives: ['Career Transition', 'Proactive Outreach', 'Cross-Selling Opportunities'],
+    advisor: 'fa082',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl169',
+    name: 'Alexander & Sophia Chen',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.3M',
+    age: 36,
+    occupation: 'Technology Executives & Startup Founders',
+    riskProfile: 'Aggressive',
+    objectives: ['Job Change Events', 'Stock Option Planning', 'Meeting Preparation Intelligence'],
+    advisor: 'fa083',
+    location: 'Austin, TX'
+  },
+  {
+    id: 'cl170',
+    name: 'Rebecca Park-Williams',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$685K',
+    age: 33,
+    occupation: 'Marketing Director & Brand Strategist',
+    riskProfile: 'Growth',
+    objectives: ['Marriage Planning', 'Life Event Integration', 'Financial Coordination'],
+    advisor: 'fa083',
+    location: 'Portland, OR'
+  },
+  {
+    id: 'cl171',
+    name: 'Nathan & Emily Rodriguez',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$365K',
+    age: 27,
+    occupation: 'Recent MBA Graduates & Corporate Associates',
+    riskProfile: 'Aggressive-Growth',
+    objectives: ['Career Launch', 'Student Loan Management', 'First Home Purchase'],
+    advisor: 'fa084',
+    location: 'Atlanta, GA'
+  },
+
+  // CLIENT PORTAL ENGAGEMENT CLIENTS (cl172-cl176)
+  {
+    id: 'cl172',
+    name: 'Montgomery & Priscilla Ashford',
+    wealthSegment: 'UHNW',
+    aum: '$16.8M',
+    age: 71,
+    occupation: 'Retired Banking Executive & Non-Profit Board Chair',
+    riskProfile: 'Conservative',
+    objectives: ['Portal Usage Monitoring', 'Service Search Activity', 'Digital Engagement'],
+    advisor: 'fa085',
+    location: 'Charleston, SC'
+  },
+  {
+    id: 'cl173',
+    name: 'Diana Foster-Kim',
+    wealthSegment: 'HNW',
+    aum: '$4.1M',
+    age: 48,
+    occupation: 'Technology Innovation Director & Digital Strategy Consultant',
+    riskProfile: 'Moderate-Aggressive',
+    objectives: ['New Asset Class Search', 'Education Planning Milestones', 'Portal Analytics'],
+    advisor: 'fa085',
+    location: 'San Francisco, CA'
+  },
+  {
+    id: 'cl174',
+    name: 'Gregory & Amanda Walsh',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.7M',
+    age: 40,
+    occupation: 'Business Development Directors & Sales Managers',
+    riskProfile: 'Moderate',
+    objectives: ['Business Financing Milestones', 'Product Search Activity', 'Engagement Tracking'],
+    advisor: 'fa086',
+    location: 'Denver, CO'
+  },
+  {
+    id: 'cl175',
+    name: 'Jennifer Chen-Davis',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$825K',
+    age: 35,
+    occupation: 'Digital Marketing Manager & E-commerce Director',
+    riskProfile: 'Growth',
+    objectives: ['Retirement Milestone Updates', 'Digital Engagement', 'Portal Optimization'],
+    advisor: 'fa086',
+    location: 'Las Vegas, NV'
+  },
+  {
+    id: 'cl176',
+    name: 'Andrew & Sarah Thompson',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$445K',
+    age: 29,
+    occupation: 'Software Developers & UX Designers',
+    riskProfile: 'Aggressive',
+    objectives: ['Portal Feature Usage', 'Search Analytics', 'Digital Native Engagement'],
+    advisor: 'fa087',
+    location: 'Seattle, WA'
+  },
+
+  // ADVISOR-CLIENT ENGAGEMENT CLIENTS (cl177-cl181)
+  {
+    id: 'cl177',
+    name: 'Reginald & Victoria Blackstone IV',
+    wealthSegment: 'UHNW',
+    aum: '$13.5M',
+    age: 65,
+    occupation: 'Private Equity Founding Partner & Investment Committee Chair',
+    riskProfile: 'Sophisticated',
+    objectives: ['Engagement Analytics', 'Communication Optimization', 'Relationship Metrics'],
+    advisor: 'fa088',
+    location: 'Greenwich, CT'
+  },
+  {
+    id: 'cl178',
+    name: 'Samantha Rodriguez-Wilson',
+    wealthSegment: 'HNW',
+    aum: '$3.8M',
+    age: 47,
+    occupation: 'Healthcare Executive & Medical Practice Owner',
+    riskProfile: 'Moderate',
+    objectives: ['Meeting Frequency Analysis', 'Email Analytics', 'Response Patterns'],
+    advisor: 'fa088',
+    location: 'Phoenix, AZ'
+  },
+  {
+    id: 'cl179',
+    name: 'Benjamin & Elizabeth Martinez',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.4M',
+    age: 39,
+    occupation: 'Corporate Finance Directors & Treasury Managers',
+    riskProfile: 'Moderate-Aggressive',
+    objectives: ['Call Analytics', 'Content Intelligence', 'Multi-Channel Assessment'],
+    advisor: 'fa089',
+    location: 'Dallas, TX'
+  },
+  {
+    id: 'cl180',
+    name: 'Catherine Park-Johnson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$735K',
+    age: 36,
+    occupation: 'Communications Director & PR Manager',
+    riskProfile: 'Growth',
+    objectives: ['Communication Preferences', 'Engagement Tracking', 'Response Analytics'],
+    advisor: 'fa089',
+    location: 'Charlotte, NC'
+  },
+  {
+    id: 'cl181',
+    name: 'Matthew & Jessica Chen',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$385K',
+    age: 31,
+    occupation: 'Business Analysts & Operations Coordinators',
+    riskProfile: 'Moderate-Growth',
+    objectives: ['Branch Visits', 'Digital Communication', 'Peer Benchmarking'],
+    advisor: 'fa090',
+    location: 'Orlando, FL'
+  },
+
+  // CLIENT SURVEYS CLIENTS (cl182-cl186)
+  {
+    id: 'cl182',
+    name: 'Harrison Foster-Blackwood III',
+    wealthSegment: 'UHNW',
+    aum: '$18.4M',
+    age: 63,
+    occupation: 'Investment Banking Chairman & Board Director',
+    riskProfile: 'Conservative-Sophisticated',
+    objectives: ['Advisor Rating Feedback', 'Service Quality Assessment', 'Trust Measurement'],
+    advisor: 'fa091',
+    location: 'Manhattan, NY'
+  },
+  {
+    id: 'cl183',
+    name: 'Vanessa Chen-Thompson',
+    wealthSegment: 'HNW',
+    aum: '$4.6M',
+    age: 52,
+    occupation: 'Venture Capital Managing Director & Tech Executive',
+    riskProfile: 'Aggressive',
+    objectives: ['Communication Effectiveness', 'Value Perception', 'Net Promoter Scoring'],
+    advisor: 'fa091',
+    location: 'Palo Alto, CA'
+  },
+  {
+    id: 'cl184',
+    name: 'Jonathan & Patricia Rodriguez',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.6M',
+    age: 42,
+    occupation: 'Legal Partners & Corporate Attorneys',
+    riskProfile: 'Moderate',
+    objectives: ['Trust and Confidence', 'Service Feedback', 'Rating Improvements'],
+    advisor: 'fa092',
+    location: 'Miami, FL'
+  },
+  {
+    id: 'cl185',
+    name: 'Michelle Park-Davis',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$795K',
+    age: 38,
+    occupation: 'Customer Success Director & Client Relations Manager',
+    riskProfile: 'Moderate-Growth',
+    objectives: ['Survey Analytics', 'Feedback Integration', 'Service Enhancement'],
+    advisor: 'fa092',
+    location: 'San Diego, CA'
+  },
+  {
+    id: 'cl186',
+    name: 'Ryan & Amanda Wilson',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$465K',
+    age: 30,
+    occupation: 'Marketing Coordinators & Brand Specialists',
+    riskProfile: 'Growth',
+    objectives: ['Satisfaction Measurement', 'Loyalty Tracking', 'Feedback Response'],
+    advisor: 'fa093',
+    location: 'Kansas City, MO'
+  },
+
+  // CLIENT ONBOARDING CLIENTS (cl187-cl191)
+  {
+    id: 'cl187',
+    name: 'Preston & Caroline Ashworth-Blackstone',
+    wealthSegment: 'UHNW',
+    aum: '$22.1M',
+    age: 69,
+    occupation: 'Retired Investment Fund Chairman & Philanthropic Foundation Director',
+    riskProfile: 'Conservative',
+    objectives: ['KYC/AML Processing', 'Account Opening Compliance', 'Onboarding Excellence'],
+    advisor: 'fa094',
+    location: 'Napa Valley, CA'
+  },
+  {
+    id: 'cl188',
+    name: 'Gabriella Martinez-Foster',
+    wealthSegment: 'HNW',
+    aum: '$5.2M',
+    age: 44,
+    occupation: 'Hedge Fund Portfolio Manager & Risk Director',
+    riskProfile: 'Aggressive-Sophisticated',
+    objectives: ['Sophisticated Client Onboarding', 'Documentation Excellence', 'Compliance Integration'],
+    advisor: 'fa094',
+    location: 'Chicago, IL'
+  },
+  {
+    id: 'cl189',
+    name: 'Nicholas & Elizabeth Johnson',
+    wealthSegment: 'AFFLUENT',
+    aum: '$1.9M',
+    age: 45,
+    occupation: 'Financial Services Executives & Risk Management Directors',
+    riskProfile: 'Moderate',
+    objectives: ['KYC Efficiency', 'AML Compliance', 'Onboarding Optimization'],
+    advisor: 'fa095',
+    location: 'Boston, MA'
+  },
+  {
+    id: 'cl190',
+    name: 'Stephanie Chen-Wilson',
+    wealthSegment: 'MASS_AFFLUENT',
+    aum: '$865K',
+    age: 37,
+    occupation: 'Compliance Officer & Regulatory Affairs Manager',
+    riskProfile: 'Conservative-Moderate',
+    objectives: ['Regulatory Compliance', 'Documentation Processing', 'Onboarding Experience'],
+    advisor: 'fa095',
+    location: 'Washington, DC'
+  },
+  {
+    id: 'cl191',
+    name: 'Joshua & Rachel Thompson',
+    wealthSegment: 'EMERGING_WEALTH',
+    aum: '$515K',
+    age: 28,
+    occupation: 'Recent Finance Graduates & Investment Trainees',
+    riskProfile: 'Growth',
+    objectives: ['First-Time Client Onboarding', 'Educational Integration', 'Digital Onboarding'],
+    advisor: 'fa096',
+    location: 'Nashville, TN'
   }
 ];
 
