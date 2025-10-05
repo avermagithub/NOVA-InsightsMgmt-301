@@ -167,56 +167,70 @@ const ClientsPage = ({ selectedRole }) => {
         </div>
       </div>
 
-      {/* Statistics */}
-      <div className="grid grid-cols-4" style={{ gap: '1.5rem', marginBottom: '2rem' }}>
-        <div className="card">
-          <div className="card-content" style={{ textAlign: 'center', padding: '1.5rem' }}>
-            <Users size={32} style={{ color: 'var(--ej-primary)', margin: '0 auto 1rem' }} />
-            <h3 style={{ color: 'var(--ej-primary)', fontSize: '2rem', margin: '0 0 0.5rem' }}>
-              {filteredClients.length}
-            </h3>
-            <p style={{ color: 'var(--ej-gray-600)', margin: 0, fontSize: '0.9rem' }}>
-              Clients with Insights
-            </p>
-          </div>
-        </div>
-        
-        <div className="card">
-          <div className="card-content" style={{ textAlign: 'center', padding: '1.5rem' }}>
-            <Eye size={32} style={{ color: 'var(--ej-gold)', margin: '0 auto 1rem' }} />
-            <h3 style={{ color: 'var(--ej-gold)', fontSize: '2rem', margin: '0 0 0.5rem' }}>
-              {filteredClients.reduce((total, client) => total + getClientInsights(client.id).length, 0)}
-            </h3>
-            <p style={{ color: 'var(--ej-gray-600)', margin: 0, fontSize: '0.9rem' }}>
-              Total Insights
-            </p>
-          </div>
-        </div>
-        
-        <div className="card">
-          <div className="card-content" style={{ textAlign: 'center', padding: '1.5rem' }}>
-            <AlertCircle size={32} style={{ color: 'var(--ej-error)', margin: '0 auto 1rem' }} />
-            <h3 style={{ color: 'var(--ej-error)', fontSize: '2rem', margin: '0 0 0.5rem' }}>
-              {filteredClients.reduce((total, client) => {
-                const insights = getClientInsights(client.id);
-                return total + insights.filter(insight => insight.priority === 'Critical' || insight.priority === 'High').length;
-              }, 0)}
-            </h3>
-            <p style={{ color: 'var(--ej-gray-600)', margin: 0, fontSize: '0.9rem' }}>
-              High Priority
-            </p>
-          </div>
-        </div>
-        
-        <div className="card">
-          <div className="card-content" style={{ textAlign: 'center', padding: '1.5rem' }}>
-            <TrendingUp size={32} style={{ color: 'var(--ej-success)', margin: '0 auto 1rem' }} />
-            <h3 style={{ color: 'var(--ej-success)', fontSize: '2rem', margin: '0 0 0.5rem' }}>
-              {Object.keys(clientsBySegment).length}
-            </h3>
-            <p style={{ color: 'var(--ej-gray-600)', margin: 0, fontSize: '0.9rem' }}>
-              Active Segments
-            </p>
+      {/* Statistics - Compact Horizontal Layout */}
+      <div className="card" style={{ marginBottom: '2rem' }}>
+        <div className="card-content" style={{ padding: '1.5rem' }}>
+          <div style={{ 
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            alignItems: 'center', 
+            gap: '2rem',
+            flexWrap: 'wrap'
+          }}>
+            {/* Clients with Insights */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flex: '1', minWidth: '180px' }}>
+              <Users size={24} style={{ color: 'var(--ej-primary)' }} />
+              <div>
+                <div style={{ color: 'var(--ej-primary)', fontSize: '1.5rem', fontWeight: '700', lineHeight: '1.2' }}>
+                  {filteredClients.length}
+                </div>
+                <div style={{ color: 'var(--ej-gray-600)', fontSize: '0.8rem', fontWeight: '500' }}>
+                  Clients with Insights
+                </div>
+              </div>
+            </div>
+
+            {/* Total Insights */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flex: '1', minWidth: '140px' }}>
+              <Eye size={24} style={{ color: 'var(--ej-gold)' }} />
+              <div>
+                <div style={{ color: 'var(--ej-gold)', fontSize: '1.5rem', fontWeight: '700', lineHeight: '1.2' }}>
+                  {filteredClients.reduce((total, client) => total + getClientInsights(client.id).length, 0)}
+                </div>
+                <div style={{ color: 'var(--ej-gray-600)', fontSize: '0.8rem', fontWeight: '500' }}>
+                  Total Insights
+                </div>
+              </div>
+            </div>
+
+            {/* High Priority */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flex: '1', minWidth: '130px' }}>
+              <AlertCircle size={24} style={{ color: 'var(--ej-error)' }} />
+              <div>
+                <div style={{ color: 'var(--ej-error)', fontSize: '1.5rem', fontWeight: '700', lineHeight: '1.2' }}>
+                  {filteredClients.reduce((total, client) => {
+                    const insights = getClientInsights(client.id);
+                    return total + insights.filter(insight => insight.priority === 'Critical' || insight.priority === 'High').length;
+                  }, 0)}
+                </div>
+                <div style={{ color: 'var(--ej-gray-600)', fontSize: '0.8rem', fontWeight: '500' }}>
+                  High Priority
+                </div>
+              </div>
+            </div>
+
+            {/* Active Segments */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flex: '1', minWidth: '140px' }}>
+              <TrendingUp size={24} style={{ color: 'var(--ej-success)' }} />
+              <div>
+                <div style={{ color: 'var(--ej-success)', fontSize: '1.5rem', fontWeight: '700', lineHeight: '1.2' }}>
+                  {Object.keys(clientsBySegment).length}
+                </div>
+                <div style={{ color: 'var(--ej-gray-600)', fontSize: '0.8rem', fontWeight: '500' }}>
+                  Active Segments
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
